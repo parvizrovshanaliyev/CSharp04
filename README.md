@@ -17,4 +17,9 @@ CSharp04 Private Class
 ### Topics
 - Computer Networking Basics: Understanding Network Components
 - Frontend vs Backend
+
+### Resources
+
+1. [Computer Networking Basics](https://www.geeksforgeeks.org/basics-computer-networking)
+2. [frontend-vs-backend](https://www.computerscience.org/bootcamps/resources/frontend-vs-backend/)
 </details>
