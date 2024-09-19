@@ -5,7 +5,7 @@ CSharp04 Private Class
 **Started Date:** 08.09.2024
 
 ## Student List
-- *
+- * - [Ceyhun](https://github.com/Ceyhun555)
 
 ## Lessons
 
