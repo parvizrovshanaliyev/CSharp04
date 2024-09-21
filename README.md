@@ -71,3 +71,51 @@ CSharp04 Private Class
 10. [What is an Operating System (OS)?](https://www.techtarget.com/whatis/definition/operating-system-OS) - TechTarget provides a comprehensive definition and explanation of operating systems, a crucial component of computing environments.
 11. [SSD vs HDD: Which is Right for You?](https://www.crucial.com/articles/about-ssd/ssd-vs-hdd) - Crucial's article compares Solid State Drives (SSD) and Hard Disk Drives (HDD), highlighting their differences, advantages, and use cases.
 </details>
+
+
+
+<details>
+<summary><strong>Week03-Day01 21.09.2024</strong></summary>
+
+## Week03-Day01 21.09.2024
+
+### Topics
+1. Introduction to Programming Languages
+2. A History of Programming Languages
+3. Why Study Programming Languages?
+4. Classifications of Programming Languages
+5. Compilation vs. Interpretation
+6. Implementation Strategies
+7. Programming Environment Tools
+8. An Overview of Compilation
+
+### Resources
+
+1. [Introduction to Programming Languages - GeeksforGeeks](https://www.geeksforgeeks.org/introduction-to-programming-languages/)
+2. [Introduction to Programming Languages (PDF) - Stony Brook University](https://www3.cs.stonybrook.edu/~pfodor/courses/CSE260/_L01_Introduction_Programming_Languages.pdf)
+3. [Introduction to Computer Programming Languages - LinkedIn Article](https://www.linkedin.com/pulse/introduction-computer-programming-languages-chukwuebuka-ejie-vi6mf/)
+4. [Programming Language Overview - JavaTpoint](https://www.javatpoint.com/programming-language)
+
+</details>
+
+
+<details>
+<summary><strong>Week03-Day01 22.09.2024</strong></summary>
+
+## Week03-Day01 22.09.2024
+
+### Topics
+1. Introducing C# and .NET
+2. What is Visual Studio?
+
+### Resources
+1. [C# Get Started](https://www.w3schools.com/cs/cs_getstarted.php)
+2. [GeeksforGeeks - C# Programming Language](https://www.geeksforgeeks.org/csharp-programming-language/?ref=lbp)
+3. [Dot Net Tutorials - Introduction to C# Language](https://dotnettutorials.net/lesson/introduction-to-csharp-language/)
+4. [Medium - What is C# and .NET](https://medium.com/@codebob75/what-is-c-and-net-41addd28b173)
+5. [Medium - What is .NET](https://medium.com/@benkaddourmed54/what-is-net-202790532234)
+6. [Introduction-to-visual-studio](https://www.geeksforgeeks.org/introduction-to-visual-studio/)
+7. [What is Visual Studio?](https://learn.microsoft.com/en-us/visualstudio/get-started/visual-studio-ide?view=vs-2022)
+8. [Introduction to Microsoft Visual Studio - tutorial](https://www.functionx.com/csharp10/Lesson01.htm)
+
+</details>
