@@ -120,6 +120,8 @@ CSharp04 Private Class
 
 </details>
 
+<details>
+<summary><strong>Week04-Day01 28.09.2024</strong></summary>
 ## Week04-Day01 28.09.2024
 
 ### Topics
