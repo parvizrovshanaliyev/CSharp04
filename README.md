@@ -119,3 +119,18 @@ CSharp04 Private Class
 8. [Introduction to Microsoft Visual Studio - tutorial](https://www.functionx.com/csharp10/Lesson01.htm)
 
 </details>
+
+## Week04-Day01 28.09.2024
+
+### Topics
+1. What is the difference between C# and .Net ?
+2. C# Programming Language
+
+### Resources
+1. [What is the difference between C# and .Net ?](https://medium.com/@codebob75/what-is-c-and-net-41addd28b173)
+2. [GeeksforGeeks - C# Programming Language](https://www.geeksforgeeks.org/csharp-programming-language/?ref=lbp)
+3. [Dot Net Tutorials - Introduction to C# Language](https://dotnettutorials.net/lesson/introduction-to-csharp-language/)
+4. [Medium - What is C# and .NET](https://medium.com/@codebob75/what-is-c-and-net-41addd28b173)
+5. [Medium - What is .NET](https://medium.com/@benkaddourmed54/what-is-net-202790532234)
+</details>
+
