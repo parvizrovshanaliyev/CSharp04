@@ -100,7 +100,7 @@ CSharp04 Private Class
 
 
 <details>
-<summary><strong>Week03-Day01 22.09.2024</strong></summary>
+<summary><strong>Week03-Day02 22.09.2024</strong></summary>
 
 ## Week03-Day01 22.09.2024
 
