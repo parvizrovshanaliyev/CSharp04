@@ -144,11 +144,12 @@ CSharp04 Private Class
 
 ### Topics
 1. Value Types and Reference Types
+2. C# - Data Types
+3. Numbers in C#
 
 ### Resources
-1. [Dot Net Tutorials - Value Types and Reference Types](https://dotnettutorials.net/lesson/value-types-reference-types/)
-2. [GeeksforGeeks - Difference Between Value and Reference Types](https://www.geeksforgeeks.org/difference-between-value-type-and-reference-type/)
-3. [Medium - Understanding Value and Reference Types in C#](https://medium.com/@mohamedbechirmabrouk/understanding-value-and-reference-types-in-c-4d0a1b94eb1)
-4. [C# Corner - Value Types and Reference Types](https://www.c-sharpcorner.com/UploadFile/ff2f08/value-types-and-reference-types-in-C-Sharp/)
-</details>
+1. [Value Type and Reference Type](https://www.tutorialsteacher.com/csharp/csharp-value-type-and-reference-type)
+2. [C# - Data Types](https://www.tutorialsteacher.com/csharp/csharp-data-types)
+3. [Numbers in C#](https://www.tutorialsteacher.com/csharp/numbers)
+</details
 
