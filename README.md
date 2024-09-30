@@ -149,6 +149,7 @@ CSharp04 Private Class
 
 ### Resources
 1. [Value Type and Reference Type](https://www.tutorialsteacher.com/csharp/csharp-value-type-and-reference-type)
+1. [C#’ta Value Type ve Reference Type](https://handeebrar.medium.com/c-ta-value-type-ve-reference-type-178d3a5823ac))
 2. [C# - Data Types](https://www.tutorialsteacher.com/csharp/csharp-data-types)
 3. [Numbers in C#](https://www.tutorialsteacher.com/csharp/numbers)
 </details
