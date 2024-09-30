@@ -143,25 +143,12 @@ CSharp04 Private Class
 ## Week04-Day02 29.09.2024
 
 ### Topics
-1. Simple Read And Write With Console Application For Beginners
-   - C# Output
-   - C# User Input
-2. C# Variables
-3. C# Data Types
+1. Value Types and Reference Types
 
 ### Resources
-1. [C# Output](https://www.w3schools.com/cs/cs_output.php)
-2. [C# User Input](https://www.w3schools.com/cs/cs_user_input.php)
-3. C# Variables
-        - https://www.w3schools.com/cs/cs_variables.php
-        - https://www.tutorialsteacher.com/csharp/csharp-variable
-4. [C# Data Types](https://www.w3schools.com/cs/cs_data_types.php)
-
-
-### Homework
-  1. print the sum of two numbers
-  2. Print the sum of two numbers received from the user.
-  3. Ask the user step by step for his/her first name, last name, father's name and phone number and print it as a single line.
-
+1. [Dot Net Tutorials - Value Types and Reference Types](https://dotnettutorials.net/lesson/value-types-reference-types/)
+2. [GeeksforGeeks - Difference Between Value and Reference Types](https://www.geeksforgeeks.org/difference-between-value-type-and-reference-type/)
+3. [Medium - Understanding Value and Reference Types in C#](https://medium.com/@mohamedbechirmabrouk/understanding-value-and-reference-types-in-c-4d0a1b94eb1)
+4. [C# Corner - Value Types and Reference Types](https://www.c-sharpcorner.com/UploadFile/ff2f08/value-types-and-reference-types-in-C-Sharp/)
 </details>
 
