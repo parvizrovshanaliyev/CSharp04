@@ -143,14 +143,18 @@ CSharp04 Private Class
 ## Week04-Day02 29.09.2024
 
 ### Topics
-1. Value Types and Reference Types
-2. C# - Data Types
-3. Numbers in C#
+1. Common Language Runtime(CLR)
+2. .NET Common Language Runtime (CLR)
+3. Value Types and Reference Types
+4. C# - Data Types
+5. Numbers in C#
 
 ### Resources
-1. [Value Type and Reference Type](https://www.tutorialsteacher.com/csharp/csharp-value-type-and-reference-type)
-1. [C#’ta Value Type ve Reference Type](https://handeebrar.medium.com/c-ta-value-type-ve-reference-type-178d3a5823ac))
-2. [C# - Data Types](https://www.tutorialsteacher.com/csharp/csharp-data-types)
-3. [Numbers in C#](https://www.tutorialsteacher.com/csharp/numbers)
+1. [Common Language Runtime(CLR)](https://ismailkasan.medium.com/common-language-runtime-clr-14583bebbcf5)
+2. [.NET Common Language Runtime (CLR)](https://www.javatpoint.com/net-common-language-runtime)
+3. [Value Type and Reference Type](https://www.tutorialsteacher.com/csharp/csharp-value-type-and-reference-type)
+4. [C#’ta Value Type ve Reference Type](https://handeebrar.medium.com/c-ta-value-type-ve-reference-type-178d3a5823ac))
+5. [C# - Data Types](https://www.tutorialsteacher.com/csharp/csharp-data-types)
+6. [Numbers in C#](https://www.tutorialsteacher.com/csharp/numbers)
 </details
 
