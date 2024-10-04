@@ -160,6 +160,7 @@ CSharp04 Private Class
 </details
 
 
+
 <details>
 <summary><strong>Week05-Day01 04.10.2024</strong></summary>
 
@@ -167,6 +168,8 @@ CSharp04 Private Class
 
 ### Topics
 1. C# Stack vs Heap Memory
+
+![C# Stack vs Heap Memory](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/images/stack%20vs%20heap.png)
 
 ### Resources
 1. [C# Stack vs Heap Memory](https://medium.com/@CodeWithHonor/c-stack-vs-heap-memory-f8a737af9919)
