@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsoleApps", "ConsoleApps", "{EBDE559D-97AF-43DA-896A-8EDD7514F74F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week05", "Week05", "{77AE5B68-0626-41F4-A877-078EF28AF651}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTypes.ValueTypes", "ConsoleApps\Week05\DataTypes.ValueTypes\DataTypes.ValueTypes.csproj", "{DFA8DC49-A159-4B35-81FD-B666313BE400}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFA8DC49-A159-4B35-81FD-B666313BE400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFA8DC49-A159-4B35-81FD-B666313BE400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFA8DC49-A159-4B35-81FD-B666313BE400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFA8DC49-A159-4B35-81FD-B666313BE400}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{77AE5B68-0626-41F4-A877-078EF28AF651} = {EBDE559D-97AF-43DA-896A-8EDD7514F74F}
+		{DFA8DC49-A159-4B35-81FD-B666313BE400} = {77AE5B68-0626-41F4-A877-078EF28AF651}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEA2487A-AB74-4D13-B4F3-133B1E0660E1}
+	EndGlobalSection
+EndGlobal
