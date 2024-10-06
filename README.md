@@ -157,7 +157,7 @@ CSharp04 Private Class
 5. [C# - Data Types](https://www.tutorialsteacher.com/csharp/csharp-data-types)
 6. [Numbers in C#](https://www.tutorialsteacher.com/csharp/numbers)
 7. [Drawing](https://excalidraw.com/#json=B3eaRkAjEB8MqM8hca-rV,-c8aVtlmegDwxfhXn2F5mw)
-</details
+</details>
 
 
 <details>
@@ -173,5 +173,5 @@ CSharp04 Private Class
 ### Resources
 1. [C# Stack vs Heap Memory](https://medium.com/@CodeWithHonor/c-stack-vs-heap-memory-f8a737af9919)
 2. [Mülakat #2 - Heap ve Stack](https://medium.com/software-development-turkey/mülakat-2-heap-ve-stack-e37f82b4c49b)
-</details
+</details>
 
