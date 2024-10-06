@@ -175,3 +175,18 @@ CSharp04 Private Class
 2. [Mülakat #2 - Heap ve Stack](https://medium.com/software-development-turkey/mülakat-2-heap-ve-stack-e37f82b4c49b)
 </details>
 
+<details>
+<summary><strong>Week05-Day02 06.10.2024</strong></summary>
+
+## Week05-Day02 06.10.2024
+
+### Topics
+1. C# Stack vs Heap Memory
+
+![C# Stack vs Heap Memory](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/images/stack%20vs%20heap.png)
+
+### Resources
+1. [C# Stack vs Heap Memory](https://medium.com/@CodeWithHonor/c-stack-vs-heap-memory-f8a737af9919)
+2. [Mülakat #2 - Heap ve Stack](https://medium.com/software-development-turkey/mülakat-2-heap-ve-stack-e37f82b4c49b)
+</details>
+
