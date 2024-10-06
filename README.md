@@ -160,7 +160,6 @@ CSharp04 Private Class
 </details
 
 
-
 <details>
 <summary><strong>Week05-Day01 04.10.2024</strong></summary>
 
