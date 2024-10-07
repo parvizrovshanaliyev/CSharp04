@@ -328,5 +328,12 @@ CSharp04 Private Class
 
      Console.WriteLine("Full Name: " + fullName);
      ```
+### Questions
+
+1. Explain difference between .NET and C#?
+2. What is IL (Intermediate Language) Code?
+3. What is CLR (Common Language Runtime)?
+4. What is JIT?
+
 </details>
 
