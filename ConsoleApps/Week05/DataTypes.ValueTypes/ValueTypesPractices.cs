@@ -94,6 +94,7 @@ namespace DataTypes.ValueTypes
             {
                 Console.WriteLine("Invalid number. Please enter a value between 1 and 7.");
             }
+
             Console.WriteLine();
 
             /*
@@ -117,8 +118,8 @@ namespace DataTypes.ValueTypes
             */
             Console.WriteLine("Task 8: Boxing and Unboxing");
             int num = 123;
-            object obj = num;  // Boxing
-            int unboxedNum = (int)obj;  // Unboxing
+            object obj = num; // Boxing
+            int unboxedNum = (int)obj; // Unboxing
             Console.WriteLine($"Boxed value: {obj}, Unboxed value: {unboxedNum}");
             Console.WriteLine();
 
@@ -145,8 +146,8 @@ namespace DataTypes.ValueTypes
             int intVal = 10;
             float floatVal = 5.5f;
             double doubleVal = 2.5;
-            float result1 = intVal + floatVal;  // Implicit conversion from int to float
-            double result2 = floatVal + doubleVal;  // Implicit conversion from float to double
+            float result1 = intVal + floatVal; // Implicit conversion from int to float
+            double result2 = floatVal + doubleVal; // Implicit conversion from float to double
             Console.WriteLine($"int + float = {result1}, float + double = {result2}");
             Console.WriteLine();
 
@@ -213,3 +214,4 @@ namespace DataTypes.ValueTypes
             }
         }
     }
+}
