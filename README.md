@@ -185,6 +185,9 @@ CSharp04 Private Class
 2. C# Comments
 3. C# Variables - Value Types
 
+
+![C# Data types -Value Types](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/images/csharp-dataTypes-valueTypes.png)
+
 ### Resources
 1. [C# Output](https://www.w3schools.com/cs/cs_output.php)
 2. [C# Comments](https://www.w3schools.com/cs/cs_comments.php)
