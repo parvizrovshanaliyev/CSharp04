@@ -187,6 +187,7 @@ CSharp04 Private Class
 
 
 ![C# Data types -Value Types](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/images/csharp-dataTypes-valueTypes.png)
+[link](https://excalidraw.com/#json=OJQuwooUgMqH7RR2JcgcC,d0K9WjpdmkvxVlCbgR-yNA)
 
 ### Resources
 1. [C# Output](https://www.w3schools.com/cs/cs_output.php)
