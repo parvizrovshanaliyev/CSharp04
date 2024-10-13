@@ -23,6 +23,7 @@ CSharp04 Private Class
 1. [Computer Networking Basics](https://www.geeksforgeeks.org/basics-computer-networking)
 2. [frontend-vs-backend](https://www.computerscience.org/bootcamps/resources/frontend-vs-backend/)
 </details>
+---
 
 <details>
 <summary><strong>Week02-Day01 14.09.2024</strong></summary>
@@ -77,6 +78,7 @@ CSharp04 Private Class
 <details>
 <summary><strong>Week03-Day01 21.09.2024</strong></summary>
 
+---
 ## Week03-Day01 21.09.2024
 
 ### Topics
@@ -122,7 +124,8 @@ CSharp04 Private Class
 
 <details>
 <summary><strong>Week04-Day01 28.09.2024</strong></summary>
-    
+
+---    
 ## Week04-Day01 28.09.2024
 
 ### Topics
@@ -163,6 +166,7 @@ CSharp04 Private Class
 <details>
 <summary><strong>Week05-Day01 04.10.2024</strong></summary>
 
+---
 ## Week05-Day01 04.10.2024
 
 ### Topics
@@ -331,7 +335,9 @@ CSharp04 Private Class
      string fullName = firstName + " " + lastName;
 
      Console.WriteLine("Full Name: " + fullName);
-     ```
+     ```    
+     
+     
 ### Questions
 
 1. Explain difference between .NET and C#?
@@ -341,59 +347,136 @@ CSharp04 Private Class
 
 </details>
 
+---
+
+## Month02
+  
 <details>
-<summary><strong>Month 1 all topics</strong></summary>
+<summary><strong>Week06-Day01 13.10.2024</strong></summary>
 
-### Week 1 - Day 1 (08.09.2024)
-- Computer Networking Basics: Understanding Network Components
-- Frontend vs Backend
+## Week06-Day01 13.10.2024
 
-### Week 2 - Day 1 (14.09.2024)
-- Understanding Data Flow: Simplex, Half Duplex, and Full Duplex Communication
-- Peer-to-Peer Network
-- Client-Server Network
-- Types of Networks: LAN, MAN, WAN
-- Network Topologies: Bus, Star, Ring, Mesh
-- Networking Protocols: TCP/IP, HTTP, FTP, SMTP
-- IP Addresses: IPv4, IPv6
-- Network Services: DNS, DHCP
-- Difference Between Hardware and Software
-- What is an Operating System (OS)?
+### Topics
+1. Type Casting in C#
+2. User Input in C#
 
-### Week 3 - Day 1 (21.09.2024)
-- Introduction to Programming Languages
-- A History of Programming Languages
-- Why Study Programming Languages?
-- Classifications of Programming Languages
-- Compilation vs. Interpretation
-- Implementation Strategies
-- Programming Environment Tools
-- An Overview of Compilation
+### Resources
+1. [Type Casting in C#](https://www.w3schools.com/cs/cs_type_casting.php)
+2. [Type Casting in C#](https://www.geeksforgeeks.org/c-sharp-type-casting/)
+3. [User Input in C#](https://www.w3schools.com/cs/cs_user_input.php)
 
-### Week 3 - Day 2 (22.09.2024)
-- Introducing C# and .NET
-- What is Visual Studio?
 
-### Week 4 - Day 1 (28.09.2024)
-- Difference Between C# and .NET
-- C# Programming Language
 
-### Week 4 - Day 2 (29.09.2024)
-- Common Language Runtime (CLR)
-- .NET Common Language Runtime (CLR)
-- Value Types and Reference Types
-- C# Data Types
-- Numbers in C#
+### **Homework Assignment**
 
-### Week 5 - Day 1 (04.10.2024)
-- C# Stack vs Heap Memory
+#### 1. **Understanding Type Casting**
 
-### Week 5 - Day 2 (06.10.2024)
-- C# Output
-- C# Comments
-- C# Variables - Value Types
+Create a C# console application to demonstrate both **implicit** and **explicit** casting, along with type conversion using the `Convert` class.
+
+##### **Instructions:**
+- Declare variables of different types such as `int`, `double`, `float`, `char`, etc.
+- Perform **implicit casting** where smaller types are automatically cast to larger types (e.g., `int` to `double`).
+- Perform **explicit casting** where larger types are manually cast to smaller types (e.g., `double` to `int`). Show how data loss occurs (e.g., losing decimal precision when casting `double` to `int`).
+- Demonstrate the use of **Convert methods** to safely convert values between types (e.g., `Convert.ToInt32()`, `Convert.ToDouble()`).
+- Print the results of each casting operation to the console.
+
+##### **Example:**
+```csharp
+int age = 25; // Declare an integer variable 'age' and assign it the value 25
+double salary = 50000.75; // Declare a double variable 'salary' and assign it the value 50000.75
+
+// Implicit casting (int to double)
+double newAge = age; // Implicitly cast the integer 'age' to a double and assign it to 'newAge'
+Console.WriteLine($"Implicit Casting - Age as double: {newAge}"); // Print the value of 'newAge' to the console
+
+// Explicit casting (double to int)
+int roundedSalary = (int)salary; // Explicitly cast the double 'salary' to an integer and assign it to 'roundedSalary'
+Console.WriteLine($"Explicit Casting - Rounded Salary: {roundedSalary}"); // Print the value of 'roundedSalary' to the console
+
+// Conversion using Convert
+int ageFromString = Convert.ToInt32("25"); // Convert the string "25" to an integer using the Convert.ToInt32 method and assign it to 'ageFromString'
+Console.WriteLine($"Convert from string to int: {ageFromString}"); // Print the value of 'ageFromString' to the console
+```
+
+---
+
+#### 2. **User Input and Type Conversion**
+
+Build a C# console application that takes **user input** for two numbers and performs basic arithmetic operations on them. Convert the user input from string to appropriate data types for performing the calculations.
+
+##### **Instructions:**
+- Prompt the user to input two numbers using `Console.ReadLine()`.
+- Convert the input strings to **int** or **double** using `Convert.ToInt32()` or `Convert.ToDouble()`.
+- Perform basic operations like **addition**, **subtraction**, **multiplication**, and **division** on the two numbers.
+- Display the results of each operation to the user.
+
+##### **Example:**
+```csharp
+// Prompt the user to enter the first number
+Console.WriteLine("Enter the first number: ");
+// Read the user input and store it in a string variable
+string firstInput = Console.ReadLine();
+// Convert the input string to a double
+double number1 = Convert.ToDouble(firstInput);
+
+// Prompt the user to enter the second number
+Console.WriteLine("Enter the second number: ");
+// Read the user input and store it in a string variable
+string secondInput = Console.ReadLine();
+// Convert the input string to a double
+double number2 = Convert.ToDouble(secondInput);
+
+// Perform addition and store the result
+double sum = number1 + number2;
+// Perform subtraction and store the result
+double difference = number1 - number2;
+// Perform multiplication and store the result
+double product = number1 * number2;
+// Perform division and store the result
+double quotient = number1 / number2;
+
+// Print the sum to the console
+Console.WriteLine($"Sum: {sum}");
+// Print the difference to the console
+Console.WriteLine($"Difference: {difference}");
+// Print the product to the console
+Console.WriteLine($"Product: {product}");
+// Print the quotient to the console
+Console.WriteLine($"Quotient: {quotient}");
+```
+
+---
+
+#### 3. **Challenge Task (Optional)**
+
+Write a C# program that asks the user to input their **age** and **monthly salary**, then performs the following:
+
+- Implicitly cast the `age` to a `double`.
+- Convert the `salary` to an `int`.
+- Calculate the user's annual salary.
+- Display the user's **age**, **monthly salary**, and **annual salary**.
+
+##### **Example:**
+```csharp
+// Sample Input: 
+// Age: 28
+// Monthly Salary: 3000.75
+
+// Output:
+// Your age as a double is: 28.0
+// Your monthly salary as an integer is: 3000
+// Your annual salary is: 36000
+```
+
+### Questions for Type Casting
+
+1. What is type casting in C#?
+2. Explain the difference between implicit and explicit type casting.
+3. What are the potential risks of explicit type casting?
+4. Provide an example of implicit type casting.
+5. Provide an example of explicit type casting.
+6. What is the `Convert` class used for in C#?
 </details>
 
 
-## Month02
 
