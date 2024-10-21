@@ -486,6 +486,18 @@ Write a C# program that asks the user to input their **age** and **monthly salar
 ## Week07-Day01 19.10.2024
 
 
+### Topics
+1. Demystifying Type Conversion in C#: A Comprehensive Guide
+2. C# Operators
+3. C# Math
+
+
+### Resources
+1. [Demystifying Type Conversion in C#: A Comprehensive Guide](https://medium.com/@praveen.rao.g.1990/demystifying-type-conversion-in-c-a-comprehensive-guide-0cd1c2e3c1db)
+2. [C# Operators](https://www.w3schools.com/cs/cs_operators.php)
+3. [C# Math](https://www.w3schools.com/cs/cs_math.php)
+
+
 ### **Homework Assignment**
 
 ### Task 1: Celsius to Fahrenheit Conversion
