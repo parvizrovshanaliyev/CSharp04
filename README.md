@@ -416,7 +416,6 @@ CSharp04 Private Class
 ### Topics
 1. C# Strings
 
-
 ### Resources
 1. [1 C# Strings](https://www.w3schools.com/cs/cs_strings.php)
 2. [2 C# Strings](https://www.programiz.com/csharp-programming/string)
@@ -439,13 +438,20 @@ CSharp04 Private Class
 ### Resources
 1. [Difference between String and StringBuilder in C#](https://petercodes.hashnode.dev/difference-between-string-and-stringbuilder-in-c)
 2. [String vs StringBuilder in C#: Choosing the Right Tool for Efficient String Manipulation](https://medium.com/@chandrashekharsingh25/string-vs-stringbuilder-in-c-choosing-the-right-tool-for-efficient-string-manipulation-6beca8ca6450)
-3. [C# If ... Else](https://www.w3schools.com/cs/cs_conditions.php)
-4. [C# - if, else if, else Statements](https://www.tutorialsteacher.com/csharp/csharp-if-else)
-5. [C# - if, else if, else Statements](https://www.tutorialsteacher.com/csharp/csharp-if-else)
+3. [1 C# If ... Else](https://www.w3schools.com/cs/cs_conditions.php)
+4. [2 C# - if, else if, else Statements](https://www.tutorialsteacher.com/csharp/csharp-if-else)
+5. [1 C# Switch](https://www.w3schools.com/cs/cs_switch.php)
+6. [2 Better C# Switch Statements for a Range of Values](https://hackajob.com/talent/blog/better-c-switch-statements-for-a-range-of-values)
+6. [3 C# switch Statement](https://www.programiz.com/csharp-programming/switch-statement)
 
 
 ### **Homework Assignment**
 
+[Week08 Tasks - Strings](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week08/Strings/Tasks.md)
+---
+[Week08 Tasks - C# If ... Else](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week08/Condition.IfStatement/Tasks.md)
+---
+[Week08 Tasks - C# Switch](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week08/Condition.SwitchCaseStatement/Tasks.md)
 ---
 
 
