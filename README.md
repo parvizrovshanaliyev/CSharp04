@@ -369,104 +369,7 @@ CSharp04 Private Class
 
 ### **Homework Assignment**
 
-#### 1. **Understanding Type Casting**
 
-Create a C# console application to demonstrate both **implicit** and **explicit** casting, along with type conversion using the `Convert` class.
-
-##### **Instructions:**
-- Declare variables of different types such as `int`, `double`, `float`, `char`, etc.
-- Perform **implicit casting** where smaller types are automatically cast to larger types (e.g., `int` to `double`).
-- Perform **explicit casting** where larger types are manually cast to smaller types (e.g., `double` to `int`). Show how data loss occurs (e.g., losing decimal precision when casting `double` to `int`).
-- Demonstrate the use of **Convert methods** to safely convert values between types (e.g., `Convert.ToInt32()`, `Convert.ToDouble()`).
-- Print the results of each casting operation to the console.
-
-##### **Example:**
-```csharp
-int age = 25; // Declare an integer variable 'age' and assign it the value 25
-double salary = 50000.75; // Declare a double variable 'salary' and assign it the value 50000.75
-
-// Implicit casting (int to double)
-double newAge = age; // Implicitly cast the integer 'age' to a double and assign it to 'newAge'
-Console.WriteLine($"Implicit Casting - Age as double: {newAge}"); // Print the value of 'newAge' to the console
-
-// Explicit casting (double to int)
-int roundedSalary = (int)salary; // Explicitly cast the double 'salary' to an integer and assign it to 'roundedSalary'
-Console.WriteLine($"Explicit Casting - Rounded Salary: {roundedSalary}"); // Print the value of 'roundedSalary' to the console
-
-// Conversion using Convert
-int ageFromString = Convert.ToInt32("25"); // Convert the string "25" to an integer using the Convert.ToInt32 method and assign it to 'ageFromString'
-Console.WriteLine($"Convert from string to int: {ageFromString}"); // Print the value of 'ageFromString' to the console
-```
-
----
-
-#### 2. **User Input and Type Conversion**
-
-Build a C# console application that takes **user input** for two numbers and performs basic arithmetic operations on them. Convert the user input from string to appropriate data types for performing the calculations.
-
-##### **Instructions:**
-- Prompt the user to input two numbers using `Console.ReadLine()`.
-- Convert the input strings to **int** or **double** using `Convert.ToInt32()` or `Convert.ToDouble()`.
-- Perform basic operations like **addition**, **subtraction**, **multiplication**, and **division** on the two numbers.
-- Display the results of each operation to the user.
-
-##### **Example:**
-```csharp
-// Prompt the user to enter the first number
-Console.WriteLine("Enter the first number: ");
-// Read the user input and store it in a string variable
-string firstInput = Console.ReadLine();
-// Convert the input string to a double
-double number1 = Convert.ToDouble(firstInput);
-
-// Prompt the user to enter the second number
-Console.WriteLine("Enter the second number: ");
-// Read the user input and store it in a string variable
-string secondInput = Console.ReadLine();
-// Convert the input string to a double
-double number2 = Convert.ToDouble(secondInput);
-
-// Perform addition and store the result
-double sum = number1 + number2;
-// Perform subtraction and store the result
-double difference = number1 - number2;
-// Perform multiplication and store the result
-double product = number1 * number2;
-// Perform division and store the result
-double quotient = number1 / number2;
-
-// Print the sum to the console
-Console.WriteLine($"Sum: {sum}");
-// Print the difference to the console
-Console.WriteLine($"Difference: {difference}");
-// Print the product to the console
-Console.WriteLine($"Product: {product}");
-// Print the quotient to the console
-Console.WriteLine($"Quotient: {quotient}");
-```
-
----
-
-#### 3. **Challenge Task (Optional)**
-
-Write a C# program that asks the user to input their **age** and **monthly salary**, then performs the following:
-
-- Implicitly cast the `age` to a `double`.
-- Convert the `salary` to an `int`.
-- Calculate the user's annual salary.
-- Display the user's **age**, **monthly salary**, and **annual salary**.
-
-##### **Example:**
-```csharp
-// Sample Input: 
-// Age: 28
-// Monthly Salary: 3000.75
-
-// Output:
-// Your age as a double is: 28.0
-// Your monthly salary as an integer is: 3000
-// Your annual salary is: 36000
-```
 
 ### Questions for Type Casting
 
@@ -500,139 +403,50 @@ Write a C# program that asks the user to input their **age** and **monthly salar
 
 ### **Homework Assignment**
 
-### Task 1: Celsius to Fahrenheit Conversion
-Write a C# program that asks the user to input a temperature in Celsius, then performs the following:
 
-- Convert the Celsius temperature to Fahrenheit using the formula: `F = (C × 9/5) + 32`.
-- Display both the Celsius and Fahrenheit values.
+</details>
 
-**Example:**
-```csharp
-// Sample Input: 
-// Celsius: 25
 
-// Output:
-// The temperature in Celsius is: 25
-// The temperature in Fahrenheit is: 77
-```
+<details>
+<summary><strong>Week08-Day01 26.10.2024</strong></summary>
 
-### Task 2: Area of a Circle
-Write a C# program that asks the user to input the radius of a circle, then performs the following:
+## Week08-Day01 26.10.2024
 
-- Calculate the area of the circle using the formula: `Area = π * r^2`. -> Use Math.PI for π in C#
-- Display the radius and the area of the circle.
 
-**Example:**
-```csharp
-// Sample Input: 
-// Radius: 5
+### Topics
+1. C# Strings
 
-// Output:
-// The radius of the circle is: 5
-// The area of the circle is: 78.54
-```
 
-### Task 3: Simple Interest Calculator
-Write a C# program that asks the user to input the principal amount, the rate of interest, and the time (in years), then performs the following:
+### Resources
+1. [1 C# Strings](https://www.w3schools.com/cs/cs_strings.php)
+2. [2 C# Strings](https://www.programiz.com/csharp-programming/string)
+3. [3 Working with Strings in C#: A Comprehensive Guide](https://medium.com/@praveen.rao.g.1990/working-with-strings-in-c-a-comprehensive-guide-242ca55934b0)
+</details>
 
-- Calculate the simple interest using the formula: `Simple Interest = (Principal * Rate * Time) / 100`.
-- Display the calculated simple interest.
 
-**Example:**
-```csharp
-// Sample Input: 
-// Principal: 1000
-// Rate of Interest: 5
-// Time: 2
+<details>
+<summary><strong>Week08-Day02 27.10.2024</strong></summary>
 
-// Output:
-// The simple interest is: 100
-```
----
-### Task 4: Rectangle Perimeter Calculator
-Write a C# program that asks the user to input the length and width of a rectangle, then calculates the perimeter using the formula: `Perimeter = 2 * (Length + Width)`.
+## Week08-Day02 27.10.2024
 
-**Example:**
-```csharp
-// Sample Input: 
-// Length: 8
-// Width: 3
 
-// Output:
-// The perimeter of the rectangle is: 22
-```
+### Topics
+1. Difference between String and StringBuilder in C#
+2. C# If ... Else
+3. C# Switch
+
+
+### Resources
+1. [Difference between String and StringBuilder in C#](https://petercodes.hashnode.dev/difference-between-string-and-stringbuilder-in-c)
+2. [String vs StringBuilder in C#: Choosing the Right Tool for Efficient String Manipulation](https://medium.com/@chandrashekharsingh25/string-vs-stringbuilder-in-c-choosing-the-right-tool-for-efficient-string-manipulation-6beca8ca6450)
+3. [C# If ... Else](https://www.w3schools.com/cs/cs_conditions.php)
+4. [C# - if, else if, else Statements](https://www.tutorialsteacher.com/csharp/csharp-if-else)
+5. [C# - if, else if, else Statements](https://www.tutorialsteacher.com/csharp/csharp-if-else)
+
+
+### **Homework Assignment**
 
 ---
 
-### Task 5: Convert Minutes to Hours and Minutes
-Write a C# program that asks the user to input a number of minutes, then converts it to hours and minutes.
 
-**Example:**
-```csharp
-// Sample Input: 
-// Minutes: 130
-
-// Output:
-// 130 minutes is 2 hour(s) and 10 minute(s).
-```
-
----
-
-### Task 6: Kilometers to Miles Converter
-Write a C# program that asks the user to input a distance in kilometers, then converts it to miles using the formula: `Miles = Kilometers * 0.621371`.
-
-**Example:**
-```csharp
-// Sample Input: 
-// Kilometers: 10
-
-// Output:
-// The distance in miles is: 6.21371
-```
-
----
-
-### Task 7: Average of Three Numbers
-Write a C# program that asks the user to input three numbers, then calculates their average.
-
-**Example:**
-```csharp
-// Sample Input: 
-// Number 1: 10
-// Number 2: 20
-// Number 3: 30
-
-// Output:
-// The average of 10, 20, and 30 is: 20
-```
-
----
-
-### Task 8: Convert Days to Weeks and Days
-Write a C# program that asks the user to input a number of days, then converts it to weeks and remaining days.
-
-**Example:**
-```csharp
-// Sample Input: 
-// Days: 10
-
-// Output:
-// 10 days is 1 week(s) and 3 day(s).
-```
-
----
-
-### Task 9: Grams to Kilograms Converter
-Write a C# program that asks the user to input a weight in grams, then converts it to kilograms.
-
-**Example:**
-```csharp
-// Sample Input: 
-// Grams: 2500
-
-// Output:
-// The weight in kilograms is: 2.5
-```
-
----
 </details>
