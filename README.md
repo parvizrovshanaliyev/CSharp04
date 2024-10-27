@@ -369,7 +369,7 @@ CSharp04 Private Class
 
 ### **Homework Assignment**
 
-
+[Week06 Tasks](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week06/UserInput/Tasks.md)
 
 ### Questions for Type Casting
 
@@ -402,7 +402,7 @@ CSharp04 Private Class
 
 
 ### **Homework Assignment**
-
+[Week07 Tasks](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week07/Practice/Tasks.md)
 
 </details>
 
