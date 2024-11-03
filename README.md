@@ -452,7 +452,23 @@ CSharp04 Private Class
 [Week08 Tasks - C# If ... Else](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week08/Condition.IfStatement/Tasks.md)
 ---
 [Week08 Tasks - C# Switch](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week08/Condition.SwitchCaseStatement/Tasks.md)
----
+
 
 
 </details>
+
+
+<details>
+<summary><strong>Week09-Day01 03.11.2024</strong></summary>
+
+## Week09-Day01 03.11.2024
+
+### code practice
+
+### Resources
+1. [String methods in C#](https://www.programiz.com/csharp-programming/library/string/compare)
+2. [String methods in C#](https://www.youtube.com/watch?v=Kk9YoxY_kO0&pp=ygUUZ2VuY2F5IHlpbGRpeiBzdHJpbmc%3D)
+3. [String in C#](https://www.youtube.com/watch?v=d7oYjvXJ7po&pp=ygUUZ2VuY2F5IHlpbGRpeiBzdHJpbmc%3D)
+</details>
+
+--- 

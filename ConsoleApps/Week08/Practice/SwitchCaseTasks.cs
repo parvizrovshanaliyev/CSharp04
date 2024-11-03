@@ -100,7 +100,16 @@ namespace Practice
              *   Output: Taurus, Gemini
              */
             Console.Write("Enter a month number (1-12): ");
-            int month = int.Parse(Console.ReadLine());
+
+            string monthStr = Console.ReadLine();
+
+            bool validMonthParsing = byte.TryParse(monthStr, out byte month);
+
+            if (validMonthParsing == false)
+            {
+                   Console.WriteLine("Please enter a valid number for month (1–12)");  
+            }
+
             switch (month)
             {
                 case 1:
@@ -161,7 +170,16 @@ namespace Practice
              *   Output: Good
              */
             Console.Write("Enter the movie rating (1-5): ");
-            int rating = int.Parse(Console.ReadLine());
+
+            string ratingStr = Console.ReadLine();
+
+            bool validRatingParsing = byte.TryParse(ratingStr, out byte rating);
+
+            if (validRatingParsing == false)
+            {
+                Console.WriteLine("Please enter a valid number for rating (1–5)");
+            }
+
             switch (rating)
             {
                 case 5:
@@ -200,19 +218,28 @@ namespace Practice
              *   Output: Breakfast
              */
             Console.Write("Enter the hour (0-23): ");
-            int hour = int.Parse(Console.ReadLine());
+
+            string hourStr= Console.ReadLine();
+
+            bool validHourParsing = byte.TryParse(hourStr, out byte hour);
+
+            if (validHourParsing == false)
+            {
+                Console.WriteLine("Please valid number for hour (0–23)");
+            }
+
             switch (hour)
             {
-                case int h when (h >= 5 && h <= 10):
+                case byte h when (h >= 5 && h <= 10):
                     Console.WriteLine("Breakfast");
                     break;
-                case int h when (h >= 11 && h <= 15):
+                case byte h when (h >= 11 && h <= 15):
                     Console.WriteLine("Lunch");
                     break;
-                case int h when (h >= 16 && h <= 20):
+                case byte h when (h >= 16 && h <= 20):
                     Console.WriteLine("Dinner");
                     break;
-                case int h when ((h >= 21 && h <= 23) || (h >= 0 && h <= 4)):
+                case byte h when ((h >= 21 && h <= 23) || (h >= 0 && h <= 4)):
                     Console.WriteLine("Late Snack");
                     break;
                 default:
@@ -237,7 +264,16 @@ namespace Practice
              *   Output: Gas (Steam)
              */
             Console.Write("Enter the temperature in Celsius: ");
-            int temp = int.Parse(Console.ReadLine());
+
+            string tempStr = Console.ReadLine();
+            
+            bool validTempParsing = int.TryParse(tempStr, out int temp);
+
+            if (validTempParsing == false)
+            {
+                Console.WriteLine("Please enter a valid number for temperature");
+            }
+
             switch (temp)
             {
                 case int t when (t < 0):
@@ -267,28 +303,45 @@ namespace Practice
              *   Output: Afternoon
              */
             Console.Write("Enter the hour (0-23): ");
-            hour = int.Parse(Console.ReadLine());
-            switch (hour)
+            
+            string hourStr2 = Console.ReadLine();
+
+            bool validHourParsing2 = byte.TryParse(hourStr2, out byte hour2);
+
+            if (validHourParsing2 == false)
             {
-                case int h when (h >= 0 && h <= 5):
+                Console.WriteLine("Please enter a valid number for hour (0–23)");
+            }
+
+
+            switch (hour2)
+            {
+                // Midnight to Early Morning: 0–5
+                case byte h when (h >= 0 && h <= 5):
                     Console.WriteLine("Midnight to Early Morning");
                     break;
-                case int h when (h >= 6 && h <= 11):
+                // Morning: 6–11
+                case byte h when (h >= 6 && h <= 11):
                     Console.WriteLine("Morning");
                     break;
-                case int h when (h >= 12 && h <= 17):
+                // Afternoon: 12–17
+                case byte h when (h >= 12 && h <= 17):
                     Console.WriteLine("Afternoon");
                     break;
-                case int h when (h >= 18 && h <= 21):
+                // Evening: 18–21
+                case byte h when (h >= 18 && h <= 21):
                     Console.WriteLine("Evening");
                     break;
-                case int h when (h >= 22 && h <= 23):
+                // Night: 22–23
+                case byte h when (h >= 22 && h <= 23):
                     Console.WriteLine("Night");
                     break;
+                // Invalid hour
                 default:
                     Console.WriteLine("Invalid hour.");
                     break;
             }
+
             Console.WriteLine();
 
             // --- Task 8: Coffee Order Size ---
@@ -305,7 +358,9 @@ namespace Practice
              *   Output: 350 ml
              */
             Console.Write("Enter the coffee size (S, M, L): ");
+
             char size = char.ToUpper(Console.ReadLine()[0]);
+
             switch (size)
             {
                 case 'S':
@@ -321,6 +376,7 @@ namespace Practice
                     Console.WriteLine("Invalid size");
                     break;
             }
+
             Console.WriteLine();
 
             // --- Task 9: Planet Order from the Sun ---
@@ -341,7 +397,16 @@ namespace Practice
              *   Output: Earth
              */
             Console.Write("Enter the planet's order from the sun (1-8): ");
-            int planetOrder = int.Parse(Console.ReadLine());
+            
+            string planetOrderStr = Console.ReadLine();
+
+            bool validPlanetOrderParsing = byte.TryParse(planetOrderStr, out byte planetOrder);
+
+            if (validPlanetOrderParsing == false)
+            {
+                Console.WriteLine("Please enter a valid number for planet order (1–8)");
+            }
+
             switch (planetOrder)
             {
                 case 1:
@@ -394,17 +459,33 @@ namespace Practice
              *   Output: Isosceles triangle
              */
             Console.Write("Enter side 1: ");
-            int side1 = int.Parse(Console.ReadLine());
+
+            bool validSide1 = int.TryParse(Console.ReadLine(), out int side1);
+
             Console.Write("Enter side 2: ");
-            int side2 = int.Parse(Console.ReadLine());
+
+            bool validSide2 = int.TryParse(Console.ReadLine(), out int side2);
+
             Console.Write("Enter side 3: ");
-            int side3 = int.Parse(Console.ReadLine());
-            if (side1 == side2 && side2 == side3)
+
+            bool validSide3 = int.TryParse(Console.ReadLine(), out int side3);
+
+            if (!validSide1 || !validSide2 || !validSide3)
+            {
+                Console.WriteLine("Please enter valid numbers for all sides.");
+            }
+            else if (side1 == side2 && side2 == side3)
+            {
                 Console.WriteLine("Equilateral triangle");
+            }
             else if (side1 == side2 || side1 == side3 || side2 == side3)
+            {
                 Console.WriteLine("Isosceles triangle");
+            }
             else
+            {
                 Console.WriteLine("Scalene triangle");
+            }
             Console.WriteLine();
 
 
@@ -433,9 +514,19 @@ namespace Practice
              *   Output: Autumn
              */
             Console.Write("Enter hemisphere (North/South): ");
+
             string hemisphere = Console.ReadLine().ToLower();
+
             Console.Write("Enter month (1-12): ");
-            int month2 = int.Parse(Console.ReadLine());
+
+            string monthStr2 = Console.ReadLine();
+
+            bool validMonthParsing2 = byte.TryParse(monthStr2, out byte month2);
+
+            if (validMonthParsing2 == false)
+            {
+                Console.WriteLine("Please enter a valid number for month (1–12)");
+            }
 
             switch (hemisphere)
             {
@@ -518,12 +609,25 @@ namespace Practice
              *   Output: Buenos Días
              */
             Console.Write("Enter hour (0-23): ");
-            int hour2 = int.Parse(Console.ReadLine());
+            
+            string hourStr3 = Console.ReadLine();
+
+            bool validHourParsing3 = byte.TryParse(hourStr3, out byte hour3);
+
+            if (validHourParsing3 == false)
+            {
+                Console.WriteLine("Please enter a valid number for hour (0–23)");
+            }
+
             Console.Write("Enter language code (EN, ES, FR): ");
+
             string lang = Console.ReadLine().ToUpper();
+
+            // Determine the greeting based on the language code and hour
             switch (lang)
             {
                 case "EN":
+                    // English greetings
                     if (hour2 >= 0 && hour2 < 12)
                         Console.WriteLine("Good Morning");
                     else if (hour2 >= 12 && hour2 < 18)
@@ -532,6 +636,7 @@ namespace Practice
                         Console.WriteLine("Good Evening");
                     break;
                 case "ES":
+                    // Spanish greetings
                     if (hour2 >= 0 && hour2 < 12)
                         Console.WriteLine("Buenos Días");
                     else if (hour2 >= 12 && hour2 < 18)
@@ -540,6 +645,7 @@ namespace Practice
                         Console.WriteLine("Buenas Noches");
                     break;
                 case "FR":
+                    // French greetings
                     if (hour2 >= 0 && hour2 < 12)
                         Console.WriteLine("Bonjour");
                     else if (hour2 >= 12 && hour2 < 18)
@@ -548,10 +654,49 @@ namespace Practice
                         Console.WriteLine("Bonsoir");
                     break;
                 default:
+                    // Invalid language code
                     Console.WriteLine("Invalid language code.");
                     break;
             }
             Console.WriteLine();
+
+
+            // Determine the greeting based on the language code and hour
+            if (lang == "EN")
+            {
+                // English greetings
+                if (hour2 >= 0 && hour2 < 12)
+                    Console.WriteLine("Good Morning");
+                else if (hour2 >= 12 && hour2 < 18)
+                    Console.WriteLine("Good Afternoon");
+                else
+                    Console.WriteLine("Good Evening");
+            }
+            else if (lang == "ES")
+            {
+                // Spanish greetings
+                if (hour2 >= 0 && hour2 < 12)
+                    Console.WriteLine("Buenos Días");
+                else if (hour2 >= 12 && hour2 < 18)
+                    Console.WriteLine("Buenas Tardes");
+                else
+                    Console.WriteLine("Buenas Noches");
+            }
+            else if (lang == "FR")
+            {
+                // French greetings
+                if (hour2 >= 0 && hour2 < 12)
+                    Console.WriteLine("Bonjour");
+                else if (hour2 >= 12 && hour2 < 18)
+                    Console.WriteLine("Bon Après-midi");
+                else
+                    Console.WriteLine("Bonsoir");
+            }
+            else
+            {
+                // Invalid language code
+                Console.WriteLine("Invalid language code.");
+            }
 
             // --- Task 13: Age Group Classification ---
             /*
@@ -568,7 +713,16 @@ namespace Practice
              *   Output: Teen
              */
             Console.Write("Enter age: ");
-            int age = int.Parse(Console.ReadLine());
+            
+            string ageStr = Console.ReadLine();
+
+            bool validAgeParsing = int.TryParse(ageStr, out int age);
+
+            if (validAgeParsing == false)
+            {
+                Console.WriteLine("Please enter a valid number for age");
+            }
+
             switch (age)
             {
                 case int n when (n >= 0 && n <= 2):

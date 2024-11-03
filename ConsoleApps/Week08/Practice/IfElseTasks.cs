@@ -24,7 +24,17 @@ namespace Practice
              *   1900 is not a leap year.
              */
             Console.Write("Enter a year: ");
-            int year = int.Parse(Console.ReadLine());
+
+            string yearStr = Console.ReadLine();
+
+            bool validYearParsing = int.TryParse(yearStr, out int year);
+
+            if (!validYearParsing)
+            {
+                Console.WriteLine("Invalid year entered.");
+                return;
+            }
+
             if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
                 Console.WriteLine($"{year} is a leap year.");
             else
@@ -62,6 +72,11 @@ namespace Practice
              * The program should determine if the day is a weekend (Saturday or Sunday)
              * or a weekday.
              *
+             * Explanation:
+             * The program reads the input, converts it to lowercase for case-insensitive comparison,
+             * and checks if the input matches "saturday" or "sunday" for weekends. For any other day,
+             * it identifies it as a weekday.
+             *
              * Example Input:
              *   Enter the day of the week: Saturday
              * Example Output:
@@ -72,13 +87,76 @@ namespace Practice
              * Example Output:
              *   Wednesday is a weekday.
              */
+
             Console.Write("Enter the day of the week: ");
             string day = Console.ReadLine().Trim().ToLower();
-            if (day == "saturday" || day == "sunday")
-                Console.WriteLine($"{char.ToUpper(day[0]) + day.Substring(1)} is a weekend.");
+
+            // Validate if the entered day is a valid day of the week
+            if (day == "monday" ||
+                day == "tuesday" ||
+                day == "wednesday" ||
+                day == "thursday" ||
+                day == "friday" ||
+                day == "saturday" ||
+                day == "sunday")
+            {
+                // Check if the day is a weekend
+                if (day == "saturday" || day == "sunday")
+                {
+                    Console.WriteLine($"{char.ToUpper(day[0]) + day.Substring(1)} is a weekend.");
+                }
+                else
+                {
+                    Console.WriteLine($"{char.ToUpper(day[0]) + day.Substring(1)} is a weekday.");
+                }
+            }
             else
-                Console.WriteLine($"{char.ToUpper(day[0]) + day.Substring(1)} is a weekday.");
+            {
+                Console.WriteLine("Invalid input. Please enter a valid day of the week.");
+            }
+
             Console.WriteLine();
+
+            // --- Task 3: Check for Weekend (Using Enums) ---
+            /*
+             * Description:
+             * Write a program that prompts the user to enter the day of the week.
+             * This version uses an enum to validate the day input and checks
+             * if the day is a weekend (Saturday or Sunday) or a weekday.
+             */
+
+            Console.Write("Enter the day of the week: ");
+
+            // Get the user's input and trim any extra spaces
+            string input = Console.ReadLine().Trim();
+
+            // Try to convert the input to a day in the DaysOfWeek enum
+            bool isValidDay = Enum.TryParse(typeof(DaysOfWeek), input, true, out var dayEnum);
+
+            // Check if the input is a valid day of the week
+            if (isValidDay && dayEnum is DaysOfWeek)
+            {
+                // Convert the parsed value to the DaysOfWeek enum type
+                DaysOfWeek selectedDay = (DaysOfWeek)dayEnum;
+
+                // Check if the selected day is Saturday or Sunday
+                if (selectedDay == DaysOfWeek.Saturday || selectedDay == DaysOfWeek.Sunday)
+                {
+                    Console.WriteLine($"{selectedDay} is a weekend.");
+                }
+                else
+                {
+                    Console.WriteLine($"{selectedDay} is a weekday.");
+                }
+            }
+            else
+            {
+                // Inform the user if the input is not a valid day of the week
+                Console.WriteLine("Invalid input. Please enter a valid day of the week.");
+            }
+
+            Console.WriteLine();
+
 
             // --- Task 4: Calculate BMI Category ---
             /*
@@ -98,9 +176,27 @@ namespace Practice
              *   Your BMI is 22.9, which is considered Normal weight.
              */
             Console.Write("Enter your weight in kg: ");
-            double weight = double.Parse(Console.ReadLine());
+
+            bool validWeightParsing = double.TryParse(Console.ReadLine(), out double weight);
+
+            if (!validWeightParsing)
+            {
+                Console.WriteLine("Invalid weight entered.");
+                return;
+            }
+
             Console.Write("Enter your height in meters: ");
-            double height = double.Parse(Console.ReadLine());
+
+            bool validHeightParsing = double.TryParse(Console.ReadLine(), out double height);
+
+            if (!validHeightParsing)
+            {
+                Console.WriteLine("Invalid height entered.");
+                return;
+            }
+
+
+
             double bmi = weight / (height * height);
             Console.Write($"Your BMI is {bmi:F1}, which is considered ");
             if (bmi < 18.5)
@@ -128,17 +224,28 @@ namespace Practice
              *   This is an Equilateral triangle.
              */
             Console.Write("Enter side 1: ");
-            int side1 = int.Parse(Console.ReadLine());
+            bool validSide1 = int.TryParse(Console.ReadLine(), out int side1);
             Console.Write("Enter side 2: ");
-            int side2 = int.Parse(Console.ReadLine());
+            bool validSide2 = int.TryParse(Console.ReadLine(), out int side2);
             Console.Write("Enter side 3: ");
-            int side3 = int.Parse(Console.ReadLine());
-            if (side1 == side2 && side2 == side3)
+            bool validSide3 = int.TryParse(Console.ReadLine(), out int side3);
+
+            if (!validSide1 || !validSide2 || !validSide3)
+            {
+                Console.WriteLine("Please enter valid numbers for all sides.");
+            }
+            else if (side1 == side2 && side2 == side3)
+            {
                 Console.WriteLine("This is an Equilateral triangle.");
+            }
             else if (side1 == side2 || side1 == side3 || side2 == side3)
+            {
                 Console.WriteLine("This is an Isosceles triangle.");
+            }
             else
+            {
                 Console.WriteLine("This is a Scalene triangle.");
+            }
             Console.WriteLine();
 
             // --- Task 6: Determine Shipping Cost Based on Weight ---
@@ -150,24 +257,43 @@ namespace Practice
              * - > 5 kg and <= 10 kg: $20
              * - > 10 kg: $50
              *
+             * Explanation:
+             * The program prompts the user to enter the package weight. It then uses a series of
+             * conditional statements to determine the cost based on the weight ranges.
+             *
              * Example Input:
              *   Enter package weight in kg: 3
              * Example Output:
              *   The shipping cost is $10.
              */
+
             Console.Write("Enter package weight in kg: ");
-            double weightInKg = double.Parse(Console.ReadLine());
-            int cost;
-            if (weightInKg <= 1)
-                cost = 5;
-            else if (weightInKg <= 5)
-                cost = 10;
-            else if (weightInKg <= 10)
-                cost = 20;
+
+            bool validWeight = double.TryParse(Console.ReadLine(), out double weightInKg);
+
+            if (validWeight)
+            {
+                int cost;
+
+                if (weightInKg <= 1)
+                    cost = 5;
+                else if (weightInKg <= 5)
+                    cost = 10;
+                else if (weightInKg <= 10)
+                    cost = 20;
+                else
+                    cost = 50;
+
+                Console.WriteLine($"The shipping cost is ${cost}.");
+            }
             else
-                cost = 50;
-            Console.WriteLine($"The shipping cost is ${cost}.");
+            {
+                Console.WriteLine("Invalid input. Please enter a valid number for the weight.");
+            }
+
             Console.WriteLine();
+
+
 
             // --- Task 7: Calculate Electricity Bill ---
             /*
@@ -178,57 +304,99 @@ namespace Practice
              * - 201-300 units: $1.20 per unit
              * - Over 300 units: $1.50 per unit
              *
+             * Explanation:
+             * The program asks the user to input the units consumed. It then calculates the total bill
+             * based on different rates for each range of units.
+             *
              * Example Input:
              *   Enter units consumed: 150
              * Example Output:
              *   The total bill is $112.5.
              */
+
             Console.Write("Enter units consumed: ");
-            int units = int.Parse(Console.ReadLine());
-            double bill = 0;
-            if (units <= 100)
-                bill = units * 0.50;
-            else if (units <= 200)
-                bill = 100 * 0.50 + (units - 100) * 0.75;
-            else if (units <= 300)
-                bill = 100 * 0.50 + 100 * 0.75 + (units - 200) * 1.20;
+
+            bool validUnits = int.TryParse(Console.ReadLine(), out int units);
+
+            if (validUnits == true && units >= 0)
+            {
+                double bill = 0;
+
+                if (units <= 100)
+                {
+                    bill = units * 0.50;
+                }
+                else if (units <= 200)
+                {
+                    bill = (100 * 0.50) + ((units - 100) * 0.75);
+                }
+                else if (units <= 300)
+                {
+                    bill = (100 * 0.50) + (100 * 0.75) + ((units - 200) * 1.20);
+                }
+                else
+                {
+                    bill = (100 * 0.50) + (100 * 0.75) + (100 * 1.20) + ((units - 300) * 1.50);
+                }
+
+                Console.WriteLine($"The total bill is ${bill}.");
+            }
             else
-                bill = 100 * 0.50 + 100 * 0.75 + 100 * 1.20 + (units - 300) * 1.50;
-            Console.WriteLine($"The total bill is ${bill}.");
+            {
+                Console.WriteLine("Invalid input. Please enter a valid number of units.");
+            }
             Console.WriteLine();
+
 
             // --- Task 8: Check if Number is Divisible by 2, 3, or 5 ---
             /*
              * Description:
              * Write a program that prompts the user for a number and checks if it is divisible by 2, 3, or 5.
              *
+             * Explanation:
+             * The program checks the divisibility of the number by 2, 3, and 5 using the modulus operator (%).
+             * Based on the results, it prints which numbers divide the input number without a remainder.
+             *
              * Example Input:
              *   Enter a number: 30
              * Example Output:
              *   The number is divisible by 2, 3, and 5.
              */
+
             Console.Write("Enter a number: ");
-            int number = int.Parse(Console.ReadLine());
-            bool divisibleBy2 = number % 2 == 0;
-            bool divisibleBy3 = number % 3 == 0;
-            bool divisibleBy5 = number % 5 == 0;
-            if (divisibleBy2 && divisibleBy3 && divisibleBy5)
-                Console.WriteLine("The number is divisible by 2, 3, and 5.");
-            else if (divisibleBy2 && divisibleBy3)
-                Console.WriteLine("The number is divisible by 2 and 3.");
-            else if (divisibleBy2 && divisibleBy5)
-                Console.WriteLine("The number is divisible by 2 and 5.");
-            else if (divisibleBy3 && divisibleBy5)
-                Console.WriteLine("The number is divisible by 3 and 5.");
-            else if (divisibleBy2)
-                Console.WriteLine("The number is divisible by 2.");
-            else if (divisibleBy3)
-                Console.WriteLine("The number is divisible by 3.");
-            else if (divisibleBy5)
-                Console.WriteLine("The number is divisible by 5.");
+
+            bool validNumber = int.TryParse(Console.ReadLine(), out int number);
+
+            if (validNumber == true)
+            {
+                bool divisibleBy2 = number % 2 == 0;
+                bool divisibleBy3 = number % 3 == 0;
+                bool divisibleBy5 = number % 5 == 0;
+
+                if (divisibleBy2 && divisibleBy3 && divisibleBy5)
+                    Console.WriteLine("The number is divisible by 2, 3, and 5.");
+                else if (divisibleBy2 && divisibleBy3)
+                    Console.WriteLine("The number is divisible by 2 and 3.");
+                else if (divisibleBy2 && divisibleBy5)
+                    Console.WriteLine("The number is divisible by 2 and 5.");
+                else if (divisibleBy3 && divisibleBy5)
+                    Console.WriteLine("The number is divisible by 3 and 5.");
+                else if (divisibleBy2)
+                    Console.WriteLine("The number is divisible by 2.");
+                else if (divisibleBy3)
+                    Console.WriteLine("The number is divisible by 3.");
+                else if (divisibleBy5)
+                    Console.WriteLine("The number is divisible by 5.");
+                else
+                    Console.WriteLine("The number is not divisible by 2, 3, or 5.");
+            }
             else
-                Console.WriteLine("The number is not divisible by 2, 3, or 5.");
+            {
+                Console.WriteLine("Invalid input. Please enter a valid integer.");
+            }
+
             Console.WriteLine();
+
 
             // --- Task 9: Ticket Price Based on Age ---
             /*
@@ -239,30 +407,52 @@ namespace Practice
              * - 13-59 years: $20
              * - 60+ years: $15
              *
+             * Explanation:
+             * The program prompts the user for their age, checks the age range, and assigns a ticket price accordingly.
+             * The program also includes input validation to ensure a valid age is entered.
+             *
              * Example Input:
              *   Enter your age: 30
              * Example Output:
              *   The ticket price is $20.
              */
+
             Console.Write("Enter your age: ");
-            int age = int.Parse(Console.ReadLine());
-            int ticketPrice;
-            if (age <= 3)
-                ticketPrice = 0;
-            else if (age <= 12)
-                ticketPrice = 10;
-            else if (age <= 59)
-                ticketPrice = 20;
+
+            bool validAge = int.TryParse(Console.ReadLine(), out int age);
+
+            if (validAge && age >= 0)
+            {
+                int ticketPrice;
+
+                if (age <= 3)
+                    ticketPrice = 0;
+                else if (age <= 12)
+                    ticketPrice = 10;
+                else if (age <= 59)
+                    ticketPrice = 20;
+                else
+                    ticketPrice = 15;
+
+                Console.WriteLine(ticketPrice == 0 ? "The ticket is free." : $"The ticket price is ${ticketPrice}.");
+            }
             else
-                ticketPrice = 15;
-            Console.WriteLine(ticketPrice == 0 ? "The ticket is free." : $"The ticket price is ${ticketPrice}.");
+            {
+                Console.WriteLine("Invalid input. Please enter a valid non-negative integer for age.");
+            }
+
             Console.WriteLine();
+
 
             // --- Task 10: Determine Passing Grade ---
             /*
              * Description:
              * Write a program that takes a student's grade as input and determines if they have passed.
              * A grade of 50 or higher is a passing grade, while below 50 is a failing grade.
+             *
+             * Explanation:
+             * The program prompts the user to input a grade. It then checks if the grade is 50 or higher
+             * to determine if the student has passed. If the grade is less than 50, the student has failed.
              *
              * Example Input:
              *   Enter your grade: 65
@@ -274,14 +464,37 @@ namespace Practice
              * Example Output:
              *   You failed.
              */
+
             Console.Write("Enter your grade: ");
-            int grade = int.Parse(Console.ReadLine());
-            if (grade >= 50)
-                Console.WriteLine("You passed!");
+
+            bool validGrade = int.TryParse(Console.ReadLine(), out int grade);
+
+            if (validGrade == true && grade >= 0 && grade <= 100)
+            {
+                if (grade >= 50)
+                    Console.WriteLine("You passed!");
+                else
+                    Console.WriteLine("You failed.");
+            }
             else
-                Console.WriteLine("You failed.");
+            {
+                Console.WriteLine("Invalid input. Please enter a valid grade between 0 and 100.");
+            }
+
             Console.WriteLine();
+
         }
     }
 }
 
+// Define an enum for the days of the week
+enum DaysOfWeek
+{
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
+}
