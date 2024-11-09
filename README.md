@@ -471,4 +471,25 @@ CSharp04 Private Class
 3. [String in C#](https://www.youtube.com/watch?v=d7oYjvXJ7po&pp=ygUUZ2VuY2F5IHlpbGRpeiBzdHJpbmc%3D)
 </details>
 
+<details>
+<summary><strong>Week10-Day01 09.11.2024</strong></summary>
+
+## Week10-Day01 09.11.2024
+
+### Topics
+1. C# While Loop
+2. C# The Do/While Loop
+3. C# For Loop
+4. C# Break and Continue
+
+### Resources
+1. [C# While Loop & C# The Do/While Loop](https://www.w3schools.com/cs/cs_while_loop.php)
+2. [C# For Loop](https://www.w3schools.com/cs/cs_for_loop.php)
+3. [C# Break and Continue](https://www.w3schools.com/cs/cs_break.php)
+
+### **Homework Assignment**
+
+[Week10 Tasks - Loops](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week10/Practice/Tasks.md)
+</details>
+
 --- 

@@ -195,7 +195,7 @@ namespace Practice
              * Convert the string to lowercase, then use a loop to check if the string reads the same forwards and backwards.
              *
              * Sample Input:
-             *   Enter a string: Racecar
+             *   Enter a string: Racecar 7/2
              * Sample Output:
              *   The string is a palindrome.
              */
