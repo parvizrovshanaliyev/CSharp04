@@ -492,4 +492,15 @@ CSharp04 Private Class
 [Week10 Tasks - Loops](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week10/Practice/Tasks.md)
 </details>
 
+## Week11-Day01 11.11.2024
+
+### Topics
+1. Practice
+2. ATM program
+
+### **Homework Assignment**
+
+[QUIZ GAME](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week11/QuizGame/Readme.md)
+</details>
+
 --- 

@@ -45,7 +45,6 @@ Good job! You got some answers right.
      - 2. `Console.WriteLine("Hello, World!");`
      - 3. `echo "Hello, World!";`
      - 4. `printf("Hello, World!");`
-   - **Correct Answer**: 2
 
 ---
 
@@ -56,7 +55,6 @@ Good job! You got some answers right.
      - 2. `char`
      - 3. `string`
      - 4. `txt`
-   - **Correct Answer**: 3
 
 ---
 
@@ -67,7 +65,6 @@ Good job! You got some answers right.
      - 2. `+`
      - 3. `&`
      - 4. `%`
-   - **Correct Answer**: 2
 
 ---
 
@@ -78,7 +75,6 @@ Good job! You got some answers right.
      - 2. `x int = 5;`
      - 3. `int x = "5";`
      - 4. `5 = int x;`
-   - **Correct Answer**: 1
 
 ---
 
@@ -89,7 +85,6 @@ Good job! You got some answers right.
      - 2. `case`
      - 3. `switch`
      - 4. `goto`
-   - **Correct Answer**: 1
 
 ---
 
@@ -100,7 +95,6 @@ Good job! You got some answers right.
      - 2. `while (x > y) {}`
      - 3. `while x > y: {}`
      - 4. `while (x > y):`
-   - **Correct Answer**: 2
 
 ---
 
@@ -111,7 +105,6 @@ Good job! You got some answers right.
      - 2. `end`
      - 3. `break`
      - 4. `exit`
-   - **Correct Answer**: 3
 
 ---
 
@@ -122,7 +115,6 @@ Good job! You got some answers right.
      - 2. `>`
      - 3. `<<`
      - 4. `||`
-   - **Correct Answer**: 2
 
 ---
 
@@ -133,7 +125,6 @@ Good job! You got some answers right.
      - 2. `|`
      - 3. `&&`
      - 4. `$$`
-   - **Correct Answer**: 3
 
 ---
 
@@ -144,7 +135,6 @@ Good job! You got some answers right.
       - 2. `for int i = 0 to 5 {}`
       - 3. `foreach (i in range(5)) {}`
       - 4. `for each i = 0; i < 5`
-    - **Correct Answer**: 1
 
 ---
 
@@ -155,7 +145,6 @@ Good job! You got some answers right.
       - 2. `// comment`
       - 3. `# comment`
       - 4. `** comment **`
-    - **Correct Answer**: 1
 
 ---
 
@@ -166,7 +155,6 @@ Good job! You got some answers right.
       - 2. `int f = 5.99;`
       - 3. `double f = "5.99";`
       - 4. `num f = 5.99f;`
-    - **Correct Answer**: 1
 
 ---
 
@@ -177,7 +165,6 @@ Good job! You got some answers right.
       - 2. `string`
       - 3. `bool`
       - 4. `char`
-    - **Correct Answer**: 2
 
 ---
 
@@ -188,7 +175,6 @@ Good job! You got some answers right.
       - 2. `do-while`
       - 3. `foreach`
       - 4. `repeat`
-    - **Correct Answer**: 4
 
 ---
 
