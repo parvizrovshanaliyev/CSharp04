@@ -11,8 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTypes.ValueTypes", "Con
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{56BFCEA8-EB15-4647-BB4F-7660AEF2766A}"
 	ProjectSection(SolutionItems) = preProject
+		array.md = array.md
+		module4functionsmethods.md = module4functionsmethods.md
 		month01.md = month01.md
 		README.md = README.md
+		syllabus.csharp.txt = syllabus.csharp.txt
 		syllabus.md = syllabus.md
 	EndProjectSection
 EndProject
@@ -46,13 +49,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loop.For", "ConsoleApps\Wee
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loop.While", "ConsoleApps\Week10\Loop.While\Loop.While.csproj", "{63F01BEC-CD1A-41E8-AF4C-D1FE7519893C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "ConsoleApps\Week10\Practice\Practice.csproj", "{A5531651-6EC9-42EF-8090-1F85DFED9D5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice", "ConsoleApps\Week10\Practice\Practice.csproj", "{A5531651-6EC9-42EF-8090-1F85DFED9D5F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week11", "Week11", "{E60C53C1-A776-4266-BCEF-DF2355E6DF27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATM", "ConsoleApps\Week11\ATM\ATM.csproj", "{2CC4BD1C-B7C5-43DB-B612-D59684E0E049}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ATM", "ConsoleApps\Week11\ATM\ATM.csproj", "{2CC4BD1C-B7C5-43DB-B612-D59684E0E049}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizGame", "ConsoleApps\Week11\QuizGame\QuizGame.csproj", "{35371C6E-3BDC-4F99-B15F-D55D3A91ABAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizGame", "ConsoleApps\Week11\QuizGame\QuizGame.csproj", "{35371C6E-3BDC-4F99-B15F-D55D3A91ABAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
