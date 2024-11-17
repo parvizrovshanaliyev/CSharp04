@@ -493,6 +493,8 @@ CSharp04 Private Class
 </details>
 
 <details>
+<summary><strong>Week11-Day01 11.11.2024</strong></summary>
+
 ## Week11-Day01 11.11.2024
 
 ### Topics
