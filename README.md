@@ -493,6 +493,8 @@ CSharp04 Private Class
 </details>
 
 <details>
+<summary><strong>Week11-Day01 11.11.2024</strong></summary>
+
 ## Week11-Day01 11.11.2024
 
 ### Topics
@@ -523,7 +525,9 @@ CSharp04 Private Class
 ### **Homework Assignment**
 
 [Week12 Tasks - C# Arrays](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week12/Practice/Tasks.Array.md)
+---
 [Week12 Tasks - C# Methods](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week12/Practice/Tasks.Method.md)
+---
 </details>
 
 
