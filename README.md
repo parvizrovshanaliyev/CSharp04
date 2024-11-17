@@ -492,6 +492,7 @@ CSharp04 Private Class
 [Week10 Tasks - Loops](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week10/Practice/Tasks.md)
 </details>
 
+<details>
 ## Week11-Day01 11.11.2024
 
 ### Topics
@@ -503,4 +504,27 @@ CSharp04 Private Class
 [QUIZ GAME](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week11/QuizGame/Readme.md)
 </details>
 
---- 
+<details>
+<summary><strong>Week12-Day01 17.11.2024</strong></summary>
+
+## Week12-Day01 17.11.2024
+
+### Topics
+1. C# Arrays
+2. C# Methods
+3. GIT
+
+### Resources
+1. [1. C# Arrays](https://www.w3schools.com/cs/cs_arrays.php)
+2. [2. C# Arrays](https://www.programiz.com/csharp-programming/arrays)
+3. [C# Methods](https://www.w3schools.com/cs/cs_methods.php)
+4. [Git](https://medium.com/@parvizrovshanaliyev/git-n%C9%99dir-38604f516522)
+
+### **Homework Assignment**
+
+[Week12 Tasks - C# Arrays](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week12/Practice/Tasks.Array.md)
+[Week12 Tasks - C# Methods](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week12/Practice/Tasks.Method.md)
+</details>
+
+
+
