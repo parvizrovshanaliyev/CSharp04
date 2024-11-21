@@ -516,6 +516,8 @@ CSharp04 Private Class
 2. C# Methods
 3. GIT
 
+![C# Reference types - Array](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/images/reference_types_array.png)
+
 ### Resources
 1. [1. C# Arrays](https://www.w3schools.com/cs/cs_arrays.php)
 2. [2. C# Arrays](https://www.programiz.com/csharp-programming/arrays)

@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTypes.ValueTypes", "Con
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{56BFCEA8-EB15-4647-BB4F-7660AEF2766A}"
 	ProjectSection(SolutionItems) = preProject
-		array.md = array.md
-		module4functionsmethods.md = module4functionsmethods.md
 		month01.md = month01.md
 		README.md = README.md
 		syllabus.csharp.txt = syllabus.csharp.txt
