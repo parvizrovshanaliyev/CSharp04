@@ -23,17 +23,39 @@ class Program
          */
 
         // Example 1: Declare with size and assign values later
-        int[] numbers = new int[5]; // Creates an array to hold 5 integers
+        int[] numbers = new int[5]; // Creates an array to hold 5 integers // default : 0 for value types
         numbers[0] = 10; // Assigning values to individual indices
         numbers[1] = 20;
         numbers[2] = 30;
         numbers[3] = 40;
         numbers[4] = 50;
 
+        int indexNum = Array.IndexOf(numbers, 50);
+
+        if (indexNum == -1)
+        {
+            Console.WriteLine("Element not found");
+        }
+        else
+        {
+            Console.WriteLine($"index of numbers: {indexNum}");
+        }
+
+        
+
+
+        bool[] bools=new bool[5]; // default : false for Bool
+        string[] texts = new string[5]; // default : null for reference types
+
         // Example 2: Declare and initialize an array directly -> new string[4]
         string[] names = { "Alice", "Bob", "Charlie", "Diana" };
 
-        int nameDianaIndex = Array.IndexOf(names, "Diana"); // Find index of "Diana"
+        int nameDianaIndex = Array.IndexOf(names, "Diana"); // Find index of "Diana" 
+
+        if (nameDianaIndex == -1)
+        {
+            Console.WriteLine("not found");
+        }
         Console.WriteLine($"Index of Diana: {nameDianaIndex}"); // Output: 3
         names[nameDianaIndex] = "Princess Diana";
 

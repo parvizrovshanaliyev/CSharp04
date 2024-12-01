@@ -25,6 +25,14 @@ class Program
          * }
          */
 
+        int a = 5;
+        int b = 10;
+        int sum = a + b;
+
+        int c, d;
+
+        string name = Console.ReadLine();// "Name"
+
         Console.WriteLine("=== C# Methods ===");
 
         // Example: Basic Method Call
@@ -84,12 +92,19 @@ class Program
 
         Console.WriteLine("\n5. Passing Parameters:");
         int num = 10;
+        //int value=10;
         IncrementByValue(num); // Passes a copy (value is unchanged)
         Console.WriteLine($"After Pass by Value: {num}");
 
         IncrementByReference(ref num); // Passes the original variable
         Console.WriteLine($"After Pass by Reference: {num}");
 
+        GetNextNameByOut(out int id);// 0 +1 return 1
+
+        int id1 = 1;
+
+        GetNextNameByRef(ref id1);
+        
         // --- Method Overloading ---
         /*
          * Method Overloading:
@@ -98,7 +113,7 @@ class Program
          */
 
         Console.WriteLine("\n6. Method Overloading:");
-        Console.WriteLine($"Area of square (side=5): {CalculateArea(5)}");
+        Console.WriteLine($"Area of square (side=5): {CalculateArea(1)}");
         Console.WriteLine($"Area of rectangle (length=5, width=10): {CalculateArea(5, 10)}");
 
         // --- Practical Example: Average Calculation ---
@@ -147,6 +162,20 @@ class Program
     static void IncrementByReference(ref int value)
     {
         value += 5; // Modifies the original variable
+    }
+
+    public static string GetNextNameByOut(out int id)
+    {
+        id = 1;
+        string returnText = "Next-" + id.ToString();
+        return returnText;
+    }
+
+    public static string GetNextNameByRef (ref int id)
+    {
+        string returnText = "Next-" + id.ToString();
+        id += 1;
+        return returnText;
     }
 
     // Overloaded method to calculate the area of a square

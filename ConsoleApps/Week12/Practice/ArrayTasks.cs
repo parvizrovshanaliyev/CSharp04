@@ -30,6 +30,7 @@ public class ArrayTasks
         int[] array = { 1, 2, 3, 4, 5 };
         Console.WriteLine("Original array: " + string.Join(", ", array));
         Console.Write("Enter index to modify (0-4): ");
+        
         if (int.TryParse(Console.ReadLine(), out int index) && index >= 0 && index < array.Length)
         {
             Console.Write("Enter new value: ");
@@ -90,6 +91,7 @@ public class ArrayTasks
         int[] array = { 2, 4, 6, 8 };
         Console.WriteLine("Array length: " + array.Length);
         Console.WriteLine("Array elements:");
+
         foreach (int item in array)
         {
             Console.WriteLine(item);
@@ -207,11 +209,11 @@ public class ArrayTasks
 
         Console.WriteLine("Duplicate elements:");
 
-        for (int i = 0; i < array.Length; i++)
+        for (int i = 0; i < array.Length; i++) // index 0 : 1
         {
             if (isDuplicate[i]) continue; // Skip already processed duplicates.
 
-            for (int j = i + 1; j < array.Length; j++)
+            for (int j = i + 1; j < array.Length; j++)  // index 1 :2- length
             {
                 if (array[i] == array[j])
                 {
@@ -240,9 +242,9 @@ public class ArrayTasks
         Console.Write("Enter element to find: ");
         if (int.TryParse(Console.ReadLine(), out int target))
         {
-            int index = Array.IndexOf(array, target);
+            int index = Array.IndexOf(array, target); // 20: index 1
 
-            if (index != -1)
+            if (index != -1) // not equal -> element founded
             {
                 Console.WriteLine("Element found at index: " + index);
             }

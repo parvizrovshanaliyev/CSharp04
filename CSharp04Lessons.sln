@@ -11,11 +11,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTypes.ValueTypes", "Con
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{56BFCEA8-EB15-4647-BB4F-7660AEF2766A}"
 	ProjectSection(SolutionItems) = preProject
+		array.md = array.md
+		module4functionsmethods.md = module4functionsmethods.md
 		month01.md = month01.md
 		README.md = README.md
 		syllabus.csharp.txt = syllabus.csharp.txt
 		syllabus.md = syllabus.md
-		month02.md = month02.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week06", "Week06", "{27D0691B-E7B0-4F0E-B402-F014D036370C}"
@@ -58,11 +59,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizGame", "ConsoleApps\Wee
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week12", "Week12", "{5800B237-9647-492A-8C12-E29FDA60231A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "ConsoleApps\Week12\Arrays\Arrays.csproj", "{CC29B2BD-9382-4155-803F-C2799B5BC0FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "ConsoleApps\Week12\Arrays\Arrays.csproj", "{CC29B2BD-9382-4155-803F-C2799B5BC0FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methods", "ConsoleApps\Week12\Methods\Methods.csproj", "{F1FF9FB4-FC9C-48F3-ACC1-F03D751349DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Methods", "ConsoleApps\Week12\Methods\Methods.csproj", "{F1FF9FB4-FC9C-48F3-ACC1-F03D751349DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "ConsoleApps\Week12\Practice\Practice.csproj", "{A0D34A6C-4D2D-4546-9B85-F9A594317EDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice", "ConsoleApps\Week12\Practice\Practice.csproj", "{A0D34A6C-4D2D-4546-9B85-F9A594317EDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week13", "Week13", "{5C553F66-56BA-4094-B848-0F690FB8083D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "ConsoleApps\Week13\Practice\Practice.csproj", "{8519179A-7CA5-40E0-9BDC-61BCC692E3DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatIsOOP", "ConsoleApps\Week13\WhatIsOOP\WhatIsOOP.csproj", "{2FBE4DCF-BB14-46AD-A2F0-C26F5BDD9686}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -142,6 +149,14 @@ Global
 		{A0D34A6C-4D2D-4546-9B85-F9A594317EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0D34A6C-4D2D-4546-9B85-F9A594317EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0D34A6C-4D2D-4546-9B85-F9A594317EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8519179A-7CA5-40E0-9BDC-61BCC692E3DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8519179A-7CA5-40E0-9BDC-61BCC692E3DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8519179A-7CA5-40E0-9BDC-61BCC692E3DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8519179A-7CA5-40E0-9BDC-61BCC692E3DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FBE4DCF-BB14-46AD-A2F0-C26F5BDD9686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FBE4DCF-BB14-46AD-A2F0-C26F5BDD9686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FBE4DCF-BB14-46AD-A2F0-C26F5BDD9686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FBE4DCF-BB14-46AD-A2F0-C26F5BDD9686}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -172,6 +187,9 @@ Global
 		{CC29B2BD-9382-4155-803F-C2799B5BC0FE} = {5800B237-9647-492A-8C12-E29FDA60231A}
 		{F1FF9FB4-FC9C-48F3-ACC1-F03D751349DD} = {5800B237-9647-492A-8C12-E29FDA60231A}
 		{A0D34A6C-4D2D-4546-9B85-F9A594317EDC} = {5800B237-9647-492A-8C12-E29FDA60231A}
+		{5C553F66-56BA-4094-B848-0F690FB8083D} = {EBDE559D-97AF-43DA-896A-8EDD7514F74F}
+		{8519179A-7CA5-40E0-9BDC-61BCC692E3DD} = {5C553F66-56BA-4094-B848-0F690FB8083D}
+		{2FBE4DCF-BB14-46AD-A2F0-C26F5BDD9686} = {5C553F66-56BA-4094-B848-0F690FB8083D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEA2487A-AB74-4D13-B4F3-133B1E0660E1}

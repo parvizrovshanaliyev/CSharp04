@@ -4,7 +4,7 @@ public class Program
 {
     static void Main(string[] args)
     {
-        ArrayTasks.Run();
+        //ArrayTasks.Run();
 
         MethodTasks.Run();
     }

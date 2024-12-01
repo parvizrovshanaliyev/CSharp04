@@ -534,5 +534,41 @@ CSharp04 Private Class
 ---
 </details>
 
+<details>
+<summary><strong>Week13-Day01 01.12.2024</strong></summary>
+
+## Week13-Day01 01.12.2024
+
+### Topics
+1. C# Arrays
+  - Loop Through Arrays
+  - Sort Arrays
+  - Multidimensional Arrays
+2. C# Methods
+  - Parameters and Arguments
+  - Default Parameter Value
+  - Return Values
+  - Named Arguments
+  - Method Overloading
+  - ref vs out in C#
+3. C# OOP
+  - C# - What is OOP?
+  - C# Classes and Objects
+
+### Resources
+1. [1. C# Arrays](https://www.w3schools.com/cs/cs_arrays.php)
+2. [2. C# Arrays](https://www.programiz.com/csharp-programming/arrays)
+3. [C# Methods](https://www.w3schools.com/cs/cs_methods.php)
+4. [ref vs out in C#](https://www.c-sharpcorner.com/UploadFile/ff2f08/ref-vs-out-keywords-in-C-Sharp/)
+5. [C# OOP](https://www.w3schools.com/cs/cs_oop.php)
+6. [Object Oriented Programming (OOPs) in C#](https://dotnettutorials.net/lesson/object-oriented-programming-csharp/)
+7. [C# OOP-Obyekt Anatomiyası — Reference Types olan Dəyişənlər](https://medium.com/@mahammadbuludzada/c-oop-obyekt-anatomiyas%C4%B1-reference-types-olan-d%C9%99yi%C5%9F%C9%99nl%C9%99r-d924c41d4d32)
+
+### **Homework Assignment**
+
+[Week13 Tasks - C# Arrays & Methods](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week13/Practice/Tasks.md)
+---
+</details>
+
 
 
