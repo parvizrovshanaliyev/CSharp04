@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+           // week 13 tasks
+           Tasks.Run();
         }
     }
 }

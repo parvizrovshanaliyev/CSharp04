@@ -242,14 +242,22 @@ public class MethodTasks
         Console.Write("Enter second number: ");
         double b = double.TryParse(Console.ReadLine(), out double num2) ? num2 : 0;
         Console.Write("Choose operation (+, -, *, /): ");
+
+        char[] operations = { '+', '-', '*', '/' };
         char operation = Console.ReadLine()[0];
-        try
+        bool validOperation = operations.Contains(operation);
+
+
+
+        if (validOperation)
         {
-            Console.WriteLine($"Result: {MethodTasks.Calculate(a, b, operation)}");
+            Console.WriteLine($"Result: {Calculate(a, b, operation)}");
+
         }
-        catch (Exception ex)
+        else
         {
-            Console.WriteLine($"Error: {ex.Message}");
+
+            Console.WriteLine($"Error: Invalid operation");
         }
     }
 

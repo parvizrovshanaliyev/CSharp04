@@ -570,5 +570,29 @@ CSharp04 Private Class
 ---
 </details>
 
+<details>
+<summary><strong>Week14-Day01 08.12.2024</strong></summary>
+
+## Week14-Day01 08.12.2024
+
+### Topics
+1. C# -  Classes and Objects
+2. C# -  Class Members
+      -  Fields
+      -  Properties
+      -  Constructors
+      -  Methods
+      -  This
+
+### Resources
+1. [C# -  Classes and Objects](https://www.w3schools.com/cs/cs_classes.php)
+2. [C# Class Members](https://www.w3schools.com/cs/cs_class_members.php)
+3. [C# Class](https://www.tutorialspoint.com/csharp/csharp_classes.htm )
+4. [C# this Keyword](https://www.programiz.com/csharp-programming/this-keyword)
+5. [C# Variable Scope](https://www.programiz.com/csharp-programming/variable-scope)
+6. [C# Constructor](https://www.programiz.com/csharp-programming/constructors)
+7. [C# Properties (Get and Set)](https://www.w3schools.com/cs/cs_properties.php)
+</details>
+
 
 
