@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OOP.ClassAndObject;
+﻿namespace OOP.ClassAndObject;
 
 /// <summary>
 /// Represents a Car with fields, properties, constructors, and methods.
