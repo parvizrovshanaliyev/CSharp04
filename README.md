@@ -598,6 +598,9 @@ CSharp04 Private Class
 5. [C# Variable Scope](https://www.programiz.com/csharp-programming/variable-scope)
 6. [C# Constructor](https://www.programiz.com/csharp-programming/constructors)
 7. [C# Properties (Get and Set)](https://www.w3schools.com/cs/cs_properties.php)
+8. [Video -1. Object Programming in C#](https://www.youtube.com/watch?v=48Z75_jZHv0&list=PLQVXoXFVVtp306cqgKyC8NoxCmHIuWVBK&index=1&ab_channel=GençayYıldız)
+9. [Video -2. Object Programming in C# - Class](https://www.youtube.com/watch?v=9_7pa5ZHaa4&list=PLQVXoXFVVtp306cqgKyC8NoxCmHIuWVBK&index=2&ab_channel=GençayYıldız)
+10.[Video -3. Object Programming in C# - Class Members](https://www.youtube.com/watch?v=3CC4EFcqMWM&list=PLQVXoXFVVtp306cqgKyC8NoxCmHIuWVBK&index=3&ab_channel=GençayYıldız) 
 </details>
 
 
