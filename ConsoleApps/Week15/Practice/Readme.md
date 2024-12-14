@@ -1,9 +1,5 @@
 ﻿---
-
 # Beginner OOP Practice Tasks - `Student` Class
-
-This guide will help you create and practice Object-Oriented Programming (OOP) concepts by building a `Student` class.
-The goal is to familiarize you with classes, properties, constructors, and methods.
 
 ---
 
@@ -206,20 +202,5 @@ Bob's grade has reduced to 65.
 Bob has changed their major to Data Science.
 Name: Bob, Age: 22, Grade: 65, Major: Data Science
 ```
-
----
-
-## **Next Steps**
-
-1. **Explore Validation Enhancements:**
-   - Prevent empty names or majors.
-   - Reject unrealistic age values (e.g., greater than 120).
-
-2. **Add More Features:**
-   - Add a `ScholarshipEligibility` method to check if `Grade > 90`.
-   - Include a `GraduationEligibility` method to check if `Grade > 50`.
-
-3. **Practice Subclasses:**
-   - Create a `GraduateStudent` class that extends `Student` and adds a `ThesisTitle` property.
 
 ---
