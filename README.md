@@ -603,5 +603,32 @@ CSharp04 Private Class
 10.[Video -3. Object Programming in C# - Class Members](https://www.youtube.com/watch?v=3CC4EFcqMWM&list=PLQVXoXFVVtp306cqgKyC8NoxCmHIuWVBK&index=3&ab_channel=GençayYıldız) 
 </details>
 
+<details>
+<summary><strong>Week15-Day01 14.12.2024</strong></summary>
+
+## Week15-Day01 14.12.2024
+
+### Topics
+1. C# Variable Scope
+2. C# Constructors
+2. Types of Constructors in C#
+
+### Resources
+1. [C# Variable Scope](https://www.programiz.com/csharp-programming/variable-scope)
+2. [C# Constructors](https://dotnettutorials.net/lesson/constructors-csharp/)
+3. [Types of Constructors in C#](https://dotnettutorials.net/lesson/types-of-constructors-in-csharp/)
+4. [Why We Need Constructors in C#](https://dotnettutorials.net/lesson/why-do-we-need-constructors-in-csharp/)
+
+### **Homework Assignment**
+---
+[Week15 Tasks - Task 1. Book](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week14/Practice/task-1-book.md)
+---
+[Week15 Tasks - Task 2. Car](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week14/Practice/task-2-car.md)
+---
+[Week15 Tasks - Task 3. Product](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week14/Practice/task-3-product.md)
+---
+
+</details>
+
 
 
