@@ -621,11 +621,11 @@ CSharp04 Private Class
 
 ### **Homework Assignment**
 ---
-[Week15 Tasks - Task 1. Book](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week14/Practice/task-1-book.md)
+[Week15 Tasks - Task 1. Book](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week15/Practice/task-1-book.md)
 ---
-[Week15 Tasks - Task 2. Car](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week14/Practice/task-2-car.md)
+[Week15 Tasks - Task 2. Car](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week15/Practice/task-2-car.md)
 ---
-[Week15 Tasks - Task 3. Product](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week14/Practice/task-3-product.md)
+[Week15 Tasks - Task 3. Product](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week15/Practice/task-3-product.md)
 ---
 
 </details>
