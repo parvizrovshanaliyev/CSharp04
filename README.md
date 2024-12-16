@@ -630,6 +630,35 @@ CSharp04 Private Class
 
 </details>
 
+<details>
+<summary><strong>Week16-Day01 21.12.2024</strong></summary>
+
+## Week16-Day01 21.12.2024
+
+### Topics
+1. The `object` Type in C#  
+2. Boxing in C#  
+3. Unboxing in C#  
+4. Key Properties and Methods of the `object` Type  
+
+### Resources
+1. [Understanding `object` in C#](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing)  
+2. [C# Boxing and Unboxing](https://www.geeksforgeeks.org/boxing-and-unboxing-in-c-sharp/)  
+3. [Key Methods of `object` in C#](https://learn.microsoft.com/en-us/dotnet/api/system.object)  
+4. [Performance Considerations for Boxing and Unboxing](https://learn.microsoft.com/en-us/dotnet/standard/performance/performance-guidelines)  
+
+---
+
+### **Homework Assignment**
+[Week16 Tasks - Task 1. Object Methods](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week16/Practice/task-1-object-methods.md)  
+[Week16 Tasks - Task 2. Boxing and Unboxing](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week16/Practice/task-2-boxing-unboxing.md)  
+[Week16 Tasks - Task 3. Boxing Performance](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week16/Practice/task-3-boxing-performance.md)  
+
+---
+
+</details>
+
+
 
 
 

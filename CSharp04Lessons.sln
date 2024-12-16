@@ -11,10 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTypes.ValueTypes", "Con
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{56BFCEA8-EB15-4647-BB4F-7660AEF2766A}"
 	ProjectSection(SolutionItems) = preProject
-		array.md = array.md
-		module4functionsmethods.md = module4functionsmethods.md
 		month01.md = month01.md
 		README.md = README.md
+		syllabus-as-universty.md = syllabus-as-universty.md
 		syllabus.csharp.txt = syllabus.csharp.txt
 		syllabus.md = syllabus.md
 	EndProjectSection
@@ -77,11 +76,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP.ClassAndObject", "Conso
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week15", "Week15", "{8F0EF50A-3ECA-4B1D-84D5-A51DD42AD1AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "ConsoleApps\Week15\Practice\Practice.csproj", "{0919AE8D-43D7-4AEF-B372-066B18C095E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice", "ConsoleApps\Week15\Practice\Practice.csproj", "{0919AE8D-43D7-4AEF-B372-066B18C095E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Class.Constructor", "ConsoleApps\Week15\OOP.Class.Constructor\OOP.Class.Constructor.csproj", "{95BD6C4B-AC0C-49C1-BF54-85F674A3D984}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP.Class.Constructor", "ConsoleApps\Week15\OOP.Class.Constructor\OOP.Class.Constructor.csproj", "{95BD6C4B-AC0C-49C1-BF54-85F674A3D984}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VariableScope", "ConsoleApps\Week15\VariableScope\VariableScope.csproj", "{6679504F-6358-4E71-96B6-E381527498BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VariableScope", "ConsoleApps\Week15\VariableScope\VariableScope.csproj", "{6679504F-6358-4E71-96B6-E381527498BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week16", "Week16", "{8D515F87-9019-4B22-8F3B-C6BF094F1209}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectAndBoxingUnboxing", "ConsoleApps\Week16\ObjectAndBoxingUnboxing\ObjectAndBoxingUnboxing.csproj", "{8E0F46FD-C731-40ED-9BCD-D5EF1FCF32F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "ConsoleApps\Week16\Practice\Practice.csproj", "{9EA72DA4-E83F-4801-AFDA-C549E8F134A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -185,6 +190,14 @@ Global
 		{6679504F-6358-4E71-96B6-E381527498BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6679504F-6358-4E71-96B6-E381527498BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6679504F-6358-4E71-96B6-E381527498BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E0F46FD-C731-40ED-9BCD-D5EF1FCF32F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E0F46FD-C731-40ED-9BCD-D5EF1FCF32F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E0F46FD-C731-40ED-9BCD-D5EF1FCF32F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E0F46FD-C731-40ED-9BCD-D5EF1FCF32F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA72DA4-E83F-4801-AFDA-C549E8F134A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA72DA4-E83F-4801-AFDA-C549E8F134A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA72DA4-E83F-4801-AFDA-C549E8F134A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA72DA4-E83F-4801-AFDA-C549E8F134A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -224,6 +237,9 @@ Global
 		{0919AE8D-43D7-4AEF-B372-066B18C095E7} = {8F0EF50A-3ECA-4B1D-84D5-A51DD42AD1AC}
 		{95BD6C4B-AC0C-49C1-BF54-85F674A3D984} = {8F0EF50A-3ECA-4B1D-84D5-A51DD42AD1AC}
 		{6679504F-6358-4E71-96B6-E381527498BF} = {8F0EF50A-3ECA-4B1D-84D5-A51DD42AD1AC}
+		{8D515F87-9019-4B22-8F3B-C6BF094F1209} = {EBDE559D-97AF-43DA-896A-8EDD7514F74F}
+		{8E0F46FD-C731-40ED-9BCD-D5EF1FCF32F0} = {8D515F87-9019-4B22-8F3B-C6BF094F1209}
+		{9EA72DA4-E83F-4801-AFDA-C549E8F134A5} = {8D515F87-9019-4B22-8F3B-C6BF094F1209}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEA2487A-AB74-4D13-B4F3-133B1E0660E1}
