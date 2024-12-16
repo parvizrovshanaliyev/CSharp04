@@ -642,10 +642,10 @@ CSharp04 Private Class
 4. Key Properties and Methods of the `object` Type  
 
 ### Resources
-1. [Understanding `object` in C#](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing)  
-2. [C# Boxing and Unboxing](https://www.geeksforgeeks.org/boxing-and-unboxing-in-c-sharp/)  
+1. [Understanding `object` in C#](https://www.geeksforgeeks.org/c-sharp-object-class/)  
+2. [C# Boxing and Unboxing](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing)  
 3. [Key Methods of `object` in C#](https://learn.microsoft.com/en-us/dotnet/api/system.object)  
-4. [Performance Considerations for Boxing and Unboxing](https://learn.microsoft.com/en-us/dotnet/standard/performance/performance-guidelines)  
+4. [Performance Considerations for Boxing and Unboxing](https://psid23.medium.com/what-is-boxing-and-unboxing-in-c-how-does-is-affect-performance-and-how-to-prevent-common-a02d2a14a244)  
 
 ---
 
