@@ -8,6 +8,12 @@ CSharp04 Private Class
 - * - [Ceyhun](https://github.com/Ceyhun555)
 
 ## Lessons
+## Table of Contents
+
+1. [Introduction to Computing](#week-1-introduction-to-computing-08092024)
+2. [Data Flow and Networking Basics](#week-2-data-flow-and-network-basics-14092024)
+3. [Introduction to Programming Languages](#week-3-introduction-to-programming-languages-21092024)
+
 
 ## Month01
 
