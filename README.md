@@ -660,9 +660,9 @@ CSharp04 Private Class
 
 
 <details>
-<summary><strong>Week16-Day021 22.12.2024</strong></summary>
+<summary><strong>Week16-Day02 22.12.2024</strong></summary>
 
-## Week16-Day021 22.12.2024
+## Week16-Day02 22.12.2024
 
 ### Topics
 1. OOP - Encapsulation - Access Modifiers
