@@ -160,7 +160,7 @@ CSharp04 Private Class
 5. [Medium - What is .NET](https://medium.com/@benkaddourmed54/what-is-net-202790532234)
 </details>
 
-<details>
+<details id="week04-day02-29092024">
 <summary><strong>Week04-Day02 29.09.2024</strong></summary>
 
 ## Week04-Day02 29.09.2024
@@ -183,7 +183,7 @@ CSharp04 Private Class
 </details>
 
 
-<details>
+<details id="week05-day01-04102024">
 <summary><strong>Week05-Day01 04.10.2024</strong></summary>
 
 ---
@@ -199,7 +199,7 @@ CSharp04 Private Class
 2. [Mülakat #2 - Heap ve Stack](https://medium.com/software-development-turkey/mülakat-2-heap-ve-stack-e37f82b4c49b)
 </details>
 
-<details>
+<details id="week05-day02-06102024">
 <summary><strong>Week05-Day02 06.10.2024</strong></summary>
 
 ## Week05-Day02 06.10.2024
@@ -371,7 +371,7 @@ CSharp04 Private Class
 
 ## Month02
   
-<details>
+<details id="week06-day01-13102024">
 <summary><strong>Week06-Day01 13.10.2024</strong></summary>
 
 ## Week06-Day01 13.10.2024
@@ -403,7 +403,7 @@ CSharp04 Private Class
 
 
 
-<details>
+<details id="week07-day01-19102024">
 <summary><strong>Week07-Day01 19.10.2024</strong></summary>
 
 ## Week07-Day01 19.10.2024
@@ -427,7 +427,7 @@ CSharp04 Private Class
 </details>
 
 
-<details>
+<details id="week08-day01-26102024">
 <summary><strong>Week08-Day01 26.10.2024</strong></summary>
 
 ## Week08-Day01 26.10.2024
@@ -443,7 +443,7 @@ CSharp04 Private Class
 </details>
 
 
-<details>
+<details id="week08-day02-27102024">
 <summary><strong>Week08-Day02 27.10.2024</strong></summary>
 
 ## Week08-Day02 27.10.2024
@@ -478,7 +478,7 @@ CSharp04 Private Class
 </details>
 
 
-<details>
+<details id="week09-day01-03112024">
 <summary><strong>Week09-Day01 03.11.2024</strong></summary>
 
 ## Week09-Day01 03.11.2024
@@ -491,7 +491,7 @@ CSharp04 Private Class
 3. [String in C#](https://www.youtube.com/watch?v=d7oYjvXJ7po&pp=ygUUZ2VuY2F5IHlpbGRpeiBzdHJpbmc%3D)
 </details>
 
-<details>
+<details id="week10-day01-09112024">
 <summary><strong>Week10-Day01 09.11.2024</strong></summary>
 
 ## Week10-Day01 09.11.2024
@@ -512,7 +512,7 @@ CSharp04 Private Class
 [Week10 Tasks - Loops](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week10/Practice/Tasks.md)
 </details>
 
-<details>
+<details id="week11-day01-11112024">
 <summary><strong>Week11-Day01 11.11.2024</strong></summary>
 
 ## Week11-Day01 11.11.2024
@@ -526,7 +526,7 @@ CSharp04 Private Class
 [QUIZ GAME](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week11/QuizGame/Readme.md)
 </details>
 
-<details>
+<details id="week12-day01-17112024">
 <summary><strong>Week12-Day01 17.11.2024</strong></summary>
 
 ## Week12-Day01 17.11.2024
@@ -560,7 +560,7 @@ CSharp04 Private Class
 
 ---
 
-<details>
+<details id="week13-day01-01122024">
 <summary><strong>Week13-Day01 01.12.2024</strong></summary>
 
 ## Week13-Day01 01.12.2024
@@ -596,7 +596,7 @@ CSharp04 Private Class
 ---
 </details>
 
-<details>
+<details id="week14-day01-08122024">
 <summary><strong>Week14-Day01 08.12.2024</strong></summary>
 
 ## Week14-Day01 08.12.2024
@@ -623,7 +623,7 @@ CSharp04 Private Class
 10.[Video -3. Object Programming in C# - Class Members](https://www.youtube.com/watch?v=3CC4EFcqMWM&list=PLQVXoXFVVtp306cqgKyC8NoxCmHIuWVBK&index=3&ab_channel=GençayYıldız) 
 </details>
 
-<details>
+<details id="week15-day01-14122024">
 <summary><strong>Week15-Day01 14.12.2024</strong></summary>
 
 ## Week15-Day01 14.12.2024
@@ -648,9 +648,9 @@ CSharp04 Private Class
 [Week15 Tasks - Task 3. Product](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week15/Practice/task-3-product.md)
 ---
 
-</details>
+</details >
 
-<details>
+<details id="week16-day01-21122024">
 <summary><strong>Week16-Day01 21.12.2024</strong></summary>
 
 ## Week16-Day01 21.12.2024
@@ -679,7 +679,7 @@ CSharp04 Private Class
 </details>
 
 
-<details>
+<details id="week16-day02-22122024">
 <summary><strong>Week16-Day02 22.12.2024</strong></summary>
 
 ## Week16-Day02 22.12.2024
