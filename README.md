@@ -9,7 +9,7 @@ CSharp04 Private Class
 
 ## Lessons
 ## Table of Contents
-1. [Introduction to Computing](#week01-introduction-to-computing-08092024)  
+1. [Introduction to Computing](#week01-day01-08092024)
 2. [Data Flow and Networking Basics](#week02-data-flow-and-networking-basics-14092024)  
 3. [Introduction to Programming Languages](#week03-introduction-to-programming-languages-21092024)  
 4. [Introducing C# and .NET](#week03-introducing-csharp-and-dotnet-22092024)  
@@ -32,7 +32,7 @@ CSharp04 Private Class
 
 ## Month01
 
-<details>
+<details id="week01-day01-08092024">
 <summary><strong>Week01-Day01 08.09.2024</strong></summary>
 
 ### Topics
