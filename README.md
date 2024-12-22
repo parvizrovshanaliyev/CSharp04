@@ -8,27 +8,27 @@ CSharp04 Private Class
 - * - [Ceyhun](https://github.com/Ceyhun555)
 
 ## Lessons
-## Table of Contents
-1. [Introduction to Computing](#week01-day01-08092024)
-2. [Data Flow and Networking Basics](#week02-data-flow-and-networking-basics-14092024)  
-3. [Introduction to Programming Languages](#week03-introduction-to-programming-languages-21092024)  
-4. [Introducing C# and .NET](#week03-introducing-csharp-and-dotnet-22092024)  
-5. [C# and .NET Differences](#week04-csharp-and-dotnet-differences-28092024)  
-6. [C# Data Types and Value Types](#week04-csharp-data-types-and-value-types-29092024)  
-7. [C# Stack vs Heap Memory](#week05-csharp-stack-vs-heap-memory-04102024)  
-8. [C# Output, Comments, and Variables](#week05-csharp-output-comments-and-variables-06102024)  
-9. [Type Casting and User Input in C#](#week06-type-casting-and-user-input-13102024)  
-10. [C# Operators and Math](#week07-csharp-operators-and-math-19102024)  
-11. [C# Strings](#week08-csharp-strings-26102024)  
-12. [C# If...Else and Switch Statements](#week08-csharp-if-else-and-switch-statements-27102024)  
-13. [C# Loops](#week10-csharp-loops-09112024)  
-14. [Quiz Game Practice](#week11-quiz-game-practice-11112024)  
-15. [C# Arrays and Methods](#week12-csharp-arrays-and-methods-17112024)  
-16. [C# Advanced Arrays and Methods](#week13-csharp-advanced-arrays-and-methods-01122024)  
-17. [C# Classes and Objects](#week14-csharp-classes-and-objects-08122024)  
-18. [C# Variable Scope and Constructors](#week15-csharp-variable-scope-and-constructors-14122024)  
-19. [C# Object Type, Boxing, and Unboxing](#week16-csharp-object-type-boxing-and-unboxing-21122024)  
-20. [Encapsulation and Destructors](#week16-encapsulation-and-destructors-22122024)  
+
+1. [Introduction to Computing](#week01-day01-08092024)  
+2. [Data Flow and Networking Basics](#week02-day01-14092024)  
+3. [Introduction to Programming Languages](#week03-day01-21092024)  
+4. [Introducing C# and .NET](#week03-day02-22092024)  
+5. [C# and .NET Differences](#week04-day01-28092024)  
+6. [C# Data Types and Value Types](#week04-day02-29092024)  
+7. [C# Stack vs Heap Memory](#week05-day01-04102024)  
+8. [C# Output, Comments, and Variables](#week05-day02-06102024)  
+9. [Type Casting and User Input in C#](#week06-day01-13102024)  
+10. [C# Operators and Math](#week07-day01-19102024)  
+11. [C# Strings](#week08-day01-26102024)  
+12. [C# If...Else and Switch Statements](#week08-day02-27102024)  
+13. [C# Loops](#week10-day01-09112024)  
+14. [Quiz Game Practice](#week11-day01-11112024)  
+15. [C# Arrays and Methods](#week12-day01-17112024)  
+16. [C# Advanced Arrays and Methods](#week13-day01-01122024)  
+17. [C# Classes and Objects](#week14-day01-08122024)  
+18. [C# Variable Scope and Constructors](#week15-day01-14122024)  
+19. [C# Object Type, Boxing, and Unboxing](#week16-day01-21122024)  
+20. [Encapsulation and Destructors](#week16-day02-22122024) 
 
 ## Month01
 
@@ -44,9 +44,8 @@ CSharp04 Private Class
 1. [Computer Networking Basics](https://www.geeksforgeeks.org/basics-computer-networking)
 2. [frontend-vs-backend](https://www.computerscience.org/bootcamps/resources/frontend-vs-backend/)
 </details>
----
 
-<details>
+<details id="week02-day01-14092024">
 <summary><strong>Week02-Day01 14.09.2024</strong></summary>
 
 ## Week02-Day01 14.09.2024
@@ -96,7 +95,7 @@ CSharp04 Private Class
 
 
 
-<details>
+<details id="week03-day01-21092024">
 <summary><strong>Week03-Day01 21.09.2024</strong></summary>
 
 ---
@@ -122,7 +121,7 @@ CSharp04 Private Class
 </details>
 
 
-<details>
+<details id="week03-day02-22092024">
 <summary><strong>Week03-Day02 22.09.2024</strong></summary>
 
 ## Week03-Day01 22.09.2024
@@ -143,7 +142,7 @@ CSharp04 Private Class
 
 </details>
 
-<details>
+<details id="week04-day01-28092024">
 <summary><strong>Week04-Day01 28.09.2024</strong></summary>
 
 ---    
