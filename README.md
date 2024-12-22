@@ -9,11 +9,26 @@ CSharp04 Private Class
 
 ## Lessons
 ## Table of Contents
-
-1. [Introduction to Computing](#week-1-introduction-to-computing-08092024)
-2. [Data Flow and Networking Basics](#week-2-data-flow-and-network-basics-14092024)
-3. [Introduction to Programming Languages](#week-3-introduction-to-programming-languages-21092024)
-
+1. [Introduction to Computing](#week01-introduction-to-computing-08092024)  
+2. [Data Flow and Networking Basics](#week02-data-flow-and-networking-basics-14092024)  
+3. [Introduction to Programming Languages](#week03-introduction-to-programming-languages-21092024)  
+4. [Introducing C# and .NET](#week03-introducing-csharp-and-dotnet-22092024)  
+5. [C# and .NET Differences](#week04-csharp-and-dotnet-differences-28092024)  
+6. [C# Data Types and Value Types](#week04-csharp-data-types-and-value-types-29092024)  
+7. [C# Stack vs Heap Memory](#week05-csharp-stack-vs-heap-memory-04102024)  
+8. [C# Output, Comments, and Variables](#week05-csharp-output-comments-and-variables-06102024)  
+9. [Type Casting and User Input in C#](#week06-type-casting-and-user-input-13102024)  
+10. [C# Operators and Math](#week07-csharp-operators-and-math-19102024)  
+11. [C# Strings](#week08-csharp-strings-26102024)  
+12. [C# If...Else and Switch Statements](#week08-csharp-if-else-and-switch-statements-27102024)  
+13. [C# Loops](#week10-csharp-loops-09112024)  
+14. [Quiz Game Practice](#week11-quiz-game-practice-11112024)  
+15. [C# Arrays and Methods](#week12-csharp-arrays-and-methods-17112024)  
+16. [C# Advanced Arrays and Methods](#week13-csharp-advanced-arrays-and-methods-01122024)  
+17. [C# Classes and Objects](#week14-csharp-classes-and-objects-08122024)  
+18. [C# Variable Scope and Constructors](#week15-csharp-variable-scope-and-constructors-14122024)  
+19. [C# Object Type, Boxing, and Unboxing](#week16-csharp-object-type-boxing-and-unboxing-21122024)  
+20. [Encapsulation and Destructors](#week16-encapsulation-and-destructors-22122024)  
 
 ## Month01
 
