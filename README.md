@@ -659,6 +659,28 @@ CSharp04 Private Class
 </details>
 
 
+<details>
+<summary><strong>Week16-Day021 22.12.2024</strong></summary>
+
+## Week16-Day021 22.12.2024
+
+### Topics
+1. OOP - Encapsulation - Access Modifiers
+1. OOP - Class - Destructor
+
+### Resources
+1. [C# Encapsulation](https://www.tutorialspoint.com/csharp/csharp_encapsulation.htm)  
+2. [C# Access Modifiers](https://www.programiz.com/csharp-programming/access-modifiers)  
+3. [C# Destructor](https://www.programiz.com/csharp-programming/destructor)  
+---
+
+### **Homework Assignment**
+[Week16 Tasks - Task 4. OOP - Encapsulation - Access Modifiers](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week16/Practice/task-4-encapsulation-access-modifiers.md)
+---
+
+</details>
+
+
 
 
 
