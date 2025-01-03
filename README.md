@@ -1,39 +1,93 @@
-# CSharp04
-CSharp04 Private Class
+# CSharp04 Private Class Curriculum
 
-
-**Started Date:** 08.09.2024
+**Start Date:** 08.09.2024
 
 ## Student List
-- * - [Ceyhun](https://github.com/Ceyhun555)
+- [Ceyhun](https://github.com/Ceyhun555)
 
-## Table of contents
+---
 
-1. [Introduction to Computing](#week01-day01-08092024)  
-2. [Data Flow and Networking Basics](#week02-day01-14092024)  
-3. [Introduction to Programming Languages](#week03-day01-21092024)  
-4. [Introducing C# and .NET](#week03-day02-22092024)  
-5. [C# and .NET Differences](#week04-day01-28092024)  
-6. [C# Data Types and Value Types](#week04-day02-29092024)  
-7. [C# Stack vs Heap Memory](#week05-day01-04102024)  
-8. [C# Output, Comments, and Variables](#week05-day02-06102024)  
-9. [Type Casting and User Input in C#](#week06-day01-13102024)  
-10. [C# Operators and Math](#week07-day01-19102024)  
-11. [C# Strings](#week08-day01-26102024)  
-12. [C# If...Else and Switch Statements](#week08-day02-27102024)  
-13. [C# Loops](#week10-day01-09112024)  
-14. [Quiz Game Practice](#week11-day01-11112024)  
-15. [C# Arrays and Methods](#week12-day01-17112024)  
-16. [C# Advanced Arrays and Methods](#week13-day01-01122024)  
-17. [C# Classes and Objects](#week14-day01-08122024)  
-18. [C# Variable Scope and Constructors](#week15-day01-14122024)  
-19. [C# Object Type, Boxing, and Unboxing](#week16-day01-21122024)  
-20. [Encapsulation and Destructors](#week16-day02-22122024) 
+## Table of Contents
 
-## Month01
+### [Month 01](#month-01)
 
-<details id="week01-day01-08092024">
-<summary><strong>Week01-Day01 08.09.2024</strong></summary>
+1. **[Introduction to Computing - Week 01, Day 01 - 08.09.2024](#week01-day01-08092024)**  
+   Basics of computing, introduction to networking, and the difference between frontend and backend.
+
+2. **[Data Flow and Networking Basics - Week 02, Day 01 - 14.09.2024](#week02-day01-14092024)**  
+   Understanding data flow, networking protocols, and different network topologies.
+
+3. **[Introduction to Programming Languages - Week 03, Day 01 - 21.09.2024](#week03-day01-21092024)**  
+   Explore the history, classifications, and purposes of programming languages.
+
+4. **[Introducing C# and .NET - Week 03, Day 02 - 22.09.2024](#week03-day02-22092024)**  
+   Introduction to C#, the .NET framework, and Visual Studio as a development tool.
+
+5. **[C# and .NET Differences - Week 04, Day 01 - 28.09.2024](#week04-day01-28092024)**  
+   Key differences between C# programming language and the .NET framework.
+
+6. **[C# Data Types and Value Types - Week 04, Day 02 - 29.09.2024](#week04-day02-29092024)**  
+   Overview of C# data types, including value types and reference types.
+
+7. **[C# Stack vs Heap Memory - Week 05, Day 01 - 04.10.2024](#week05-day01-04102024)**  
+   Differences between stack and heap memory allocation in C#.
+
+8. **[C# Output, Comments, and Variables - Week 05, Day 02 - 06.10.2024](#week05-day02-06102024)**  
+   Basics of output statements, comments, and variables in C#.
+
+---
+
+### [Month 02](#month-02)
+
+9. **[Type Casting and User Input in C# - Week 06, Day 01 - 13.10.2024](#week06-day01-13102024)**  
+   Understanding type conversions and handling user input in C#.
+
+10. **[C# Operators and Math - Week 07, Day 01 - 19.10.2024](#week07-day01-19102024)**  
+    Dive into operators and mathematical operations in C#.
+
+11. **[C# Strings - Week 08, Day 01 - 26.10.2024](#week08-day01-26102024)**  
+    String handling and manipulation techniques in C#.
+
+12. **[C# If...Else and Switch Statements - Week 08, Day 02 - 27.10.2024](#week08-day02-27102024)**  
+    Implement conditional branching with if-else and switch statements.
+
+13. **[C# Loops - Week 09, Day 01 - 03.11.2024](#week09-day01-03112024)**  
+    Explore loop constructs in C#, including for, while, and do-while loops.
+
+14. **[C# Loops Continued - Week 10, Day 01 - 09.11.2024](#week10-day01-09112024)**  
+    Advanced examples and scenarios involving loops in C#.
+
+15. **[Quiz Game Practice - Week 11, Day 01 - 11.11.2024](#week11-day01-11112024)**  
+    Apply concepts in a practical session with a quiz game.
+
+16. **[C# Arrays and Methods - Week 12, Day 01 - 17.11.2024](#week12-day01-17112024)**  
+    Introduction to arrays and the basics of methods in C#.
+
+---
+
+### [Month 03](#month-03)
+
+17. **[C# Advanced Arrays and Methods - Week 13, Day 01 - 01.12.2024](#week13-day01-01122024)**  
+    Advanced techniques with arrays and method overloading in C#.
+
+18. **[C# Classes and Objects - Week 14, Day 01 - 08.12.2024](#week14-day01-08122024)**  
+    Dive into object-oriented programming with classes and objects in C#.
+
+19. **[C# Variable Scope and Constructors - Week 15, Day 01 - 14.12.2024](#week15-day01-14122024)**  
+    Learn about variable scope and the role of constructors in C#.
+
+20. **[C# Object Type, Boxing, and Unboxing - Week 16, Day 01 - 21.12.2024](#week16-day01-21122024)**  
+    Key concepts about the `object` type, boxing, and unboxing.
+
+21. **[Encapsulation and Destructors - Week 16, Day 02 - 22.12.2024](#week16-day02-22122024)**  
+    Explore the principles of encapsulation and destructors in object-oriented programming.
+
+---
+
+## Month 01
+
+### Week01-Day01 08.09.2024
+#### [Introduction to Computing](#week01-day01-08092024)
 
 ### Topics
 - Computer Networking Basics: Understanding Network Components
@@ -43,12 +97,14 @@ CSharp04 Private Class
 
 1. [Computer Networking Basics](https://www.geeksforgeeks.org/basics-computer-networking)
 2. [frontend-vs-backend](https://www.computerscience.org/bootcamps/resources/frontend-vs-backend/)
-</details>
 
-<details id="week02-day01-14092024">
-<summary><strong>Week02-Day01 14.09.2024</strong></summary>
+[Back to Top](#table-of-contents)
 
-## Week02-Day01 14.09.2024
+---
+
+### Week02-Day01 14.09.2024
+#### [Data Flow and Networking Basics](#week02-day01-14092024)
+
 
 ### Topics
 1. Computer Networking Basics: Understanding Network Components
@@ -91,15 +147,13 @@ CSharp04 Private Class
 9.  [Difference Between Hardware and Software](https://www.simplilearn.com/difference-between-hardware-software-article) - This article on Simplilearn discusses the fundamental distinctions between hardware and software in computing.
 10. [What is an Operating System (OS)?](https://www.techtarget.com/whatis/definition/operating-system-OS) - TechTarget provides a comprehensive definition and explanation of operating systems, a crucial component of computing environments.
 11. [SSD vs HDD: Which is Right for You?](https://www.crucial.com/articles/about-ssd/ssd-vs-hdd) - Crucial's article compares Solid State Drives (SSD) and Hard Disk Drives (HDD), highlighting their differences, advantages, and use cases.
-</details>
-
-
-
-<details id="week03-day01-21092024">
-<summary><strong>Week03-Day01 21.09.2024</strong></summary>
+    
+[Back to Top](#table-of-contents)
 
 ---
-## Week03-Day01 21.09.2024
+
+### Week03-Day01 21.09.2024
+#### [Introduction to Programming Languages](#week03-day01-21092024)
 
 ### Topics
 1. Introduction to Programming Languages
@@ -118,13 +172,13 @@ CSharp04 Private Class
 3. [Introduction to Computer Programming Languages - LinkedIn Article](https://www.linkedin.com/pulse/introduction-computer-programming-languages-chukwuebuka-ejie-vi6mf/)
 4. [Programming Language Overview - JavaTpoint](https://www.javatpoint.com/programming-language)
 
-</details>
 
+[Back to Top](#table-of-contents)
 
-<details id="week03-day02-22092024">
-<summary><strong>Week03-Day02 22.09.2024</strong></summary>
+---
 
-## Week03-Day01 22.09.2024
+### Week03-Day02 22.09.2024
+#### [Introducing C# and .NET](#week03-day02-22092024)
 
 ### Topics
 1. Introducing C# and .NET
@@ -140,13 +194,12 @@ CSharp04 Private Class
 7. [What is Visual Studio?](https://learn.microsoft.com/en-us/visualstudio/get-started/visual-studio-ide?view=vs-2022)
 8. [Introduction to Microsoft Visual Studio - tutorial](https://www.functionx.com/csharp10/Lesson01.htm)
 
-</details>
+[Back to Top](#table-of-contents)
 
-<details id="week04-day01-28092024">
-<summary><strong>Week04-Day01 28.09.2024</strong></summary>
+---
 
----    
-## Week04-Day01 28.09.2024
+### Week04-Day01 28.09.2024
+#### [C# and .NET Differences](#week04-day01-28092024)
 
 ### Topics
 1. What is the difference between C# and .Net ?
@@ -158,12 +211,15 @@ CSharp04 Private Class
 3. [Dot Net Tutorials - Introduction to C# Language](https://dotnettutorials.net/lesson/introduction-to-csharp-language/)
 4. [Medium - What is C# and .NET](https://medium.com/@codebob75/what-is-c-and-net-41addd28b173)
 5. [Medium - What is .NET](https://medium.com/@benkaddourmed54/what-is-net-202790532234)
-</details>
+   [Back to Top](#table-of-contents)
 
-<details id="week04-day02-29092024">
-<summary><strong>Week04-Day02 29.09.2024</strong></summary>
 
-## Week04-Day02 29.09.2024
+[Back to Top](#table-of-contents)
+
+---
+
+### Week04-Day02 29.09.2024
+#### [C# Data Types and Value Types](#week04-day02-29092024)
 
 ### Topics
 1. Common Language Runtime(CLR)
@@ -180,14 +236,13 @@ CSharp04 Private Class
 5. [C# - Data Types](https://www.tutorialsteacher.com/csharp/csharp-data-types)
 6. [Numbers in C#](https://www.tutorialsteacher.com/csharp/numbers)
 7. [Drawing](https://excalidraw.com/#json=B3eaRkAjEB8MqM8hca-rV,-c8aVtlmegDwxfhXn2F5mw)
-</details>
 
-
-<details id="week05-day01-04102024">
-<summary><strong>Week05-Day01 04.10.2024</strong></summary>
+[Back to Top](#table-of-contents)
 
 ---
-## Week05-Day01 04.10.2024
+
+### Week05-Day01 04.10.2024
+#### [C# Stack vs Heap Memory](#week05-day01-04102024)
 
 ### Topics
 1. C# Stack vs Heap Memory
@@ -197,12 +252,13 @@ CSharp04 Private Class
 ### Resources
 1. [C# Stack vs Heap Memory](https://medium.com/@CodeWithHonor/c-stack-vs-heap-memory-f8a737af9919)
 2. [Mülakat #2 - Heap ve Stack](https://medium.com/software-development-turkey/mülakat-2-heap-ve-stack-e37f82b4c49b)
-</details>
 
-<details id="week05-day02-06102024">
-<summary><strong>Week05-Day02 06.10.2024</strong></summary>
+[Back to Top](#table-of-contents)
 
-## Week05-Day02 06.10.2024
+---
+
+### Week05-Day02 06.10.2024
+#### [C# Output, Comments, and Variables](#week05-day02-06102024)
 
 ### Topics
 1. C# Output
@@ -219,160 +275,19 @@ CSharp04 Private Class
 3. [C# Variables](https://www.w3schools.com/cs/cs_variables.php)
 4. [C# Variables](https://www.tutorialsteacher.com/csharp/csharp-variable)
 
-### Homework
+### **Homework Assignment**
+[Week05 Tasks](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week05/DataTypes.ValueTypes/tasks.md)
 
-1. **Task 1**: Write a C# program that prints the following output:  
-   `Hello, World!`
-   - **Hint**: Use the `Console.WriteLine` method to display text in the console.
-   - **Example**:
-     ```csharp
-     Console.WriteLine("Hello, World!");
-     ```
-
-2. **Task 2**: Write a C# program that uses both single-line and multi-line comments.
-   - **Instructions**:
-      - Write a program that prints any text.
-      - Add a single-line comment above the `Console.WriteLine` statement.
-      - Add a multi-line comment explaining what the program does.
-   - **Example**:
-     ```csharp
-     // This is a single-line comment
-     
-     /*
-     This program prints a greeting message
-     to the console.
-     */
-     Console.WriteLine("Welcome to C# Programming!");
-     ```
-
-3. **Task 3**: Declare variables for the following value types and print their values:
-   - `int` (integer)
-   - `double` (decimal number)
-   - `char` (character)
-   - `bool` (true/false)
-   - **Instructions**:
-      - Declare each variable with an appropriate value.
-      - Use `Console.WriteLine` to print the value of each variable.
-   - **Example**:
-     ```csharp
-     int myInt = 25;
-     double myDouble = 4.99;
-     char myChar = 'A';
-     bool myBool = true;
-
-     Console.WriteLine("Integer: " + myInt);
-     Console.WriteLine("Double: " + myDouble);
-     Console.WriteLine("Character: " + myChar);
-     Console.WriteLine("Boolean: " + myBool);
-     ```
-
-4. **Task 4**: Write a C# program that adds two numbers and prints the result.
-   - **Instructions**:
-      - Declare two integer variables, assign values to them.
-      - Calculate their sum and store it in another variable.
-      - Print the sum.
-   - **Example**:
-     ```csharp
-     int num1 = 10;
-     int num2 = 20;
-     int sum = num1 + num2;
-
-     Console.WriteLine("The sum is: " + sum);
-     ```
-
-5. **Task 5**: Write a C# program that explains the difference between an integer (`int`) and a floating-point number (`double`).
-   - **Instructions**:
-      - Declare one variable of type `int` and another of type `double`.
-      - Assign appropriate values (e.g., `int myInt = 5; double myDouble = 5.99;`).
-      - Print their values and explain their difference in a comment.
-   - **Example**:
-     ```csharp
-     int myInt = 5;
-     double myDouble = 5.99;
-
-     // Integers store whole numbers, while doubles store decimal numbers
-     Console.WriteLine("Integer: " + myInt);
-     Console.WriteLine("Double: " + myDouble);
-     ```
-
-6. **Task 6**: Experiment with modifying variables.
-   - **Instructions**:
-      - Declare a variable and assign it a value.
-      - Change the value of the variable later in the code.
-      - Print the variable's value before and after the change.
-   - **Example**:
-     ```csharp
-     int myNumber = 10;
-     Console.WriteLine("Original value: " + myNumber);
-
-     myNumber = 20;
-     Console.WriteLine("Modified value: " + myNumber);
-     ```
-
-7. **Task 7**: Create a program that calculates the area of a rectangle.
-   - **Instructions**:
-      - Declare two variables for `length` and `width` of the rectangle.
-      - Calculate the area (`length * width`).
-      - Print the area to the console.
-   - **Example**:
-     ```csharp
-     int length = 5;
-     int width = 10;
-     int area = length * width;
-
-     Console.WriteLine("The area of the rectangle is: " + area);
-     ```
-
-8. **Task 8**: Write a C# program that swaps the values of two variables.
-   - **Instructions**:
-      - Declare two integer variables and assign them values.
-      - Swap their values without using a third variable.
-      - Print the values before and after swapping.
-   - **Hint**: Use arithmetic operations (addition and subtraction).
-   - **Example**:
-     ```csharp
-     int a = 10;
-     int b = 20;
-
-     Console.WriteLine("Before swap: a = " + a + ", b = " + b);
-
-     a = a + b;  // Now a is 30
-     b = a - b;  // Now b is 10 (original a)
-     a = a - b;  // Now a is 20 (original b)
-
-     Console.WriteLine("After swap: a = " + a + ", b = " + b);
-     ```
-
-9. **Task 9**: Create a C# program that concatenates two strings.
-   - **Instructions**:
-      - Declare two string variables and assign values to them.
-      - Concatenate the strings using the `+` operator.
-      - Print the result.
-   - **Example**:
-     ```csharp
-     string firstName = "John";
-     string lastName = "Doe";
-     string fullName = firstName + " " + lastName;
-
-     Console.WriteLine("Full Name: " + fullName);
-     ```    
-     
-     
-### Questions
-
-1. Explain difference between .NET and C#?
-2. What is IL (Intermediate Language) Code?
-3. What is CLR (Common Language Runtime)?
-4. What is JIT?
-
-</details>
+[Back to Top](#table-of-contents)
 
 ---
 
-## Month02
+## Month 02
   
-<details id="week06-day01-13102024">
-<summary><strong>Week06-Day01 13.10.2024</strong></summary>
+---
+
+### Week06-Day01 13.10.2024
+#### [Type Casting and User Input in C#](#week06-day01-13102024)
 
 ## Week06-Day01 13.10.2024
 
@@ -384,8 +299,6 @@ CSharp04 Private Class
 1. [Type Casting in C#](https://www.w3schools.com/cs/cs_type_casting.php)
 2. [Type Casting in C#](https://www.geeksforgeeks.org/c-sharp-type-casting/)
 3. [User Input in C#](https://www.w3schools.com/cs/cs_user_input.php)
-
-
 
 ### **Homework Assignment**
 
@@ -399,14 +312,13 @@ CSharp04 Private Class
 4. Provide an example of implicit type casting.
 5. Provide an example of explicit type casting.
 6. What is the `Convert` class used for in C#?
-</details>
 
+[Back to Top](#table-of-contents)
 
+---
 
-<details id="week07-day01-19102024">
-<summary><strong>Week07-Day01 19.10.2024</strong></summary>
-
-## Week07-Day01 19.10.2024
+### Week07-Day01 19.10.2024
+#### [C# Operators and Math](#week07-day01-19102024)
 
 
 ### Topics
@@ -424,13 +336,12 @@ CSharp04 Private Class
 ### **Homework Assignment**
 [Week07 Tasks](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week07/Practice/Tasks.md)
 
-</details>
+[Back to Top](#table-of-contents)
 
+---
 
-<details id="week08-day01-26102024">
-<summary><strong>Week08-Day01 26.10.2024</strong></summary>
-
-## Week08-Day01 26.10.2024
+### Week08-Day01 26.10.2024
+#### [C# Strings](#week08-day01-26102024)
 
 
 ### Topics
@@ -440,13 +351,14 @@ CSharp04 Private Class
 1. [1 C# Strings](https://www.w3schools.com/cs/cs_strings.php)
 2. [2 C# Strings](https://www.programiz.com/csharp-programming/string)
 3. [3 Working with Strings in C#: A Comprehensive Guide](https://medium.com/@praveen.rao.g.1990/working-with-strings-in-c-a-comprehensive-guide-242ca55934b0)
-</details>
 
 
-<details id="week08-day02-27102024">
-<summary><strong>Week08-Day02 27.10.2024</strong></summary>
+[Back to Top](#table-of-contents)
 
-## Week08-Day02 27.10.2024
+---
+
+### Week08-Day02 27.10.2024
+#### [C# If...Else and Switch Statements](#week08-day02-27102024)
 
 
 ### Topics
@@ -473,15 +385,12 @@ CSharp04 Private Class
 ---
 [Week08 Tasks - C# Switch](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week08/Condition.SwitchCaseStatement/Tasks.md)
 
+[Back to Top](#table-of-contents)
 
+---
 
-</details>
-
-
-<details id="week09-day01-03112024">
-<summary><strong>Week09-Day01 03.11.2024</strong></summary>
-
-## Week09-Day01 03.11.2024
+### Week09-Day01 03.11.2024
+#### [C# Loops](#week09-day01-03112024)
 
 ### code practice
 
@@ -489,12 +398,14 @@ CSharp04 Private Class
 1. [String methods in C#](https://www.programiz.com/csharp-programming/library/string/compare)
 2. [String methods in C#](https://www.youtube.com/watch?v=Kk9YoxY_kO0&pp=ygUUZ2VuY2F5IHlpbGRpeiBzdHJpbmc%3D)
 3. [String in C#](https://www.youtube.com/watch?v=d7oYjvXJ7po&pp=ygUUZ2VuY2F5IHlpbGRpeiBzdHJpbmc%3D)
-</details>
 
-<details id="week10-day01-09112024">
-<summary><strong>Week10-Day01 09.11.2024</strong></summary>
+[Back to Top](#table-of-contents)
 
-## Week10-Day01 09.11.2024
+---
+
+### Week10-Day01 09.11.2024
+#### [C# Loops](#week10-day01-09112024)
+
 
 ### Topics
 1. C# While Loop
@@ -510,12 +421,14 @@ CSharp04 Private Class
 ### **Homework Assignment**
 
 [Week10 Tasks - Loops](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week10/Practice/Tasks.md)
-</details>
 
-<details id="week11-day01-11112024">
-<summary><strong>Week11-Day01 11.11.2024</strong></summary>
+[Back to Top](#table-of-contents)
 
-## Week11-Day01 11.11.2024
+---
+
+### Week11-Day01 11.11.2024
+#### [Quiz Game Practice](#week11-day01-11112024)
+
 
 ### Topics
 1. Practice
@@ -523,13 +436,13 @@ CSharp04 Private Class
 
 ### **Homework Assignment**
 
-[QUIZ GAME](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week11/QuizGame/Readme.md)
-</details>
 
-<details id="week12-day01-17112024">
-<summary><strong>Week12-Day01 17.11.2024</strong></summary>
+[Back to Top](#table-of-contents)
 
-## Week12-Day01 17.11.2024
+---
+
+### Week12-Day01 17.11.2024
+#### [C# Arrays and Methods](#week12-day01-17112024)
 
 ### Topics
 1. C# Arrays
@@ -551,19 +464,16 @@ CSharp04 Private Class
 [Week12 Tasks - C# Arrays](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week12/Practice/Tasks.Array.md)
 ---
 [Week12 Tasks - C# Methods](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week12/Practice/Tasks.Method.md)
----
-</details>
 
----
-
-## Month03
-
+[Back to Top](#table-of-contents)
 ---
 
-<details id="week13-day01-01122024">
-<summary><strong>Week13-Day01 01.12.2024</strong></summary>
+## Month 03
 
-## Week13-Day01 01.12.2024
+---
+
+### Week13-Day01 01.12.2024
+#### [C# Advanced Arrays and Methods](#week13-day01-01122024)
 
 ### Topics
 1. C# Arrays
@@ -593,13 +503,13 @@ CSharp04 Private Class
 ### **Homework Assignment**
 
 [Week13 Tasks - C# Arrays & Methods](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week13/Practice/Tasks.md)
+
+[Back to Top](#table-of-contents)
+
 ---
-</details>
 
-<details id="week14-day01-08122024">
-<summary><strong>Week14-Day01 08.12.2024</strong></summary>
-
-## Week14-Day01 08.12.2024
+### Week14-Day01 08.12.2024
+#### [C# Classes and Objects](#week14-day01-08122024)
 
 ### Topics
 1. C# -  Classes and Objects
@@ -621,12 +531,14 @@ CSharp04 Private Class
 8. [Video -1. Object Programming in C#](https://www.youtube.com/watch?v=48Z75_jZHv0&list=PLQVXoXFVVtp306cqgKyC8NoxCmHIuWVBK&index=1&ab_channel=GençayYıldız)
 9. [Video -2. Object Programming in C# - Class](https://www.youtube.com/watch?v=9_7pa5ZHaa4&list=PLQVXoXFVVtp306cqgKyC8NoxCmHIuWVBK&index=2&ab_channel=GençayYıldız)
 10.[Video -3. Object Programming in C# - Class Members](https://www.youtube.com/watch?v=3CC4EFcqMWM&list=PLQVXoXFVVtp306cqgKyC8NoxCmHIuWVBK&index=3&ab_channel=GençayYıldız) 
-</details>
 
-<details id="week15-day01-14122024">
-<summary><strong>Week15-Day01 14.12.2024</strong></summary>
+[Back to Top](#table-of-contents)
 
-## Week15-Day01 14.12.2024
+---
+
+### Week15-Day01 14.12.2024
+#### [C# Variable Scope and Constructors](#week15-day01-14122024)
+
 
 ### Topics
 1. C# Variable Scope
@@ -646,14 +558,13 @@ CSharp04 Private Class
 [Week15 Tasks - Task 2. Car](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week15/Practice/task-2-car.md)
 ---
 [Week15 Tasks - Task 3. Product](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week15/Practice/task-3-product.md)
+
+[Back to Top](#table-of-contents)
+
 ---
 
-</details >
-
-<details id="week16-day01-21122024">
-<summary><strong>Week16-Day01 21.12.2024</strong></summary>
-
-## Week16-Day01 21.12.2024
+### Week16-Day01 21.12.2024
+#### [C# Object Type, Boxing, and Unboxing](#week16-day01-21122024)
 
 ### Topics
 1. The `object` Type in C#  
@@ -674,15 +585,12 @@ CSharp04 Private Class
 [Week16 Tasks - Task 2. Boxing and Unboxing](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week16/Practice/task-2-boxing-unboxing.md)  
 [Week16 Tasks - Task 3. Boxing Performance](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week16/Practice/task-3-boxing-performance.md)  
 
+[Back to Top](#table-of-contents)
+
 ---
 
-</details>
-
-
-<details id="week16-day02-22122024">
-<summary><strong>Week16-Day02 22.12.2024</strong></summary>
-
-## Week16-Day02 22.12.2024
+### Week16-Day02 22.12.2024
+#### [Encapsulation and Destructors](#week16-day02-22122024)
 
 ### Topics
 1. OOP - Encapsulation - Access Modifiers
@@ -698,7 +606,6 @@ CSharp04 Private Class
 [Week16 Tasks - Task 4. OOP - Encapsulation - Access Modifiers](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week16/Practice/task-4-encapsulation-access-modifiers.md)
 ---
 
-</details>
 
 
 
