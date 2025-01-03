@@ -1,5 +1,7 @@
 ﻿### **README: Mastering Destructors in C#**
 
+![](docs/lesson-imgs/oop-destructors.png)
+
 ---
 
 ### **What Are Destructors?**

@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		syllabus-as-universty.md = syllabus-as-universty.md
 		syllabus.csharp.txt = syllabus.csharp.txt
 		syllabus.md = syllabus.md
+		month02.md = month02.md
+		month03.md = month03.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week06", "Week06", "{27D0691B-E7B0-4F0E-B402-F014D036370C}"

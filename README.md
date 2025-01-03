@@ -593,8 +593,8 @@
 #### [Encapsulation and Destructors](#week16-day02-22122024)
 
 ### Topics
-1. OOP - Encapsulation - Access Modifiers
-1. OOP - Class - Destructor
+1. [OOP - Encapsulation - Access Modifiers](ConsoleApps/Week16/OOP.Destructors/README.md)
+2. OOP - Class - Destructor
 
 ### Resources
 1. [C# Encapsulation](https://www.tutorialspoint.com/csharp/csharp_encapsulation.htm)  
