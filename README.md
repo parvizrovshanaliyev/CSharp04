@@ -7,7 +7,7 @@ CSharp04 Private Class
 ## Student List
 - * - [Ceyhun](https://github.com/Ceyhun555)
 
-## Lessons
+## Table of contents
 
 1. [Introduction to Computing](#week01-day01-08092024)  
 2. [Data Flow and Networking Basics](#week02-day01-14092024)  
