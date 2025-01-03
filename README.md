@@ -512,7 +512,7 @@
 #### [C# Classes and Objects](#week14-day01-08122024)
 
 ### Topics
-1. C# -  Classes and Objects
+1. [C# -  Classes and Objects](ConsoleApps/Week14/OOP.ClassAndObject/README.md)
 2. C# -  Class Members
       -  Fields
       -  Properties
@@ -542,8 +542,8 @@
 
 ### Topics
 1. C# Variable Scope
-2. C# Constructors
-2. Types of Constructors in C#
+2. [C# Constructors](ConsoleApps/Week15/OOP.Class.Constructor/README.md)
+3. [Types of Constructors in C#](ConsoleApps/Week15/OOP.Class.Constructor/README.md)
 
 ### Resources
 1. [C# Variable Scope](https://www.programiz.com/csharp-programming/variable-scope)
@@ -567,10 +567,10 @@
 #### [C# Object Type, Boxing, and Unboxing](#week16-day01-21122024)
 
 ### Topics
-1. The `object` Type in C#  
-2. Boxing in C#  
-3. Unboxing in C#  
-4. Key Properties and Methods of the `object` Type  
+1. [The `object` Type in C#  ](ConsoleApps/Week16/ObjectAndBoxingUnboxing/README.md)
+2. [Boxing in C# ](ConsoleApps/Week16/ObjectAndBoxingUnboxing/README.md) 
+3. [Unboxing in C# ](ConsoleApps/Week16/ObjectAndBoxingUnboxing/README.md) 
+4. [Key Properties and Methods of the `object` Type  ](ConsoleApps/Week16/ObjectAndBoxingUnboxing/README.md)
 
 ### Resources
 1. [Understanding `object` in C#](https://www.geeksforgeeks.org/c-sharp-object-class/)  
@@ -594,7 +594,7 @@
 
 ### Topics
 1. [OOP - Encapsulation - Access Modifiers](ConsoleApps/Week16/OOP.Destructors/README.md)
-2. [OOP - Class - Destructor](ConsoleApps/Week16/OOP.Destructors/README.md)
+2. [OOP - Class - Destructor](ConsoleApps/Week16/OOP.AccessModifiersAndEncapsulation/README.md)
 
 ### Resources
 1. [C# Encapsulation](https://www.tutorialspoint.com/csharp/csharp_encapsulation.htm)  

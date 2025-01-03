@@ -1,5 +1,7 @@
 # **Comprehensive Guide to Constructors in C#: Implicit, Explicit, and Their Role**
 
+![](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/docs/lesson-imgs/oop-constructors.png)
+
 ---
 
 ## **What are Constructors?**

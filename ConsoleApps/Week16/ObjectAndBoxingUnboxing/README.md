@@ -1,8 +1,7 @@
-Here’s an expanded, beginner-friendly version of the guide with deeper explanations, step-by-step breakdowns, and examples:
 
----
+# **C#: Beginnerï¿½s Guide to Boxing, Unboxing, and Object Methods**
 
-# **C#: Beginner’s Guide to Boxing, Unboxing, and Object Methods**
+![](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/docs/lesson-imgs/object-type.png)
 
 ---
 
@@ -54,7 +53,7 @@ Unboxing is the reverse process. It converts a reference type (an `object` conta
 
 1. **Type Safety**:
    - The `object` being unboxed must hold a compatible value type.
-   - Runtime exceptions will occur if the types don’t match.
+   - Runtime exceptions will occur if the types donï¿½t match.
 
 2. **Syntax Example**:
    ```csharp
@@ -178,7 +177,7 @@ public override int GetHashCode()
 
 ### **5. MemberwiseClone()**
 **Purpose**: Creates a shallow copy of the object.
-- Copies field values but doesn’t duplicate reference types.
+- Copies field values but doesnï¿½t duplicate reference types.
 
 **Example**:
 ```csharp

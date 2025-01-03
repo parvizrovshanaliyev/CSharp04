@@ -1,6 +1,6 @@
 ﻿# **Comprehensive Guide to Classes, Objects, Constructor Overloading, and Property Types in C#**
 
-
+![](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/docs/lesson-imgs/oop-classAndObject.png)
 ---
 
 ## **What Are Classes and Objects?**
