@@ -1,7 +1,7 @@
 ﻿### **README: Mastering Destructors in C#**
 
 --
-![t](docs/lesson-imgs/oop-destructors.png)
+![](parvizrovshanaliyev/CSharp04/tree/main/docs/lesson-imgs/oop-destructors.png)
 
 ---
 
