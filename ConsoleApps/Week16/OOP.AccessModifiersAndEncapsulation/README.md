@@ -1,6 +1,8 @@
 ﻿
 # **C#: Access Modifiers and Encapsulation Made Simple**
 
+![](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/docs/lesson-imgs/oop-encapsulation.png)
+
 Access modifiers and encapsulation are essential concepts in **object-oriented programming (OOP)**. They help you control how different parts of your program interact with each other, ensuring **data security**, **code maintainability**, and **clarity**.
 
 ---
