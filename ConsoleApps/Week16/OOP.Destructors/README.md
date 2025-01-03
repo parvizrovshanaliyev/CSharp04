@@ -1,6 +1,7 @@
 ﻿### **README: Mastering Destructors in C#**
 
-![](docs/lesson-imgs/oop-destructors.png)
+--
+![t](docs/lesson-imgs/oop-destructors.png)
 
 ---
 
