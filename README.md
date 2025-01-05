@@ -1,9 +1,218 @@
-# CSharp04 Private Class Curriculum
+# CSharp04 .NET Development Course
 
-**Start Date:** 08.09.2024
+**Course Duration:** September 2024 - January 2025  
+**Start Date:** 08.09.2024  
+**Format:** Twice Weekly Classes  
+**Class Duration:** 2 hours per session
+**Schedule:** Saturday and Sunday
+**Language:** English  
+**Instructor:** Parviz Rovshan Aliyev  
+**Location:** Online Platform  
 
-## Student List
-- [Ceyhun](https://github.com/Ceyhun555)
+---
+
+** Student Information
+| Name | GitHub Profile | Email |
+|------|---------------|--------|
+| Ceyhun | [@Ceyhun555](https://github.com/Ceyhun555) | [Email] |
+
+---
+
+## Course Overview
+
+This intensive course is structured to take you from the basics of computing to professional C# development. Through hands-on projects and practical exercises, you'll learn to build robust applications using C# and the .NET framework.
+
+### What You'll Learn
+- Fundamentals of computing and networking
+- C# programming language from basics to advanced concepts
+- Object-Oriented Programming principles
+- Working with databases and data structures
+- Building real-world applications
+- Best practices in software development
+
+### Career Opportunities
+- .NET Developer
+- Software Engineer
+- Backend Developer
+- Full-stack Developer
+- Application Developer
+
+### Course Flow
+```mermaid
+graph TD
+    A[Start: Computing Basics] --> B[Programming Fundamentals]
+    B --> C[C# Basics]
+    
+    C --> D[Data Types & Variables]
+    C --> E[Control Structures]
+    C --> F[Methods & Arrays]
+    
+    D --> G[OOP Concepts]
+    E --> G
+    F --> G
+    
+    G --> H[Advanced C#]
+    G --> I[Database Basics]
+    
+    H --> J[Projects & Practice]
+    I --> J
+    
+    subgraph "Phase 1: Fundamentals"
+        A
+        B
+        C
+    end
+    
+    subgraph "Phase 2: Core Concepts"
+        D
+        E
+        F
+    end
+    
+    subgraph "Phase 3: Advanced Topics"
+        G
+        H
+        I
+    end
+    
+    subgraph "Phase 4: Application"
+        J
+    end
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style J fill:#9ff,stroke:#333,stroke-width:2px
+```
+
+### Learning Path Breakdown
+1. **Phase 1: Fundamentals**
+   - Computing basics and networking
+   - Programming concepts
+   - Introduction to C# and .NET
+
+2. **Phase 2: Core Concepts**
+   - Working with data types
+   - Control structures and logic
+   - Methods and arrays
+
+3. **Phase 3: Advanced Topics**
+   - Object-Oriented Programming
+   - Advanced C# features
+   - Database fundamentals
+
+4. **Phase 4: Application**
+   - Real-world projects
+   - Code reviews
+   - Best practices implementation
+
+---
+
+** Learning Resources
+
+### Official Documentation
+- [Official C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/)
+- [C# Programming Guide](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/)
+- [.NET Documentation](https://docs.microsoft.com/en-us/dotnet/)
+- [Visual Studio Documentation](https://docs.microsoft.com/en-us/visualstudio/ide/)
+- [Git Documentation](https://git-scm.com/doc)
+
+---
+
+## Prerequisites
+
+### Technical Requirements
+- Computer with Windows OS (Windows 10 or later recommended)
+- Minimum 8GB RAM (16GB recommended)
+- At least 50GB free disk space
+- Stable internet connection (minimum 5Mbps)
+
+### Software Requirements
+- Visual Studio 2022 Community Edition
+- .NET 6.0 SDK
+- Git version control
+- GitHub account
+
+### Knowledge Requirements
+- Basic computer literacy
+- Basic understanding of programming concepts (helpful but not required)
+- English language proficiency
+- Problem-solving aptitude
+
+---
+
+## Course Structure
+
+### Class Format
+- Two sessions per week 
+- Each session: 2 hours 
+- 5-minute break after first hour
+- Total 4 hours of instruction per week
+- Interactive and hands-on learning environment
+
+### Learning Components
+- Interactive lectures
+- Live coding demonstrations
+- Hands-on exercises
+- Group discussions
+- Real-world project work
+- Homework assignments
+- Version control with Git
+
+### Project Work
+- Individual projects
+- Group projects
+- Final course project
+- Code reviews and feedback sessions
+
+---
+
+## Assessment
+
+### Grading Components
+- Attendance and Participation: 20%
+- Homework Assignments: 30%
+- Projects: 30%
+- Final Project: 20%
+
+### Requirements for Completion
+- Minimum 80% attendance
+- Completion of all assignments
+- Successful submission of final project
+- Active participation in class activities
+
+### Certification
+- Project portfolio
+- LinkedIn skill endorsements
+
+---
+
+## Communication
+
+### Primary Channels
+- GitHub Issues for assignment submissions
+- Email for private communications
+
+### Support
+- One-on-one mentoring sessions
+- Code review sessions
+
+---
+
+** Development Environment
+
+### Required Software
+- **IDE:** Visual Studio 2022 Community Edition
+- **Framework:** .NET 6.0+
+- **Version Control:** Git & GitHub
+- **Additional Tools:**
+  - SQL Server Management Studio
+  - Postman
+  - Visual Studio Code (optional)
+
+### Environment Setup
+- Detailed setup instructions provided
+- Installation verification
+- Configuration guidance
+- Troubleshooting support
 
 ---
 
