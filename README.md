@@ -41,6 +41,8 @@
 
 This intensive course is structured to take you from the basics of computing to professional C# development. Through hands-on projects and practical exercises, you'll learn to build robust applications using C# and the .NET framework.
 
+<details>
+<summary><strong>Course Flow ,Career Opportunities ,  Learning Resources , Prerequisites and etc.</strong></summary>
 ### What You'll Learn
 - Fundamentals of computing and networking
 - C# programming language from basics to advanced concepts
@@ -63,50 +65,46 @@ graph TD
     B --> C[C# Basics]
     
     C --> D[Data Types & Variables]
-    C --> E[Control Structures & Logic]
-    C --> F[Methods, Arrays & Collections]
+    C --> E[Control Structures]
+    C --> F[Methods & Arrays]
     
-    D --> G[Object-Oriented Programming Concepts]
+    D --> G[OOP Concepts]
     E --> G
     F --> G
     
-    G --> H[Advanced C# Features]
-    G --> I[Database Fundamentals]
+    G --> H[Advanced C#]
+    G --> I[Database Basics]
     
-    H --> J[Capstone Projects & Hands-on Practice]
+    H --> J[Projects & Practice]
     I --> J
     
-    subgraph "Phase 1: Foundations"
+    subgraph "Phase 1: Fundamentals"
         A
         B
         C
     end
     
-    subgraph "Phase 2: Core Programming Concepts"
+    subgraph "Phase 2: Core Concepts"
         D
         E
         F
     end
     
-    subgraph "Phase 3: Advanced Development Skills"
+    subgraph "Phase 3: Advanced Topics"
         G
         H
         I
     end
     
-    subgraph "Phase 4: Real-World Application"
+    subgraph "Phase 4: Application"
         J
     end
 
-    style A fill:#f9f,stroke:#333,stroke-width:2px,stroke-dasharray: 5
-    style J fill:#9ff,stroke:#333,stroke-width:2px,stroke-dasharray: 5
-    style G fill:#ffc,stroke:#333,stroke-width:2px
-    style H fill:#cff,stroke:#333,stroke-width:2px
-    style I fill:#cff,stroke:#333,stroke-width:2px
-
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style J fill:#9ff,stroke:#333,stroke-width:2px
 ```
----
 
+---
 ** Learning Resources
 
 ### Official Documentation
@@ -214,7 +212,7 @@ graph TD
 - Installation verification
 - Configuration guidance
 - Troubleshooting support
-
+</deatils>
 ---
 
 ## Table of Contents
