@@ -11,6 +11,25 @@
 
 ---
 
+## Quick Navigation
+[📚 Course Overview](#course-overview) | 
+[🎯 Prerequisites](#prerequisites) | 
+[📅 Course Structure](#course-structure) | 
+[📝 Assessment](#assessment) | 
+[📞 Communication](#communication) | 
+[🛠️ Development Environment](#development-environment) | 
+[📖 Table of Contents](#table-of-contents)
+
+### Key Links
+- [🔍 Learning Resources](#learning-resources)
+- [📊 Learning Path](#learning-path-breakdown)
+- [📋 Technical Requirements](#technical-requirements)
+- [💻 Software Requirements](#software-requirements)
+- [📑 Grading Components](#grading-components)
+- [🎓 Certification](#certification)
+
+---
+
 ** Student Information
 | Name | GitHub Profile | Email |
 |------|---------------|--------|
