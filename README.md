@@ -63,66 +63,48 @@ graph TD
     B --> C[C# Basics]
     
     C --> D[Data Types & Variables]
-    C --> E[Control Structures]
-    C --> F[Methods & Arrays]
+    C --> E[Control Structures & Logic]
+    C --> F[Methods, Arrays & Collections]
     
-    D --> G[OOP Concepts]
+    D --> G[Object-Oriented Programming Concepts]
     E --> G
     F --> G
     
-    G --> H[Advanced C#]
-    G --> I[Database Basics]
+    G --> H[Advanced C# Features]
+    G --> I[Database Fundamentals]
     
-    H --> J[Projects & Practice]
+    H --> J[Capstone Projects & Hands-on Practice]
     I --> J
     
-    subgraph "Phase 1: Fundamentals"
+    subgraph "Phase 1: Foundations"
         A
         B
         C
     end
     
-    subgraph "Phase 2: Core Concepts"
+    subgraph "Phase 2: Core Programming Concepts"
         D
         E
         F
     end
     
-    subgraph "Phase 3: Advanced Topics"
+    subgraph "Phase 3: Advanced Development Skills"
         G
         H
         I
     end
     
-    subgraph "Phase 4: Application"
+    subgraph "Phase 4: Real-World Application"
         J
     end
 
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style J fill:#9ff,stroke:#333,stroke-width:2px
+    style A fill:#f9f,stroke:#333,stroke-width:2px,stroke-dasharray: 5
+    style J fill:#9ff,stroke:#333,stroke-width:2px,stroke-dasharray: 5
+    style G fill:#ffc,stroke:#333,stroke-width:2px
+    style H fill:#cff,stroke:#333,stroke-width:2px
+    style I fill:#cff,stroke:#333,stroke-width:2px
+
 ```
-
-### Learning Path Breakdown
-1. **Phase 1: Fundamentals**
-   - Computing basics and networking
-   - Programming concepts
-   - Introduction to C# and .NET
-
-2. **Phase 2: Core Concepts**
-   - Working with data types
-   - Control structures and logic
-   - Methods and arrays
-
-3. **Phase 3: Advanced Topics**
-   - Object-Oriented Programming
-   - Advanced C# features
-   - Database fundamentals
-
-4. **Phase 4: Application**
-   - Real-world projects
-   - Code reviews
-   - Best practices implementation
-
 ---
 
 ** Learning Resources
