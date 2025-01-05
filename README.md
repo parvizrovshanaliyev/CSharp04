@@ -82,6 +82,8 @@
 21. **[Encapsulation and Destructors - Week 16, Day 02 - 22.12.2024](#week16-day02-22122024)**  
     Explore the principles of encapsulation and destructors in object-oriented programming.
 
+22. **[Repeat of week 16 - Week17, Day 01 - 04.01.2025](#week17-day01-04012025)**
+    Repeat of week 16
 ---
 
 ## Month 01
@@ -604,6 +606,26 @@
 
 ### **Homework Assignment**
 [Week16 Tasks - Task 4. OOP - Encapsulation - Access Modifiers](https://github.com/parvizrovshanaliyev/CSharp04/blob/main/ConsoleApps/Week16/Practice/task-4-encapsulation-access-modifiers.md)
+
+[Back to Top](#table-of-contents)
+---
+
+### Week17-Day01 04.01.2025
+#### [Repeat of week 16](#week17-day01-04012025)
+
+### Topic
+1. Boxing and Unboxing in C#
+2. Access Modifiers in C#
+3. Encapsulation in C#
+4. Destructors in C#
+
+### Resources
+1. [Boxing and Unboxing in C#](https://dotnettutorials.net/lesson/boxing-and-unboxing-in-csharp/)  
+2. [C# Access Modifiers](https://dotnettutorials.net/lesson/access-specifiers-csharp/)  
+3. [Encapsulation in C#](https://dotnettutorials.net/lesson/encapsulation-csharp/)  
+4. [Destructors in C#](https://dotnettutorials.net/lesson/destructor-csharp/)  
+
+[Back to Top](#table-of-contents)
 ---
 
 

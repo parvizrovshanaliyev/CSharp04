@@ -2,7 +2,7 @@
 
 namespace Practice
 {
-    internal class Program
+     class Program
     {
         static void Main(string[] args)
         {
@@ -13,6 +13,18 @@ namespace Practice
             MeasuringBoxingPerformance();
 
             EmployeeManagementSystem();
+
+            Sum(5, "salam");
+        }
+
+        static int Sum(object a, object b)
+        {
+            if (a.GetType() == b.GetType())
+            {
+                return (int)a + (int)b;
+            }
+
+            return 0;
         }
 
         private static void EmployeeManagementSystem()
@@ -34,6 +46,8 @@ namespace Practice
 
             // Set salary
             Console.WriteLine("--- Setting Salary ---");
+
+            //employee._salary = 3000;
             employee.SetSalary(3000);
             employee.GetDetails();
 
@@ -56,6 +70,7 @@ namespace Practice
             // Display final details
             Console.WriteLine("--- Final Employee Details ---");
             employee.GetDetails();
+
         }
 
         private static void MeasuringBoxingPerformance()
