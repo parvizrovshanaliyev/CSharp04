@@ -14,19 +14,8 @@
 ## Quick Navigation
 [📚 Course Overview](#course-overview) | 
 [🎯 Prerequisites](#prerequisites) | 
-[📅 Course Structure](#course-structure) | 
-[📝 Assessment](#assessment) | 
-[📞 Communication](#communication) | 
 [🛠️ Development Environment](#development-environment) | 
 [📖 Table of Contents](#table-of-contents)
-
-### Key Links
-- [🔍 Learning Resources](#learning-resources)
-- [📊 Learning Path](#learning-path-breakdown)
-- [📋 Technical Requirements](#technical-requirements)
-- [💻 Software Requirements](#software-requirements)
-- [📑 Grading Components](#grading-components)
-- [🎓 Certification](#certification)
 
 ---
 
@@ -144,75 +133,12 @@ graph TD
 - At least 50GB free disk space
 - Stable internet connection (minimum 5Mbps)
 
-### Software Requirements
-- Visual Studio 2022 Community Edition
-- .NET 6.0 SDK
-- Git version control
-- GitHub account
 
 ### Knowledge Requirements
 - Basic computer literacy
 - Basic understanding of programming concepts (helpful but not required)
 - English language proficiency
 - Problem-solving aptitude
-
----
-
-## Course Structure
-
-### Class Format
-- Two sessions per week 
-- Each session: 2 hours 
-- 5-minute break after first hour
-- Total 4 hours of instruction per week
-- Interactive and hands-on learning environment
-
-### Learning Components
-- Interactive lectures
-- Live coding demonstrations
-- Hands-on exercises
-- Group discussions
-- Real-world project work
-- Homework assignments
-- Version control with Git
-
-### Project Work
-- Individual projects
-- Group projects
-- Final course project
-- Code reviews and feedback sessions
-
----
-
-## Assessment
-
-### Grading Components
-- Attendance and Participation: 20%
-- Homework Assignments: 30%
-- Projects: 30%
-- Final Project: 20%
-
-### Requirements for Completion
-- Minimum 80% attendance
-- Completion of all assignments
-- Successful submission of final project
-- Active participation in class activities
-
-### Certification
-- Project portfolio
-- LinkedIn skill endorsements
-
----
-
-## Communication
-
-### Primary Channels
-- GitHub Issues for assignment submissions
-- Email for private communications
-
-### Support
-- One-on-one mentoring sessions
-- Code review sessions
 
 ---
 
@@ -226,13 +152,6 @@ graph TD
   - SQL Server Management Studio
   - Postman
   - Visual Studio Code (optional)
-
-### Environment Setup
-- Detailed setup instructions provided
-- Installation verification
-- Configuration guidance
-- Troubleshooting support
-
 ---
 
 ## Table of Contents
@@ -312,6 +231,13 @@ graph TD
 
 22. **[Repeat of week 16 - Week17, Day 01 - 04.01.2025](#week17-day01-04012025)**
     Repeat of week 16
+
+23. **[Introduction to Inheritance in C# - Week18, Day 01 - 11.01.2025](#week18-day01-11012025)**
+    Introduction to Inheritance in C#
+
+24. **[Types of Inheritance in C# - Week18, Day 02 - 11.01.2025](#week18-day02-121012025)**
+    Types of Inheritance in C#,Method Hiding, Shadowing, and Overriding in C# Explained with Examples
+    
 ---
 
 ## Month 01
@@ -1716,6 +1642,39 @@ graph TD
 2. [C# Access Modifiers](https://dotnettutorials.net/lesson/access-specifiers-csharp/)  
 3. [Encapsulation in C#](https://dotnettutorials.net/lesson/encapsulation-csharp/)  
 4. [Destructors in C#](https://dotnettutorials.net/lesson/destructor-csharp/)  
+
+[Back to Top](#table-of-contents)
+---
+
+### Week18-Day01 11.01.2025
+#### [Introduction to Inheritance in C#](#week18-day01-11012025)
+
+### Topic
+1. [Introduction to Inheritance in C#](ConsoleApps/Week18/OOp.Inheritance/README.md)
+   -Understanding inheritance as a key OOP concept that enables code reuse, extensibility, and logical structuring of classes.
+
+### Resources
+1. [Inheritance in C#](https://dotnettutorials.net/lesson/inheritance-c-sharp/)
+
+[Back to Top](#table-of-contents)
+---
+
+### Week18-Day02 121.01.2025
+#### [Types of Inheritance in C#](#week18-day02-12012025)
+
+### Topic
+1. Types of Inheritance in C#
+2. [Method Overriding in C# Inheritance](ConsoleApps/Week18/OOP.Inheritance.MethodOverriding/README.md)
+3. [Access Modifiers in C# Inheritance](ConsoleApps/Week18/OOP.Inheritance.AccessModifiers/README.md)
+
+### Resources
+1. [Types of Inheritance in C#](https://dotnettutorials.net/lesson/types-of-inheritance-in-csharp/)
+2. [How to use Inheritance in Application Development](https://dotnettutorials.net/lesson/how-to-use-inheritance-in-application-development/)
+3. [Method Overriding](https://iqratechnology.com/academy/c-sharp-training/c-method-overriding/)
+4. [Method Hiding, Shadowing, and Overriding in C# Explained with Examples](https://medium.com/@javvadirupasri8/method-hiding-shadowing-and-overriding-in-c-explained-with-examples-643c7dfc8ccc)
+
+### **Homework Assignment**
+[Week18 Tasks - Inheritance in C#](ConsoleApps/Week18/Practice/tasks.md)
 
 [Back to Top](#table-of-contents)
 ---

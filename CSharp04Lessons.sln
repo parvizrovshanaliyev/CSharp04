@@ -102,6 +102,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Inheritance.AccessModif
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Inheritance.MethodOverriding", "ConsoleApps\Week18\OOP.Inheritance.MethodOverriding\OOP.Inheritance.MethodOverriding.csproj", "{3F231EB5-3246-419B-A005-2E0363549E82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "ConsoleApps\Week18\Practice\Practice.csproj", "{EA1AE652-F7B9-4AB6-8D8A-525EA8C2DE3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -232,6 +234,10 @@ Global
 		{3F231EB5-3246-419B-A005-2E0363549E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F231EB5-3246-419B-A005-2E0363549E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F231EB5-3246-419B-A005-2E0363549E82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA1AE652-F7B9-4AB6-8D8A-525EA8C2DE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA1AE652-F7B9-4AB6-8D8A-525EA8C2DE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA1AE652-F7B9-4AB6-8D8A-525EA8C2DE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA1AE652-F7B9-4AB6-8D8A-525EA8C2DE3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -280,6 +286,7 @@ Global
 		{3BF76B83-FEC6-44D2-A16D-488C4D1B7A1D} = {A64491EA-C65D-4EBA-A62E-4EBE5B1808C4}
 		{D19902B7-78C0-4212-B68D-109AE8ECFF68} = {A64491EA-C65D-4EBA-A62E-4EBE5B1808C4}
 		{3F231EB5-3246-419B-A005-2E0363549E82} = {A64491EA-C65D-4EBA-A62E-4EBE5B1808C4}
+		{EA1AE652-F7B9-4AB6-8D8A-525EA8C2DE3E} = {A64491EA-C65D-4EBA-A62E-4EBE5B1808C4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEA2487A-AB74-4D13-B4F3-133B1E0660E1}
