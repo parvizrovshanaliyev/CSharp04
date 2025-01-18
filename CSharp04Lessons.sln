@@ -98,11 +98,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week18", "Week18", "{A64491
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOp.Inheritance", "ConsoleApps\Week18\OOp.Inheritance\OOp.Inheritance.csproj", "{3BF76B83-FEC6-44D2-A16D-488C4D1B7A1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Inheritance.AccessModifiers", "ConsoleApps\Week18\OOP.Inheritance.AccessModifiers\OOP.Inheritance.AccessModifiers.csproj", "{D19902B7-78C0-4212-B68D-109AE8ECFF68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP.Inheritance.AccessModifiers", "ConsoleApps\Week18\OOP.Inheritance.AccessModifiers\OOP.Inheritance.AccessModifiers.csproj", "{D19902B7-78C0-4212-B68D-109AE8ECFF68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Inheritance.MethodOverriding", "ConsoleApps\Week18\OOP.Inheritance.MethodOverriding\OOP.Inheritance.MethodOverriding.csproj", "{3F231EB5-3246-419B-A005-2E0363549E82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP.Inheritance.MethodOverriding", "ConsoleApps\Week18\OOP.Inheritance.MethodOverriding\OOP.Inheritance.MethodOverriding.csproj", "{3F231EB5-3246-419B-A005-2E0363549E82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "ConsoleApps\Week18\Practice\Practice.csproj", "{EA1AE652-F7B9-4AB6-8D8A-525EA8C2DE3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice", "ConsoleApps\Week18\Practice\Practice.csproj", "{EA1AE652-F7B9-4AB6-8D8A-525EA8C2DE3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week19", "Week19", "{16579458-9F49-4BFB-9EE1-672FBD1EDD3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem", "ConsoleApps\Week19\LibraryManagementSystem\LibraryManagementSystem.csproj", "{1ECF730A-3FE6-4F82-9A53-6D1D84B59D5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -238,6 +242,10 @@ Global
 		{EA1AE652-F7B9-4AB6-8D8A-525EA8C2DE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA1AE652-F7B9-4AB6-8D8A-525EA8C2DE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA1AE652-F7B9-4AB6-8D8A-525EA8C2DE3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ECF730A-3FE6-4F82-9A53-6D1D84B59D5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ECF730A-3FE6-4F82-9A53-6D1D84B59D5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ECF730A-3FE6-4F82-9A53-6D1D84B59D5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ECF730A-3FE6-4F82-9A53-6D1D84B59D5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -287,6 +295,8 @@ Global
 		{D19902B7-78C0-4212-B68D-109AE8ECFF68} = {A64491EA-C65D-4EBA-A62E-4EBE5B1808C4}
 		{3F231EB5-3246-419B-A005-2E0363549E82} = {A64491EA-C65D-4EBA-A62E-4EBE5B1808C4}
 		{EA1AE652-F7B9-4AB6-8D8A-525EA8C2DE3E} = {A64491EA-C65D-4EBA-A62E-4EBE5B1808C4}
+		{16579458-9F49-4BFB-9EE1-672FBD1EDD3A} = {EBDE559D-97AF-43DA-896A-8EDD7514F74F}
+		{1ECF730A-3FE6-4F82-9A53-6D1D84B59D5D} = {16579458-9F49-4BFB-9EE1-672FBD1EDD3A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEA2487A-AB74-4D13-B4F3-133B1E0660E1}
