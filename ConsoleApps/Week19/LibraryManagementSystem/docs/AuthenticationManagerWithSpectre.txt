@@ -1,0 +1,190 @@
+using LibraryManagementSystem.Models;
+using Spectre.Console;
+
+namespace LibraryManagementSystem.Managers;
+
+/// <summary>
+/// Manages user authentication including login, logout, and user management operations.
+/// Uses Spectre.Console for enhanced user interface and experience.
+/// </summary>
+public class AuthenticationManager
+{
+    private User[] _users;
+    private int _userCount;
+    private const int MaxUsers = 10;
+    private const int MaxLoginAttempts = 5;
+
+    private User? loggedInUser = null;
+
+    /// <summary>
+    /// Initializes a new instance of the AuthenticationManager class.
+    /// Creates default users for testing purposes.
+    /// </summary>
+    public AuthenticationManager()
+    {
+        _users = new User[MaxUsers];
+        _userCount = 0;
+
+        var user1 = new User(username: "admin", password: "admin1234@");
+        var user2 = new User(username: "moderator", password: "moderator1234@");
+
+        AddUser(user1);
+        AddUser(user2);
+    }
+
+    /// <summary>
+    /// Adds a new user to the system if the maximum user limit hasn't been reached.
+    /// </summary>
+    /// <param name="user">The user object to add to the system.</param>
+    /// <returns>True if the user was successfully added; otherwise, false.</returns>
+    public bool AddUser(User user)
+    {
+        /*
+         * Spectre.Console Feature: Markup
+         * - Uses AnsiConsole.MarkupLine for colored text output
+         * - [red] and [/] tags wrap the error message in red color
+         * - Text styling makes error messages more noticeable
+         */
+        if (_userCount >= MaxUsers)
+        {
+            AnsiConsole.MarkupLine($"[red]User limit reached.[/] {_userCount}/{MaxUsers} users are already registered.");
+            return false;
+        }
+
+        _users[_userCount++] = user;
+        return true;
+    }
+
+    /// <summary>
+    /// Handles the user login process with enhanced UI using Spectre.Console features.
+    /// Validates credentials and provides visual feedback during the login process.
+    /// </summary>
+    /// <returns>True if login is successful; otherwise, false.</returns>
+    public bool Login()
+    {
+        /*
+         * Spectre.Console Feature: Rule
+         * - Creates a horizontal line with text
+         * - RuleStyle("grey") sets the line color
+         * - LeftJustified() aligns the text to the left
+         * - Provides visual separation and context for the login section
+         */
+        AnsiConsole.Write(new Rule("[yellow]Login Required[/]").RuleStyle("grey").LeftJustified());
+
+        /*
+         * Spectre.Console Feature: TextPrompt with Validation
+         * - Creates an interactive text input with built-in validation
+         * - PromptStyle("green") sets the input text color
+         * - ValidationErrorMessage shows custom error in red
+         * - Validate method provides custom validation logic
+         * - Returns validated input string
+         */
+        string username = AnsiConsole.Prompt(
+            new TextPrompt<string>("[blue]Enter username:[/]")
+                .PromptStyle("green")
+                .ValidationErrorMessage("[red]Username cannot be empty[/]")
+                .Validate(input =>
+                {
+                    if (string.IsNullOrWhiteSpace(input))
+                        return ValidationResult.Error("[red]Username cannot be empty[/]");
+                    return ValidationResult.Success();
+                }));
+
+        /*
+         * Spectre.Console Feature: Secret TextPrompt
+         * - Similar to regular TextPrompt but masks input with dots
+         * - .Secret() enables secure password entry
+         * - Provides same validation capabilities as regular TextPrompt
+         * - More secure than traditional Console.ReadLine() for passwords
+         */
+        string password = AnsiConsole.Prompt(
+            new TextPrompt<string>("[blue]Enter password:[/]")
+                .PromptStyle("green")
+                .Secret()
+                .ValidationErrorMessage("[red]Password cannot be empty[/]")
+                .Validate(input =>
+                {
+                    if (string.IsNullOrWhiteSpace(input))
+                        return ValidationResult.Error("[red]Password cannot be empty[/]");
+                    return ValidationResult.Success();
+                }));
+
+        /*
+         * Spectre.Console Feature: Status
+         * - Shows a spinner with status message during operations
+         * - Provides visual feedback during credential verification
+         * - Can be used with async operations
+         * - Makes the application feel more responsive
+         * - The ctx parameter can be used to update status message
+         */
+        var loginStatus = AnsiConsole.Status()
+            .Start("Verifying credentials...", ctx =>
+            {
+                Thread.Sleep(1000); // Simulate verification process
+                for (int i = 0; i < _userCount; i++)
+                {
+                    if (username == _users[i].Username && _users[i].ValidatePassword(password))
+                    {
+                        loggedInUser = _users[i];
+                        return true;
+                    }
+                }
+                return false;
+            });
+
+        /*
+         * Spectre.Console Feature: Markup with Success/Error
+         * - Uses color coding for success/error messages
+         * - [green] for success messages
+         * - [red] for error messages
+         * - Makes the outcome immediately clear to users
+         */
+        if (loginStatus)
+        {
+            AnsiConsole.MarkupLine($"[green]Welcome[/], {username}!");
+            return true;
+        }
+
+        AnsiConsole.MarkupLine("[red]Invalid credentials. Please try again.[/]");
+        return false;
+    }
+
+    /// <summary>
+    /// Logs out the current user with visual feedback using Spectre.Console features.
+    /// </summary>
+    public void Logout()
+    {
+        /*
+         * Spectre.Console Feature: Status with Spinner
+         * - Shows a loading spinner during logout
+         * - Returns a message that's displayed after completion
+         * - Provides visual feedback for the logout process
+         * - Makes even quick operations feel more polished
+         */
+        if (IsLoggedIn())
+        {
+            var spinner = AnsiConsole.Status()
+                .Start("Logging out...", ctx =>
+                {
+                    Thread.Sleep(500); // Simulate logout process
+                    loggedInUser = null;
+                    return "Goodbye!";
+                });
+
+            AnsiConsole.MarkupLine($"[blue]{spinner}[/]");
+        }
+        else
+        {
+            AnsiConsole.MarkupLine("[yellow]No user is currently logged in.[/]");
+        }
+    }
+
+    /// <summary>
+    /// Checks if a user is currently logged in.
+    /// </summary>
+    /// <returns>True if a user is logged in; otherwise, false.</returns>
+    public bool IsLoggedIn()
+    {
+        return loggedInUser != null;
+    }
+}
