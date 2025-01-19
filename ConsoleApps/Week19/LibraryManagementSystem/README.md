@@ -20,6 +20,9 @@ The goal of this project is to enable users to log into a library system and man
 
 ---
 
+### Additional Resources
+- [Learning Path Order](docs/learning_topics.md#learning-path-order)
+
 ## **Project Steps**
 
 ### **Step 1: Requirement Analysis**

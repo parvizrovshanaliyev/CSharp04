@@ -1,10 +1,14 @@
-﻿namespace LibraryManagementSystem
+﻿using LibraryManagementSystem.Managers;
+
+namespace LibraryManagementSystem
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            AuthenticationManager authManager = new AuthenticationManager();
+
+            authManager.Login();
         }
     }
 }
