@@ -240,6 +240,18 @@ graph TD
     
 ---
 
+### [Month 04](#month-04)
+
+25. **[Review of homework related to Inheritance - Week19, Day 01 - 19.01.2025](#week19-day01-19012025)**
+    Review and discussion of Week 18 inheritance tasks .
+
+26. **[Library Management System - Week19, Day 02 - 20.01.2025](#week19-day02-20012025)**
+    part1.Build a console-based Library Management System to practice inheritance, encapsulation, and polymorphism. 
+    Implement features like user authentication, book management, and basic CRUD operations.
+
+
+---
+
 ## Month 01
 
 ### Week01-Day01 08.09.2024
@@ -1678,6 +1690,41 @@ graph TD
 
 [Back to Top](#table-of-contents)
 ---
+### Week19-Day01 19.01.2025
+#### [Review of homework related to Inheritance](#week19-day01-19012025)
+
+### Topic
+1. Review and discussion of Week 18 inheritance tasks
+2. Code review and best practices
+3. Common inheritance patterns and anti-patterns
+4. Q&A session on inheritance concepts
+
+### Resources
+1. [Week18 Tasks Solutions](ConsoleApps/Week18/Practice/solutions.md)
+2. [Inheritance Best Practices](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/inheritance)
+
+[Back to Top](#table-of-contents)
+---
+
+### Week19-Day02 20.01.2025
+#### [Library Management System](#week19-day02-20012025)
+
+### Topic
+1. part 1- Building a Console-Based Library Management System
+   - Implementing user authentication
+   - Creating base and derived classes for library items
+   - Applying inheritance and encapsulation principles
+
+### Resources
+1. [Project Documentation](ConsoleApps/Week19/LibraryManagementSystem/README.md)
+2. [Learning Topics](ConsoleApps/Week19/LibraryManagementSystem/docs/learning_topics.md)
+
+### **Project Assignment**
+[Library Management System Project](ConsoleApps/Week19/LibraryManagementSystem/README.md)
+
+[Back to Top](#table-of-contents)
+---
+
 
 
 
