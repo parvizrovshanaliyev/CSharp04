@@ -4,11 +4,10 @@ namespace LibraryManagementSystem.Managers;
 
 public class AuthenticationManager
 {
-    private User[] _users;
+    private readonly User[] _users;
     private int _userCount;
     private const int MaxUsers = 10;
-    private const int MaxLoginAttempts = 5;
-
+    private const int MaxLoginAttempts = 3;
     private User? loggedInUser = null;
 
     public AuthenticationManager()
@@ -39,31 +38,39 @@ public class AuthenticationManager
 
     public bool Login()
     {
-        // admin
-        string username = GetValidatedInput(
-            prompt: "Enter username:",
-            errorMessage: "Username cannot be empty.Please try again.");
-
-        // ******
-        string password = GetValidatedInput(
-            prompt: "Enter password:",
-            errorMessage: "Password cannot be empty.Please try again.",
-            maskInput: true);
+        int attemptCount = 0;
 
 
-        for (int i = 0; i < _userCount; i++)
+        while (attemptCount < MaxLoginAttempts)
         {
-            if (username == _users[i].Username && _users[i].ValidatePassword(password))
-            {
-                loggedInUser = _users[i];
-                Console.WriteLine($"Welcome, {username}");
 
-                return true;
+            // admin
+            string username = GetValidatedInput(
+                prompt: "Enter username:",
+                errorMessage: "Username cannot be empty.Please try again.");
+
+            // ******
+            string password = GetValidatedInput(
+                prompt: "Enter password:",
+                errorMessage: "Password cannot be empty.Please try again.",
+                maskInput: true);
+
+
+            for (int i = 0; i < _userCount; i++)
+            {
+                if (username == _users[i].Username && _users[i].ValidatePassword(password))
+                {
+                    loggedInUser = _users[i];
+                    Console.WriteLine($"Welcome, {username}");
+                    return true;
+                }
             }
+
+            attemptCount++;
+            Console.WriteLine($"Invalid credentials. Please try again. You have {MaxLoginAttempts - attemptCount} attempts remaining.");
         }
 
-
-        Console.WriteLine($"Invalid credentials. Please try again.");
+        Console.WriteLine("Maximum login attempts exceeded. Access denied.");
         return false;
     }
 
