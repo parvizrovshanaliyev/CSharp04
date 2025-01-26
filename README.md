@@ -245,9 +245,12 @@ graph TD
 25. **[Review of homework related to Inheritance - Week19, Day 01 - 19.01.2025](#week19-day01-19012025)**
     Review and discussion of Week 18 inheritance tasks .
 
-26. **[Library Management System - Week19, Day 02 - 20.01.2025](#week19-day02-20012025)**
+26. **[Library Management System part 1 - Week19, Day 02 - 20.01.2025](#week19-day02-20012025)**
     part1.Build a console-based Library Management System to practice inheritance, encapsulation, and polymorphism. 
     Implement features like user authentication, book management, and basic CRUD operations.
+
+27. **[Library Management System part 2 - Week20, Day 01 - 26.01.2025](#week20-day01-26012025)**
+    part2. Continue building the Library Management System
 
 
 ---
@@ -1721,6 +1724,24 @@ graph TD
 
 ### **Project Assignment**
 [Library Management System Project](ConsoleApps/Week19/LibraryManagementSystem/README.md)
+
+[Back to Top](#table-of-contents)
+---
+
+### Week20-Day01 26.01.2025
+#### [Library Management System Part 2](#week20-day01-26012025)
+
+### Topic
+1. part 2 - Enhancing the Library Management System
+   - LibraryManager.cs
+2. Difference between readonly and const keyword in C#
+
+### Resources
+1. [Project Documentation Part 2](ConsoleApps/Week20/LibraryManagementSystem/README.md)
+2. [Difference between readonly and const keyword in C#](https://www.geeksforgeeks.org/difference-between-readonly-and-const-keyword-in-c-sharp/)
+
+### **Project Assignment**
+[Library Management System Project - Part 2](ConsoleApps/Week20/LibraryManagementSystem/README.md)
 
 [Back to Top](#table-of-contents)
 ---
