@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace LibraryManagementSystem.Enums;
 
-namespace LibraryManagementSystem.Enums
+public enum ItemType
 {
-    public enum ItemType
-    {
-        Book = 1,
-        Magazine = 2,
-        Article = 3,
-    }
+    Book = 1,
+    Magazine = 2,
+    Article = 3,
 }
