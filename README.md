@@ -1737,11 +1737,11 @@ graph TD
 2. Difference between readonly and const keyword in C#
 
 ### Resources
-1. [Project Documentation Part 2](ConsoleApps/Week20/LibraryManagementSystem/README.md)
+1. [Project Documentation Part 2](ConsoleApps/Week19/LibraryManagementSystem/README.md)
 2. [Difference between readonly and const keyword in C#](https://www.geeksforgeeks.org/difference-between-readonly-and-const-keyword-in-c-sharp/)
 
 ### **Project Assignment**
-[Library Management System Project - Part 2](ConsoleApps/Week20/LibraryManagementSystem/README.md)
+[Library Management System Project - Part 2](ConsoleApps/Week19/LibraryManagementSystem/README.md)
 
 [Back to Top](#table-of-contents)
 ---
