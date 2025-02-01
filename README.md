@@ -1762,14 +1762,11 @@ graph TD
    - Understanding polymorphic behavior
    - Runtime polymorphism vs compile-time polymorphism
    - Virtual and override keywords
-   - Abstract classes and methods
 
 ### Resources
 1. [Project Documentation Part 3](ConsoleApps/Week19/LibraryManagementSystem/README.md)
 2. [Polymorphism in C#](https://dotnettutorials.net/lesson/polymorphism-csharp/)
-3. [Runtime vs Compile Time Polymorphism](https://www.geeksforgeeks.org/difference-between-compile-time-and-run-time-polymorphism-in-c-sharp/)
-4. [Virtual and Override Keywords](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual)
-5. [Abstract Classes and Methods](https://www.w3schools.com/cs/cs_abstract.php)
+3. [Virtual and Override Keywords](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual)
 
 ### **Project Assignment**
 [Library Management System Project - Final Phase](ConsoleApps/Week19/LibraryManagementSystem/README.md)
