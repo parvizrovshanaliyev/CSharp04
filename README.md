@@ -252,6 +252,10 @@ graph TD
 27. **[Library Management System part 2 - Week20, Day 01 - 26.01.2025](#week20-day01-26012025)**
     part2. Continue building the Library Management System
 
+28. **[Library Management System part 3 & Polymorphism in C# - Week21, Day 01 - 01.02.2025](#week21-day01-01022025]**
+    part3.Continue building the Library Management System & Polymorphism in C#
+
+
 
 ---
 
@@ -1742,6 +1746,33 @@ graph TD
 
 ### **Project Assignment**
 [Library Management System Project - Part 2](ConsoleApps/Week19/LibraryManagementSystem/README.md)
+
+[Back to Top](#table-of-contents)
+---
+
+### Week21-Day01 01.02.2025
+#### [Library Management System Part 3 & Polymorphism in C#](#week21-day01-01022025)
+
+### Topic
+1. Part 3 - Completing the Library Management System
+   - Implementing polymorphic behavior
+   - Adding advanced features
+   - System testing and refinement
+2. Introduction to Polymorphism in C#
+   - Understanding polymorphic behavior
+   - Runtime polymorphism vs compile-time polymorphism
+   - Virtual and override keywords
+   - Abstract classes and methods
+
+### Resources
+1. [Project Documentation Part 3](ConsoleApps/Week19/LibraryManagementSystem/README.md)
+2. [Polymorphism in C#](https://dotnettutorials.net/lesson/polymorphism-csharp/)
+3. [Runtime vs Compile Time Polymorphism](https://www.geeksforgeeks.org/difference-between-compile-time-and-run-time-polymorphism-in-c-sharp/)
+4. [Virtual and Override Keywords](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual)
+5. [Abstract Classes and Methods](https://www.w3schools.com/cs/cs_abstract.php)
+
+### **Project Assignment**
+[Library Management System Project - Final Phase](ConsoleApps/Week19/LibraryManagementSystem/README.md)
 
 [Back to Top](#table-of-contents)
 ---
