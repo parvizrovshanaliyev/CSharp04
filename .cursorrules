@@ -1,0 +1,130 @@
+# Cursor Rules for C# Learning Project
+
+# Include patterns for C# files
+include_patterns:
+  - "**/*.cs"
+  - "**/*.csproj"
+  - "**/*.sln"
+  - "**/README.md"
+  - "**/docs/*.md"
+  - "**/docs/*.txt"
+  - "**/*.config"
+  - "**/appsettings.json"
+  - "**/tasks.md"
+  - "**/learning_topics.md"
+  - "**/*.resx"
+  - "**/Properties/*.json"
+
+# Exclude patterns for build outputs and temporary files
+exclude_patterns:
+  - "**/bin/**"
+  - "**/obj/**"
+  - "**/.vs/**"
+  - "**/_ReSharper.Caches/**"
+  - "**/Debug/**"
+  - "**/Release/**"
+  - "**/*.user"
+  - "**/*.suo"
+  - "**/*.cache"
+  - "**/TestResults/**"
+  - "**/.idea/**"
+  - "**/*.tmp"
+  - "**/*.temp"
+  - "**/packages/**"
+  - "**/*.nupkg"
+  - "**/node_modules/**"
+  - "**/.vscode/**"
+
+# Language settings
+language_settings:
+  - language: "csharp"
+    tab_size: 4
+    insert_spaces: true
+    auto_closing_pairs: true
+    format_on_type: true
+    format_on_paste: true
+    detect_indentation: true
+    trim_trailing_whitespace: true
+    insert_final_newline: true
+
+# Search settings
+search_settings:
+  exclude_patterns:
+    - "**/bin/**"
+    - "**/obj/**"
+    - "**/.git/**"
+    - "**/.vs/**"
+    - "**/node_modules/**"
+  include_hidden: false
+  case_sensitive: false
+  whole_word: false
+  use_ignore_files: true
+  max_results: 100
+  
+# Editor settings
+editor_settings:
+  rulers: [80, 120]
+  word_wrap: false
+  auto_indent: true
+  format_on_save: true
+  minimap: true
+  line_numbers: true
+  bracket_pair_colorization: true
+  guides: "active"
+  suggest_selection: "first"
+  quick_suggestions: true
+  snippets_prevent_quick_suggestions: false
+  parameter_hints: true
+  auto_closing_quotes: true
+  auto_closing_brackets: true
+  auto_surround: true
+  format_on_paste: true
+  hover_delay: 300
+
+# Project-specific folders to index
+index_folders:
+  - "ConsoleApps/"
+  - "docs/"
+  - "Properties/"
+  - "Models/"
+  - "Managers/"
+  - "Constants/"
+  - "Enums/"
+
+# Folders to ignore for indexing
+ignore_for_index:
+  - ".git/"
+  - ".vs/"
+  - "_ReSharper.Caches/"
+  - "bin/"
+  - "obj/"
+  - "TestResults/"
+  - "packages/"
+  - "node_modules/"
+  - ".vscode/"
+  - "*.DotSettings.user"
+
+# File associations
+file_associations:
+  "*.cs": "csharp"
+  "*.csproj": "xml"
+  "*.sln": "xml"
+  "*.md": "markdown"
+  "*.json": "json"
+  "*.resx": "xml"
+  "*.config": "xml"
+
+# Code style settings
+code_style:
+  csharp:
+    indent_size: 4
+    continuation_indent_size: 4
+    space_after_keywords: true
+    space_within_parentheses: false
+    space_between_method_declaration_parameter_list_parentheses: false
+    space_between_method_call_parameter_list_parentheses: false
+    space_before_array_initializer_braces: false
+    indent_brace_style: "K&R"
+    preserve_single_line_blocks: true
+    preserve_single_line_statements: true
+    csharp_new_line_before_open_brace: all 
