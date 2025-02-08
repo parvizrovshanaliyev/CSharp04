@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using LibraryManagementSystem.Constants;
 using LibraryManagementSystem.Enums;
@@ -10,16 +9,16 @@ using LibraryManagementSystem.Models;
 namespace LibraryManagementSystem.Managers
 {
     /// <summary>
-    /// Manages the library's collection of items including books, magazines and articles.
-    /// Handles operations like adding, deleting, searching and displaying items.
+    /// Manages the library's collection of items including books, magazines, and articles.
+    /// Handles operations like adding, deleting, searching, and displaying items.
     /// </summary>
     public class LibraryManager
     {
-
         #region Fields
         private readonly LibraryItem[] _libraryItems;
         private int _itemCount;
         private const int MaxItems = 100;
+        private readonly Stack<string> _menuHistory;
         #endregion
 
         #region Constructor
@@ -30,6 +29,7 @@ namespace LibraryManagementSystem.Managers
         {
             _libraryItems = new LibraryItem[MaxItems];
             _itemCount = 0;
+            _menuHistory = new Stack<string>();
         }
         #endregion
 
@@ -56,11 +56,10 @@ namespace LibraryManagementSystem.Managers
         /// <returns>True if item was added successfully, false otherwise.</returns>
         public bool AddItem(LibraryItem item)
         {
-            if (!ValidateItem(item))
-            {
-                return false;
-            }
+            // Validate the item before adding
+            if (!ValidateItem(item)) return false;
 
+            // Add item to the array and increment the item count
             _libraryItems[_itemCount++] = item;
             Console.WriteLine("Item added successfully");
             return true;
@@ -77,7 +76,7 @@ namespace LibraryManagementSystem.Managers
                 return;
             }
 
-            Console.WriteLine("\n Library Items:");
+            Console.WriteLine("\nLibrary Items:");
             for (int i = 0; i < _itemCount; i++)
             {
                 Console.Write($"{i + 1}. ");
@@ -105,8 +104,8 @@ namespace LibraryManagementSystem.Managers
             for (int i = 0; i < _itemCount; i++)
             {
                 LibraryItem item = _libraryItems[i];
-                if (item != null && 
-                    (item.Title.ToLower().Contains(searchTerm) || 
+                if (item != null &&
+                    (item.Title.ToLower().Contains(searchTerm) ||
                      item.Author.ToLower().Contains(searchTerm)))
                 {
                     matchingItems[matchCount++] = item;
@@ -115,13 +114,6 @@ namespace LibraryManagementSystem.Managers
 
             // Resize the array to the actual number of matches
             Array.Resize(ref matchingItems, matchCount);
-
-            // TODO: Use LINQ for searching items in the future
-            // return _libraryItems
-            //     .Where(item => item != null &&
-            //                    (item.Title.ToLower().Contains(searchTerm) ||
-            //                     item.Author.ToLower().Contains(searchTerm)))
-            //     .ToArray();
 
             return matchingItems;
         }
@@ -133,18 +125,16 @@ namespace LibraryManagementSystem.Managers
         /// <returns>True if deletion was successful, false otherwise.</returns>
         public bool DeleteItem(int index)
         {
-            // Validates if index is within bounds
-            if (!ValidateIndex(index))
-            {
-                return false;
-            }
-            
-            // Shift all elements after deleted item one position left
+            // Validate the index before deleting
+            if (!ValidateIndex(index)) return false;
+
+            // Shift all elements after the deleted item one position left
             for (int i = index; i < _itemCount - 1; i++)
             {
                 _libraryItems[i] = _libraryItems[i + 1];
             }
 
+            // Nullify the last element and decrement the item count
             _libraryItems[--_itemCount] = null;
             Console.WriteLine("Item deleted successfully");
             return true;
@@ -161,10 +151,7 @@ namespace LibraryManagementSystem.Managers
         /// <returns>True if the update was successful, false otherwise.</returns>
         public bool UpdateItem(int index, string newTitle, string newAuthor, int newPublishYear, string newAdditionalInfo)
         {
-            if (!ValidateIndex(index) || !ValidateItemDetails(newTitle, newAuthor, newPublishYear))
-            {
-                return false;
-            }
+            if (!ValidateIndex(index) || !ValidateItemDetails(newTitle, newAuthor, newPublishYear)) return false;
 
             LibraryItem item = _libraryItems[index];
             item.UpdateDetails(newTitle, newAuthor, newPublishYear);
@@ -172,26 +159,17 @@ namespace LibraryManagementSystem.Managers
             switch (item)
             {
                 case Book book:
-                    if (!ValidateAdditionalInfo(newAdditionalInfo, "Genre cannot be empty for books."))
-                    {
-                        return false;
-                    }
+                    if (!ValidateAdditionalInfo(newAdditionalInfo, "Genre cannot be empty for books.")) return false;
                     book.UpdateGenre(newAdditionalInfo);
                     break;
 
                 case Magazine magazine:
-                    if (!ValidateAdditionalInfo(newAdditionalInfo, "Invalid issue number for magazines.", out int issueNumber) || issueNumber <= 0)
-                    {
-                        return false;
-                    }
+                    if (!ValidateAdditionalInfo(newAdditionalInfo, "Invalid issue number for magazines.", out int issueNumber) || issueNumber <= 0) return false;
                     magazine.UpdateIssueNumber(issueNumber);
                     break;
 
                 case Article article:
-                    if (!ValidateAdditionalInfo(newAdditionalInfo, "Journal name cannot be empty for articles."))
-                    {
-                        return false;
-                    }
+                    if (!ValidateAdditionalInfo(newAdditionalInfo, "Journal name cannot be empty for articles.")) return false;
                     article.UpdateJournalName(newAdditionalInfo);
                     break;
 
@@ -215,36 +193,23 @@ namespace LibraryManagementSystem.Managers
         /// <returns>The created library item, or null if creation failed.</returns>
         public LibraryItem CreateNewItem(ItemType type, string title, string author, int publishYear, string additionalInfo)
         {
-            if (!ValidateItemDetails(title, author, publishYear))
-            {
-                return null;
-            }
+            if (!ValidateItemDetails(title, author, publishYear)) return null;
 
             switch (type)
             {
                 case ItemType.Book:
                     if (ValidateAdditionalInfo(additionalInfo, "Genre cannot be empty."))
-                    {
                         return new Book(title, author, publishYear, additionalInfo);
-                    }
                     break;
 
                 case ItemType.Magazine:
                     if (ValidateAdditionalInfo(additionalInfo, "Invalid issue number.", out int issueNumber) && issueNumber > 0)
-                    {
                         return new Magazine(title, author, publishYear, issueNumber);
-                    }
                     break;
 
                 case ItemType.Article:
                     if (ValidateAdditionalInfo(additionalInfo, "Journal name cannot be empty."))
-                    {
                         return new Article(title, author, publishYear, additionalInfo);
-                    }
-                    break;
-
-                default:
-                    Console.WriteLine("Error: Unknown item type.");
                     break;
             }
 
@@ -275,28 +240,30 @@ namespace LibraryManagementSystem.Managers
         /// <returns>True if the menu should continue running, false if it should exit.</returns>
         private bool ProcessMenuChoice(int choice)
         {
+            _menuHistory.Push(choice.ToString());
             switch (choice)
             {
-                case MenuOptions.AddItem:
+                case (int)MenuOptions.AddItem:
                     AddNewItem();
                     return true;
-                case MenuOptions.ListItems:
+                case (int)MenuOptions.ListItems:
                     DisplayAllItemInfo();
                     return true;
-                case MenuOptions.SearchItems:
+                case (int)MenuOptions.SearchItems:
                     SearchItems();
                     return true;
-                case MenuOptions.DeleteItem:
+                case (int)MenuOptions.DeleteItem:
                     DeleteItem();
                     return true;
-                case MenuOptions.UpdateItem:
+                case (int)MenuOptions.UpdateItem:
                     UpdateItem();
                     return true;
-                case MenuOptions.Exit:
+                case (int)MenuOptions.Exit:
                     Console.WriteLine("Thank you for using LMS!");
                     return false;
                 default:
-                    Console.WriteLine("Invalid choice. Please enter a number 1 and 6.");
+                    Console.WriteLine("Invalid choice. Please enter a number between 1 and 6.");
+                    _menuHistory.Pop(); // Remove invalid choice from history
                     return true;
             }
         }
@@ -306,21 +273,13 @@ namespace LibraryManagementSystem.Managers
         /// </summary>
         private void AddNewItem()
         {
-            Console.WriteLine("\n New Item");
+            Console.WriteLine("\nNew Item");
             Console.WriteLine("1. Book");
             Console.WriteLine("2. Magazine");
             Console.WriteLine("3. Article");
-            Console.WriteLine("4. Cancel - (return menu)");
+            Console.WriteLine("4. Cancel");
             Console.Write("\nEnter item type (1-3): ");
-
             int choice = GetUserChoice();
-            
-            // validate user input
-            while (choice < 1 || choice > 4)
-            {
-                Console.WriteLine("Invalid choice. Please enter a number 1 and 4.");
-                choice = GetUserChoice();
-            }
 
             if (choice == 4)
             {
@@ -332,10 +291,7 @@ namespace LibraryManagementSystem.Managers
 
             string title = GetInput("Enter title: ");
             string author = GetInput("Enter author: ");
-            string publishYearStr = GetInput("Enter publish year: ");
-
-            ValidateYear(publishYearStr,out int publishYear);
-
+            int publishYear = GetValidatedYear("Enter publish year: ");
             string additionalInformation = GetAdditionalInformation(type);
 
             var item = CreateNewItem(type, title, author, publishYear, additionalInformation);
@@ -344,20 +300,30 @@ namespace LibraryManagementSystem.Managers
             {
                 AddItem(item);
                 Console.WriteLine("Item added successfully.");
-                return;
             }
-         
-
-            Console.WriteLine("Error: Item creation failed.");
+            else
+            {
+                Console.WriteLine("Error: Item creation failed.");
+            }
         }
 
-        private void ValidateYear(string userInput,out int year)
+        /// <summary>
+        /// Validates and retrieves a year from user input.
+        /// </summary>
+        /// <param name="prompt">The prompt to display to the user.</param>
+        /// <returns>The validated year.</returns>
+        private int GetValidatedYear(string prompt)
         {
+            string userInput = GetInput(prompt);
+            int year;
+
             while (!int.TryParse(userInput, out year) || year < 1000 || year > DateTime.Now.Year)
             {
                 Console.WriteLine("Invalid year. Please enter a valid year between 1000 and the current year.");
-                userInput = GetInput("Enter publish year: ");
+                userInput = GetInput(prompt);
             }
+
+            return year;
         }
 
         /// <summary>
@@ -376,8 +342,7 @@ namespace LibraryManagementSystem.Managers
 
             string newTitle = GetInput("Enter new title: ");
             string newAuthor = GetInput("Enter new author: ");
-            Console.Write("Enter new publish year: ");
-            int newPublishYear = GetUserChoice();
+            int newPublishYear = GetValidatedYear("Enter new publish year: ");
             string newAdditionalInfo = GetInput("Enter new additional information: ");
             UpdateItem(index, newTitle, newAuthor, newPublishYear, newAdditionalInfo);
         }
@@ -388,7 +353,7 @@ namespace LibraryManagementSystem.Managers
         private void DeleteItem()
         {
             DisplayAllItemInfo();
-            Console.Write("\nEnter the number of the item to delete (or cancel):");
+            Console.Write("\nEnter the number of the item to delete (or 0 to cancel): ");
             int choice = GetUserChoice();
 
             if (choice == 0)
@@ -405,10 +370,8 @@ namespace LibraryManagementSystem.Managers
         /// </summary>
         private void SearchItems()
         {
-            Console.WriteLine("\nEnter search term (title or author): ");
-            string searchTerm = Console.ReadLine() ?? "";
-
-            LibraryItem[] searchResult = SearchItems(searchTerm);
+            string searchTerm = GetInput("\nEnter search term (title or author): ");
+            var searchResult = SearchItems(searchTerm);
 
             if (searchResult.Length == 0)
             {
