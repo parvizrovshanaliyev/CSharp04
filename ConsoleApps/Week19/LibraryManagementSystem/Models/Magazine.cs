@@ -35,4 +35,13 @@ public class Magazine : LibraryItem
         Console.WriteLine($"Issue: {IssueNumber}");
         Console.WriteLine(new string('-', 40)); // Add a separator line
     }
+
+
+    public void UpdateIssueNumber(int newIssueNumber)
+    {
+        if (newIssueNumber > 0)
+        {
+            IssueNumber = newIssueNumber;
+        }
+    }
 }

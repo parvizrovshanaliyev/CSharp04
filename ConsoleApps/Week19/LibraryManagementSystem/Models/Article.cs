@@ -35,4 +35,12 @@ public class Article : LibraryItem
         Console.WriteLine($"Journal Name: {JournalName}");
         Console.WriteLine(new string('-', 40)); // Add a separator line
     }
+
+    public void UpdateJournalName(string newJournalName)
+    {
+        if (!string.IsNullOrWhiteSpace(newJournalName))
+        {
+            JournalName = newJournalName;
+        }
+    }
 }

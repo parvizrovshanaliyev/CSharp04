@@ -35,4 +35,12 @@ public class Book : LibraryItem
         Console.WriteLine($"Genre: {Genre}");
         Console.WriteLine(new string('-', 40)); // Add a separator line
     }
+
+    public void UpdateGenre(string newGenre)
+    {
+        if (!string.IsNullOrWhiteSpace(newGenre))
+        {
+            Genre = newGenre;
+        }
+    }
 }

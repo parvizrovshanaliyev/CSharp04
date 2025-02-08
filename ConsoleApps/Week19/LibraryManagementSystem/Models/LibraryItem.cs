@@ -45,4 +45,16 @@ public class LibraryItem
     {
         Console.WriteLine($"[Item] Title: {Title}, Author: {Author}, Year: {PublishYear}");
     }
+
+    public void UpdateDetails(string newTitle, string newAuthor, int newPublishYear)
+    {
+        if (!string.IsNullOrWhiteSpace(newTitle))
+            Title = newTitle;
+
+        if (!string.IsNullOrWhiteSpace(newAuthor))
+            Author = newAuthor;
+
+        if (newPublishYear >= 1000 && newPublishYear <= DateTime.Now.Year)
+            PublishYear = newPublishYear;
+    }
 }
