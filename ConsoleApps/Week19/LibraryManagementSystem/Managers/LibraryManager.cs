@@ -18,7 +18,6 @@ namespace LibraryManagementSystem.Managers
         private readonly LibraryItem[] _libraryItems;
         private int _itemCount;
         private const int MaxItems = 100;
-        private readonly Stack<string> _menuHistory;
         #endregion
 
         #region Constructor
@@ -29,7 +28,6 @@ namespace LibraryManagementSystem.Managers
         {
             _libraryItems = new LibraryItem[MaxItems];
             _itemCount = 0;
-            _menuHistory = new Stack<string>();
         }
         #endregion
 
@@ -240,30 +238,28 @@ namespace LibraryManagementSystem.Managers
         /// <returns>True if the menu should continue running, false if it should exit.</returns>
         private bool ProcessMenuChoice(int choice)
         {
-            _menuHistory.Push(choice.ToString());
             switch (choice)
             {
-                case (int)MenuOptions.AddItem:
+                case MenuOptions.AddItem:
                     AddNewItem();
                     return true;
-                case (int)MenuOptions.ListItems:
+                case MenuOptions.ListItems:
                     DisplayAllItemInfo();
                     return true;
-                case (int)MenuOptions.SearchItems:
+                case MenuOptions.SearchItems:
                     SearchItems();
                     return true;
-                case (int)MenuOptions.DeleteItem:
+                case MenuOptions.DeleteItem:
                     DeleteItem();
                     return true;
-                case (int)MenuOptions.UpdateItem:
+                case MenuOptions.UpdateItem:
                     UpdateItem();
                     return true;
-                case (int)MenuOptions.Exit:
+                case MenuOptions.Exit:
                     Console.WriteLine("Thank you for using LMS!");
                     return false;
                 default:
                     Console.WriteLine("Invalid choice. Please enter a number between 1 and 6.");
-                    _menuHistory.Pop(); // Remove invalid choice from history
                     return true;
             }
         }
