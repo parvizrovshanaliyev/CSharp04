@@ -295,7 +295,6 @@ namespace LibraryManagementSystem.Managers
             if (item != null)
             {
                 AddItem(item);
-                Console.WriteLine("Item added successfully.");
             }
             else
             {
