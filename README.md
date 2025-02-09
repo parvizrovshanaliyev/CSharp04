@@ -230,12 +230,12 @@ graph TD
     Explore the principles of encapsulation and destructors in object-oriented programming.
 
 22. **[Repeat of week 16 - Week17, Day 01 - 04.01.2025](#week17-day01-04012025)**
-    Repeat of week 16
+    Repeat of week 16.
 
 23. **[Introduction to Inheritance in C# - Week18, Day 01 - 11.01.2025](#week18-day01-11012025)**
     Introduction to Inheritance in C#
 
-24. **[Types of Inheritance in C# - Week18, Day 02 - 11.01.2025](#week18-day02-121012025)**
+24. **[Types of Inheritance in C# - Week18, Day 02 - 11.01.2025](#week18-day02-121012025)** 
     Types of Inheritance in C#,Method Hiding, Shadowing, and Overriding in C# Explained with Examples
     
 ---
@@ -253,10 +253,10 @@ graph TD
     part2. Continue building the Library Management System.
 
 28. **[Library Management System part 3 & Polymorphism in C# - Week21, Day 01 - 01.02.2025](#week21-day01-01022025)**
-    part3.Continue building the Library Management System & Polymorphism in C#
+    part3.Continue building the Library Management System & Polymorphism in C#.
 
 29. **[Polymorphism in C# Examples - Week22, Day 01 - 08.02.2025](#week22-day01-08022025)**
-     Polymorphism in C# Examples
+    Polymorphism in C# Examples.
 
 30. **[OOP Abstraction Abstract Classes and Methods - Week22, Day 02 - 09.02.2025](#week22-day02-09022025)**
     Deep dive into abstract classes and their implementation.
