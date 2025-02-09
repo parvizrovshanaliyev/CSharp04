@@ -258,6 +258,9 @@ graph TD
 29. **[Polymorphism in C# Examples - Week22, Day 01 - 08.02.2025](#week22-day01-08022025)**
      Polymorphism in C# Examples
 
+30. **[OOP Abstraction Abstract Classes and Methods - Week22, Day 02 - 09.02.2025](#week22-day02-09022025)**
+    Deep dive into abstract classes and their implementation.
+
 ---
 
 ## Month 01
@@ -1790,7 +1793,23 @@ graph TD
 [Week22 Tasks - Polymorphism Examples](ConsoleApps/Week21/Practice/tasks.md)
 
 [Back to Top](#table-of-contents)
-### Week22-
+---
+
+### Week22-Day02 09.02.2025
+#### [OOP Abstraction Abstract Classes and Methods](#week22-day02-09022025)
+
+### Topic
+1. Abstract Classes and Methods in C#
+2. Practical Implementation of Abstract Classes
+3. Polymorphism with Abstract Classes
+
+### Resources
+1. [Abstract Class and Abstract Methods in C#](https://dotnettutorials.net/lesson/abstract-class-abstract-methods-csharp/)
+2. [Understanding Abstract Classes](https://www.tutorialsteacher.com/csharp/csharp-abstract-class)
+3. [Understanding virtual and abstract in C#](https://medium.com/@nirajranasinghe/understanding-virtual-and-abstract-in-c-33cb0a7fcead)
+
+[Back to Top](#table-of-contents)
+---
 
 
 
