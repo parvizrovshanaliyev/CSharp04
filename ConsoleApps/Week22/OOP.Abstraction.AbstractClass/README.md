@@ -1,19 +1,11 @@
 ﻿# OOP Abstraction - Abstract Class and Abstract Methods in C#
 
-## Table of Contents
-- [Introduction](#introduction)
-- [What is Abstraction?](#what-is-abstraction)
-- [Abstract Classes](#abstract-classes)
-- [Abstract Methods](#abstract-methods)
-- [When to Use Abstract Classes](#when-to-use-abstract-classes)
-- [Examples](#examples)
-- [Best Practices](#best-practices)
-- [Common Pitfalls](#common-pitfalls)
-
 ## Introduction
-This project demonstrates the concept of abstraction in Object-Oriented Programming (OOP) using C#, specifically focusing on abstract classes and abstract methods. Abstraction is one of the four fundamental principles of OOP, alongside encapsulation, inheritance, and polymorphism.
+
+In this article, we will explore the concept of abstraction in Object-Oriented Programming (OOP) using C#. Specifically, we will focus on abstract classes and abstract methods. Abstraction is one of the four fundamental principles of OOP, alongside encapsulation, inheritance, and polymorphism.
 
 ## What is Abstraction?
+
 Abstraction is the process of hiding complex implementation details and showing only the necessary features of an object. It helps in:
 - Reducing complexity
 - Avoiding code duplication
@@ -21,9 +13,10 @@ Abstraction is the process of hiding complex implementation details and showing 
 - Creating a clear and organized class hierarchy
 
 ## Abstract Classes
+
 An abstract class in C# is a restricted class that cannot be instantiated on its own and must be inherited by another class. It serves as a base class for other classes to derive from.
 
-Key characteristics:
+### Key Characteristics:
 - Declared using the `abstract` keyword
 - Can have both abstract and concrete methods
 - Can have constructors and destructors
@@ -31,7 +24,7 @@ Key characteristics:
 - Cannot be instantiated directly
 - Must be inherited by a derived class
 
-Example:
+### Example:
 ```csharp
 public abstract class Shape
 {
@@ -48,15 +41,17 @@ public abstract class Shape
 ```
 
 ## Abstract Methods
+
 Abstract methods are methods declared in an abstract class without implementation. They must be implemented by any non-abstract class that inherits from the abstract class.
 
-Characteristics:
+### Characteristics:
 - Declared using the `abstract` keyword
 - Have no method body
 - Must be implemented in derived classes using the `override` keyword
 - Can only exist in abstract classes
 
 ## When to Use Abstract Classes
+
 Use abstract classes when:
 1. You want to share code among several related classes
 2. You expect classes that inherit from the abstract class to have common methods or properties
@@ -66,6 +61,7 @@ Use abstract classes when:
 ## Examples
 
 ### 1. Simple Example: Document Processing
+
 This basic example shows how to handle different types of documents:
 
 ```csharp
@@ -95,6 +91,7 @@ public class PdfDocument : Document
     {
         Console.WriteLine($"Processing PDF document: {Title}");
         // PDF-specific processing logic
+        Console.WriteLine($"PDF Version: {PdfVersion}");
     }
 }
 
@@ -106,11 +103,25 @@ public class WordDocument : Document
     {
         Console.WriteLine($"Processing Word document: {Title}");
         // Word-specific processing logic
+        Console.WriteLine($"Word Version: {WordVersion}");
+    }
+}
+
+public class ExcelDocument : Document
+{
+    public string ExcelVersion { get; set; }
+
+    public override void Process()
+    {
+        Console.WriteLine($"Processing Excel document: {Title}");
+        // Excel-specific processing logic
+        Console.WriteLine($"Excel Version: {ExcelVersion}");
     }
 }
 ```
 
 ### 2. Intermediate Example: Payment Processing System
+
 This example demonstrates a payment processing system:
 
 ```csharp
@@ -126,9 +137,9 @@ public abstract class PaymentProcessor
     }
 
     // Abstract methods
-    public abstract Task<bool> AuthorizePayment();
-    public abstract Task<bool> ProcessPayment();
-    public abstract Task<bool> RefundPayment(string transactionId);
+    public abstract bool AuthorizePayment();
+    public abstract bool ProcessPayment();
+    public abstract bool RefundPayment(string transactionId);
 
     // Concrete method
     public virtual void ValidatePayment()
@@ -154,25 +165,25 @@ public class CreditCardProcessor : PaymentProcessor
         ExpiryDate = expiryDate;
     }
 
-    public override async Task<bool> AuthorizePayment()
+    public override bool AuthorizePayment()
     {
         // Credit card authorization logic
-        await Task.Delay(1000); // Simulating API call
+        Console.WriteLine("CreditCardProcessor: Payment authorized.");
         return true;
     }
 
-    public override async Task<bool> ProcessPayment()
+    public override bool ProcessPayment()
     {
         ValidatePayment();
         // Credit card processing logic
-        await Task.Delay(1000); // Simulating API call
+        Console.WriteLine("CreditCardProcessor: Payment processed.");
         return true;
     }
 
-    public override async Task<bool> RefundPayment(string transactionId)
+    public override bool RefundPayment(string transactionId)
     {
         // Credit card refund logic
-        await Task.Delay(1000); // Simulating API call
+        Console.WriteLine("CreditCardProcessor: Payment refunded.");
         return true;
     }
 }
@@ -187,31 +198,32 @@ public class PayPalProcessor : PaymentProcessor
         EmailAddress = emailAddress;
     }
 
-    public override async Task<bool> AuthorizePayment()
+    public override bool AuthorizePayment()
     {
         // PayPal authorization logic
-        await Task.Delay(1000); // Simulating API call
+        Console.WriteLine("PayPalProcessor: Payment authorized.");
         return true;
     }
 
-    public override async Task<bool> ProcessPayment()
+    public override bool ProcessPayment()
     {
         ValidatePayment();
         // PayPal processing logic
-        await Task.Delay(1000); // Simulating API call
+        Console.WriteLine("PayPalProcessor: Payment processed.");
         return true;
     }
 
-    public override async Task<bool> RefundPayment(string transactionId)
+    public override bool RefundPayment(string transactionId)
     {
         // PayPal refund logic
-        await Task.Delay(1000); // Simulating API call
+        Console.WriteLine("PayPalProcessor: Payment refunded.");
         return true;
     }
 }
 ```
 
 ### 3. Complex Example: Game Character System
+
 This example shows a more complex game character system with multiple levels of abstraction:
 
 ```csharp
@@ -387,57 +399,127 @@ public class Mage : GameCharacter
         }
     }
 }
+```
 
-// Usage Example:
-public class GameExample
+## OOP Principles and SOLID Principles
+
+### OOP Principles
+
+1. **Abstraction**: The process of hiding complex implementation details and showing only the necessary features of an object.
+2. **Encapsulation**: The bundling of data and methods that operate on that data within a single unit or class.
+3. **Inheritance**: The mechanism by which one class can inherit the properties and methods of another class.
+4. **Polymorphism**: The ability of different classes to be treated as instances of the same class through a common interface.
+
+### SOLID Principles
+
+1. **Single Responsibility Principle (SRP)**: A class should have only one reason to change, meaning it should have only one job or responsibility.
+2. **Open/Closed Principle (OCP)**: Software entities should be open for extension but closed for modification.
+3. **Liskov Substitution Principle (LSP)**: Objects of a superclass should be replaceable with objects of a subclass without affecting the correctness of the program.
+4. **Interface Segregation Principle (ISP)**: Clients should not be forced to depend on interfaces they do not use.
+5. **Dependency Inversion Principle (DIP)**: High-level modules should not depend on low-level modules. Both should depend on abstractions.
+
+### Relation of OOP Principles with SOLID Principles in the Code
+
+1. **Abstraction**:
+   - Used in the `Document`, `PaymentProcessor`, and `GameCharacter` classes to provide a simplified interface for operations.
+   - Related SOLID Principles: SRP, OCP, LSP.
+
+2. **Encapsulation**:
+   - Used to bundle data and methods within classes like `PdfDocument`, `CreditCardProcessor`, and `Warrior`.
+   - Related SOLID Principles: SRP, ISP.
+
+3. **Inheritance**:
+   - Used to create a class hierarchy where derived classes inherit from base classes like `Document`, `PaymentProcessor`, and `GameCharacter`.
+   - Related SOLID Principles: OCP, LSP.
+
+4. **Polymorphism**:
+   - Used to treat different classes as instances of the same class through a common interface, such as using `Document`, `PaymentProcessor`, and `GameCharacter` types.
+   - Related SOLID Principles: LSP, DIP.
+
+## Best Practices
+
+1. Name abstract classes with clear, descriptive names that reflect their purpose.
+2. Use abstract classes to provide a common base class implementation.
+3. Keep the abstraction level consistent.
+4. Document the expected behavior of abstract methods.
+5. Consider using interfaces instead if you only need to define a contract.
+6. Don't create abstract classes with too many abstract methods.
+7. Follow the Single Responsibility Principle.
+
+## Common Pitfalls
+
+1. Creating abstract classes with too many responsibilities.
+2. Forgetting to implement all abstract methods in derived classes.
+3. Making an abstract class too specific.
+4. Not considering interfaces as an alternative.
+5. Creating deep inheritance hierarchies.
+6. Making concrete methods abstract when they don't need to be.
+
+## Liskov Substitution Principle (LSP)
+
+The Liskov Substitution Principle (LSP) is one of the SOLID principles of object-oriented design. It states that objects of a superclass should be replaceable with objects of a subclass without affecting the correctness of the program. In other words, if class B is a subclass of class A, then we should be able to replace objects of class A with objects of class B without altering the desirable properties of the program (e.g., correctness).
+
+### Key Points:
+
+- Subtypes must be substitutable for their base types.
+- Derived classes must extend the base classes without changing their behavior.
+- Clients should not need to know the difference between the base class and the derived class.
+
+### Example:
+
+Consider the following example where the LSP is violated:
+
+```csharp
+public abstract class Bird
 {
-    public static async Task RunGameExample()
+    public abstract void Fly();
+}
+
+public class Sparrow : Bird
+{
+    public override void Fly()
     {
-        var warrior = new Warrior("Conan", 1);
-        var mage = new Mage("Gandalf", 1);
+        Console.WriteLine("Sparrow is flying.");
+    }
+}
 
-        // Battle simulation
-        Console.WriteLine("Battle begins!");
-        
-        warrior.UseSpecialAbility();
-        var warriorDamage = warrior.CalculateDamage("heavy");
-        mage.TakeDamage(warriorDamage);
-
-        mage.UseSpecialAbility();
-        var mageDamage = mage.CalculateDamage("arcane");
-        warrior.TakeDamage(mageDamage);
-
-        // Level up
-        warrior.LevelUp();
-        mage.LevelUp();
+public class Ostrich : Bird
+{
+    public override void Fly()
+    {
+        throw new NotImplementedException("Ostriches can't fly.");
     }
 }
 ```
 
-These examples demonstrate different levels of complexity in using abstract classes:
+In this example, the `Ostrich` class violates the LSP because it cannot fly, even though it inherits from the `Bird` class, which has a `Fly` method. To adhere to the LSP, we should refactor the design:
 
-1. The **Document Processing** example shows basic abstraction with simple method overriding.
-2. The **Payment Processing** example demonstrates real-world business logic with async operations and multiple payment methods.
-3. The **Game Character** example shows complex inheritance with multiple stats, abilities, and game mechanics.
+```csharp
+public abstract class Bird
+{
+    // Common bird properties and methods
+}
 
-Each example builds upon the previous one, showing how abstraction can be used to create increasingly sophisticated systems while maintaining clean, maintainable code.
+public abstract class FlyingBird : Bird
+{
+    public abstract void Fly();
+}
 
-## Best Practices
-1. Name abstract classes with clear, descriptive names that reflect their purpose
-2. Use abstract classes to provide a common base class implementation
-3. Keep the abstraction level consistent
-4. Document the expected behavior of abstract methods
-5. Consider using interfaces instead if you only need to define a contract
-6. Don't create abstract classes with too many abstract methods
-7. Follow the Single Responsibility Principle
+public class Sparrow : FlyingBird
+{
+    public override void Fly()
+    {
+        Console.WriteLine("Sparrow is flying.");
+    }
+}
 
-## Common Pitfalls
-1. Creating abstract classes with too many responsibilities
-2. Forgetting to implement all abstract methods in derived classes
-3. Making an abstract class too specific
-4. Not considering interfaces as an alternative
-5. Creating deep inheritance hierarchies
-6. Making concrete methods abstract when they don't need to be
+public class Ostrich : Bird
+{
+    // Ostrich-specific properties and methods
+}
+```
+
+By introducing a `FlyingBird` class, we ensure that only birds that can fly inherit the `Fly` method, thus adhering to the LSP.
 
 ---
 
