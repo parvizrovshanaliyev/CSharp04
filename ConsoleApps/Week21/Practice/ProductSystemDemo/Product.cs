@@ -11,7 +11,7 @@
 /// Provides common properties and virtual method for displaying details.
 /// Demonstrates polymorphism in a real-world scenario.
 /// </summary>
-public class Product
+public abstract class Product
 {
     /// <summary>
     /// Gets or sets the name of the product.

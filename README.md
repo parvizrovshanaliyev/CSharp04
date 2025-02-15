@@ -261,6 +261,9 @@ graph TD
 30. **[OOP Abstraction Abstract Classes and Methods - Week22, Day 02 - 09.02.2025](#week22-day02-09022025)**
     Deep dive into abstract classes and their implementation.
 
+31. **[OOP Abstraction Interfaces - Week23, Day 01 - 15.02.2025](#week23-day01-15022025)**
+    Understanding interfaces, their implementation, and best practices in C#.
+
 ---
 
 ## Month 01
@@ -1793,6 +1796,7 @@ graph TD
 [Week22 Tasks - Polymorphism Examples](ConsoleApps/Week21/Practice/tasks.md)
 
 [Back to Top](#table-of-contents)
+
 ---
 
 ### Week22-Day02 09.02.2025
@@ -1809,6 +1813,31 @@ graph TD
 3. [Understanding virtual and abstract in C#](https://medium.com/@nirajranasinghe/understanding-virtual-and-abstract-in-c-33cb0a7fcead)
 
 [Back to Top](#table-of-contents)
+
+---
+
+### Week23-Day01 15.02.2025
+#### [OOP Abstraction Interfaces](#week23-day01-15022025)
+
+### Topic
+1. Understanding Interfaces in C#
+2. Interface Implementation Best Practices
+3. Interface vs Abstract Classes
+4. Multiple Interface Implementation
+5. Default Interface Methods
+6. Interface Segregation Principle
+
+### Resources
+1. [Interfaces in C#](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface)
+2. [Interface Best Practices](https://www.tutorialsteacher.com/csharp/csharp-interface)
+3. [Interface vs Abstract Class](https://www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-c-sharp/)
+4. [.NET Tutorial: Interfaces](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/interfaces)
+
+### **Homework Assignment**
+[Week22 Tasks - Abstract Classes](ConsoleApps/Week22/Practice/tasks.md)
+
+[Back to Top](#table-of-contents)
+
 ---
 
 

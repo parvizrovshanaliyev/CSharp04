@@ -10,7 +10,7 @@
 /// Provides a common interface for salary calculation through virtual method.
 /// Demonstrates the foundation for dynamic polymorphism.
 /// </summary>
-public class Employee
+public abstract class Employee
 {
     /// <summary>
     /// Gets or sets the name of the employee.
