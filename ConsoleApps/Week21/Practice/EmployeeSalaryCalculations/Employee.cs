@@ -12,10 +12,26 @@
 /// </summary>
 public abstract class Employee
 {
+    private string _name;
+
+    protected Employee()
+    {
+        
+    }
+
+    protected Employee(string name)
+    {
+        Name = name;
+    }
+
     /// <summary>
     /// Gets or sets the name of the employee.
     /// </summary>
-    public string Name { get; set; }
+    public string Name
+    {
+        get => _name;
+        set => _name = value;
+    }
 
     /// <summary>
     /// Calculates the salary for the employee.

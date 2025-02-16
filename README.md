@@ -264,6 +264,8 @@ graph TD
 31. **[OOP Abstraction Interfaces - Week23, Day 01 - 15.02.2025](#week23-day01-15022025)**
     Understanding interfaces, their implementation, and best practices in C#.
 
+32. **[OOP Partial Classes and Sealed Classes - Week23, Day 02 - 16.02.2025](#week23-day02-16022025)**
+    Understanding partial classes and sealed classes in C#, their use cases and implementation.
 ---
 
 ## Month 01
@@ -1828,6 +1830,7 @@ graph TD
 6. Interface Segregation Principle
 
 ### Resources
+1. [Interface in C#](https://dotnettutorials.net/lesson/interface-c-sharp/)
 1. [Interfaces in C#](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface)
 2. [Interface Best Practices](https://www.tutorialsteacher.com/csharp/csharp-interface)
 3. [Interface vs Abstract Class](https://www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-c-sharp/)
@@ -1835,11 +1838,36 @@ graph TD
 
 ### **Homework Assignment**
 [Week22 Tasks - Abstract Classes](ConsoleApps/Week22/Practice/tasks.md)
+[Week23 Tasks - Interfaces](ConsoleApps/Week23/Practice/interface-tasks.md)
 
 [Back to Top](#table-of-contents)
 
 ---
+### Week23-Day02 16.02.2025
+#### [OOP Partial Classes and Sealed Classes](#week23-day02-16022025)
 
+### Topic
+1. Understanding Partial Classes in C#
+2. Implementing Partial Classes
+3. Understanding Sealed Classes
+4. Use Cases for Sealed Classes
+5. Best Practices for Partial and Sealed Classes
+
+### Resources
+1. [Abstract Class vs Interface in C#: Pros and Cons](https://www.bytehide.com/blog/abstract-class-vs-interface-csharp)
+2. [Partial Class and Partial Methods in C#](https://dotnettutorials.net/lesson/partial-classes-partial-methods-csharp/)
+3. [Partial Classes and Methods](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
+4. [Sealed Class and Sealed Methods in C#](https://dotnettutorials.net/lesson/sealed-class-methods-csharp/)
+5. [Sealed Classes in C#](https://www.geeksforgeeks.org/sealed-class-in-c-sharp/)
+6. [When to Use Sealed Classes](https://www.tutorialsteacher.com/csharp/csharp-sealed-class)
+
+### **Homework Assignment**
+[Week23 Tasks - Partial Classes](ConsoleApps/Week23/Practice/partial-class-tasks.md)
+[Week23 Tasks - Sealed Classes](ConsoleApps/Week23/Practice/sealed-class-tasks.md)
+
+[Back to Top](#table-of-contents)
+
+---
 
 
 

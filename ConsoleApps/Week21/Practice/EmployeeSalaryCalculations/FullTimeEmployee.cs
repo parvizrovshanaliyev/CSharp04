@@ -9,6 +9,15 @@
 /// </summary>
 public class FullTimeEmployee : Employee
 {
+    public FullTimeEmployee()
+    {
+        
+    }
+    public FullTimeEmployee(string name, double monthlySalary) :base(name)
+    {
+        MonthlySalary = monthlySalary;
+    }
+
     /// <summary>
     /// Gets or sets the monthly salary for the full-time employee.
     /// </summary>

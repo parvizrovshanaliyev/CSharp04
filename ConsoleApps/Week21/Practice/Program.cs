@@ -43,11 +43,12 @@ namespace Practice
             Console.WriteLine("---------------------------------------");
             Employee[] employees = new Employee[5];
 
-            employees[0] = new FullTimeEmployee { Name = "John Doe", MonthlySalary = 5000 };
-            employees[1] = new PartTimeEmployee { Name = "Jane Smith", HourlyRate = 20, HoursWorked = 80 };
-            employees[2] = new FullTimeEmployee { Name = "Bob Johnson", MonthlySalary = 6000 };
-            employees[3] = new PartTimeEmployee { Name = "Alice Brown", HourlyRate = 25, HoursWorked = 60 };
-            employees[4] = new FullTimeEmployee { Name = "Charlie Wilson", MonthlySalary = 5500 };
+            // { Name = "John Doe", MonthlySalary = 5000 }
+            employees[0] = new FullTimeEmployee(name:"John Doe",monthlySalary: 5000);
+            employees[1] = new PartTimeEmployee() { Name = "Jane Smith", HourlyRate = 20, HoursWorked = 80 };
+            employees[2] = new FullTimeEmployee() { Name = "Bob Johnson", MonthlySalary = 6000 };
+            employees[3] = new PartTimeEmployee() { Name = "Alice Brown", HourlyRate = 25, HoursWorked = 60 };
+            employees[4] = new FullTimeEmployee() { Name = "Charlie Wilson", MonthlySalary = 5500 };
 
             foreach (var employee in employees)
             {
