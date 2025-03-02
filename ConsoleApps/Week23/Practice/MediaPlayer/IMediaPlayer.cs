@@ -59,36 +59,60 @@ public class AudioPlayer : IMediaPlayer, IPlaylist
         Console.WriteLine("Audio stopped.");
     }
 
+    /// <summary>
+    /// Adds a media item to the playlist if there is available space.
+    /// </summary>
+    /// <param name="media">The name of the media item to be added to the playlist.</param>
     public void AddToPlaylist(string media)
     {
+        // Check if there is room in the playlist array
         if (count < playlist.Length)
         {
+            // Add the media to the next available slot and increment the count
             playlist[count++] = media;
+
+            // Notify the user that the media item has been successfully added
             Console.WriteLine($"Added {media} to audio playlist.");
         }
         else
         {
+            // Notify the user if the playlist is already at full capacity
             Console.WriteLine("Playlist is full.");
         }
     }
 
+
+    /// <summary>
+    /// Removes a specified media item from the playlist.
+    /// </summary>
+    /// <param name="media">The name of the media item to remove.</param>
     public void RemoveFromPlaylist(string media)
     {
+        // Find the index of the media item in the playlist array
         int index = Array.IndexOf(playlist, media, 0, count);
+
+        // If the media item is found in the playlist
         if (index >= 0)
         {
+            // Shift all elements to the left to overwrite the removed item
             for (int i = index; i < count - 1; i++)
             {
                 playlist[i] = playlist[i + 1];
             }
+
+            // Decrement count and set the last item to null to avoid duplicate references
             playlist[--count] = null;
+
+            // Notify the user that the item has been removed
             Console.WriteLine($"Removed {media} from audio playlist.");
         }
         else
         {
+            // Notify the user if the media item was not found in the playlist
             Console.WriteLine($"{media} not found in audio playlist.");
         }
     }
+
 
     public void ShowPlaylist()
     {

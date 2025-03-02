@@ -16,3 +16,41 @@ public partial class BankAccount
         Console.WriteLine($"[Notification] {type} of ${amount:F2} processed successfully.");
     }
 }
+
+
+/// <summary>
+/// Represents a transaction with amount and timestamp.
+/// </summary>
+public class TransactionHistory
+{
+    public decimal Amount { get; }
+    public DateTime Time { get; }
+
+    public TransactionHistory(decimal amount, DateTime time)
+    {
+        Amount = amount;
+        Time = time;
+    }
+}
+
+/// <summary>
+/// Handles transaction logging.
+/// </summary>
+public class TransactionLog
+{
+    private readonly List<TransactionHistory> _transactions = new List<TransactionHistory>();
+
+    public void AddTransaction(decimal amount)
+    {
+        _transactions.Add(new TransactionHistory(amount, DateTime.Now));
+    }
+
+    public void DisplayTransactions()
+    {
+        Console.WriteLine("Transaction History:");
+        foreach (var transaction in _transactions)
+        {
+            Console.WriteLine($" - {(transaction.Amount > 0 ? "Deposit" : "Withdrawal")}: ${Math.Abs(transaction.Amount):F2} at {transaction.Time}");
+        }
+    }
+}

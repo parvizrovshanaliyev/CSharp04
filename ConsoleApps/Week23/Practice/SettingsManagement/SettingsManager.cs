@@ -1,59 +1,68 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Practice.SettingsManagement;
+/// <summary>
+/// Represents a single setting with a name and value.
+/// </summary>
+public class Setting
+{
+    /// <summary>
+    /// The name of the setting (e.g., "UserName", "DisplayMode").
+    /// </summary>
+    public string Name { get; }
+
+    /// <summary>
+    /// The value associated with the setting.
+    /// </summary>
+    public string Value { get; set; }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Setting"/> class.
+    /// </summary>
+    /// <param name="name">The name of the setting.</param>
+    /// <param name="value">The default value of the setting.</param>
+    public Setting(string name, string value)
+    {
+        Name = name;
+        Value = value;
+    }
+}
 
 /// <summary>
 /// Manages application settings, including user preferences such as username, display mode, and sound settings.
-/// This class ensures settings persistence and allows modifications, resets, and retrievals.
 /// </summary>
 public sealed class SettingsManager
 {
     /// <summary>
-    /// Array to store setting names.
+    /// Array to store multiple settings.
     /// </summary>
-    private string[] settingNames = { "UserName", "DisplayMode", "Sound" };
-
-    /// <summary>
-    /// Array to store setting values.
-    /// </summary>
-    private string[] settingValues = new string[3];
+    private readonly Setting[] settings;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="SettingsManager"/> class and loads default settings.
     /// </summary>
     public SettingsManager()
     {
-        LoadDefaultSettings();
-    }
-
-    /// <summary>
-    /// Loads default settings into the settings arrays.
-    /// This ensures that the application starts with predefined values.
-    /// </summary>
-    private void LoadDefaultSettings()
-    {
-        settingValues[0] = "Guest";
-        settingValues[1] = "Light";
-        settingValues[2] = "On";
+        settings = new Setting[]
+        {
+            new Setting("UserName", "Guest"),
+            new Setting("DisplayMode", "Light"),
+            new Setting("Sound", "On")
+        };
         Console.WriteLine("Default settings loaded.");
     }
 
     /// <summary>
-    /// Updates a specific setting if the name exists.
+    /// Updates a specific setting if it exists.
     /// </summary>
     /// <param name="key">The name of the setting to update.</param>
     /// <param name="value">The new value for the setting.</param>
     public void UpdateSetting(string key, string value)
     {
-        for (int i = 0; i < settingNames.Length; i++)
+        foreach (var setting in settings)
         {
-            if (settingNames[i] == key)
+            if (setting.Name.Equals(key, StringComparison.OrdinalIgnoreCase))
             {
-                settingValues[i] = value;
+                setting.Value = value;
                 Console.WriteLine($"Setting updated: {key} = {value}");
                 return;
             }
@@ -62,24 +71,43 @@ public sealed class SettingsManager
     }
 
     /// <summary>
+    /// Retrieves the value of a specific setting.
+    /// </summary>
+    /// <param name="key">The name of the setting to retrieve.</param>
+    /// <returns>The value of the specified setting, or null if not found.</returns>
+    public string GetSetting(string key)
+    {
+        foreach (var setting in settings)
+        {
+            if (setting.Name.Equals(key, StringComparison.OrdinalIgnoreCase))
+            {
+                return setting.Value;
+            }
+        }
+        Console.WriteLine($"Setting not found: {key}");
+        return null;
+    }
+
+    /// <summary>
     /// Displays all current settings in a structured format.
     /// </summary>
     public void DisplaySettings()
     {
         Console.WriteLine("Current Settings:");
-        for (int i = 0; i < settingNames.Length; i++)
+        foreach (var setting in settings)
         {
-            Console.WriteLine($" - {settingNames[i]}: {settingValues[i]}");
+            Console.WriteLine($" - {setting.Name}: {setting.Value}");
         }
     }
 
     /// <summary>
     /// Resets all settings back to their default values.
-    /// This allows users to revert changes and restore the initial configuration.
     /// </summary>
     public void ResetToDefaults()
     {
-        LoadDefaultSettings();
+        settings[0].Value = "Guest";
+        settings[1].Value = "Light";
+        settings[2].Value = "On";
         Console.WriteLine("Settings reset to defaults.");
     }
 }

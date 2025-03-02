@@ -268,6 +268,11 @@ graph TD
     Understanding partial classes and sealed classes in C#, their use cases and implementation.
 ---
 
+### [Month 05](#month-04)
+
+33. **[Week 23 Review and Homework Discussion - Week24, Day 01 - 23.02.2025](#week24-day01-23022025)**
+    Review and discussion of Week 23 homework assignments covering interfaces, partial classes and sealed classes.
+
 ## Month 01
 
 ### Week01-Day01 08.09.2024
@@ -1869,7 +1874,27 @@ graph TD
 
 ---
 
+### Week24-Day01 23.02.2025
+#### [Week 23 Review and Homework Discussion](#week24-day01-23022025)
 
+### Topics
+1. Review of Week 23 Interface Concepts
+2. Review of Week 23 Partial Classes Implementation
+3. Review of Week 23 Sealed Classes Usage
+4. Discussion of Homework Solutions
+
+### Resources
+1. [Interface Best Practices in C#](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/interfaces/how-to-implement-interface-events)
+2. [Partial Classes Design Patterns](https://www.c-sharpcorner.com/UploadFile/84c85b/using-partial-classes-in-C-Sharp-net/)
+3. [When to Use Sealed Classes](https://stackoverflow.com/questions/7777611/when-should-i-use-sealed-class-in-c)
+4. [C# Interface Implementation Guidelines](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/interfaces)
+
+### **Homework Assignment**
+[Week12 Tasks - Array](ConsoleApps/Week12/ArrayRealExamples/tasks.md)
+
+[Back to Top](#table-of-contents)
+
+---
 
 
 

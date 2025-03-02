@@ -11,7 +11,18 @@ namespace Practice.BankingSystem;
 /// </summary>
 public partial class BankAccount
 {
+    /// <summary>
+    /// Gets or sets the account number of the bank account.
+    /// </summary>
     public string AccountNumber { get; set; }
+
+    /// <summary>
+    /// Gets or sets the account holder's name.
+    /// </summary>
     public string AccountHolder { get; set; }
+
+    /// <summary>
+    /// Gets the current balance of the account.
+    /// </summary>
     public decimal Balance { get; private set; }
 }

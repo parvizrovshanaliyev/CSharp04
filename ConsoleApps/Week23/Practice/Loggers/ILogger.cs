@@ -23,7 +23,6 @@ public interface ILogger
 /// </summary>
 public class ConsoleLogger : ILogger
 {
-    private readonly StringBuilder logBuilder = new StringBuilder();
     private readonly string[] logs = new string[100];
     private int logIndex = 0;
 
@@ -36,7 +35,6 @@ public class ConsoleLogger : ILogger
         string log = $"[{level}] {DateTime.Now}: {message}";
         if (logIndex < logs.Length)
             logs[logIndex++] = log;
-        logBuilder.AppendLine(log);
         Console.ForegroundColor = color;
         Console.WriteLine(log);
         Console.ResetColor();
@@ -56,7 +54,6 @@ public class ConsoleLogger : ILogger
 public class FileLogger : ILogger
 {
     private readonly string filePath = "logs.txt";
-    private readonly StringBuilder logBuilder = new StringBuilder();
     private readonly string[] logs = new string[100];
     private int logIndex = 0;
 
@@ -69,7 +66,6 @@ public class FileLogger : ILogger
         string log = $"[{level}] {DateTime.Now}: {message}";
         if (logIndex < logs.Length)
             logs[logIndex++] = log;
-        logBuilder.AppendLine(log);
         Console.WriteLine("(Simulated) Writing to file: " + log);
     }
 
@@ -87,7 +83,6 @@ public class FileLogger : ILogger
 /// </summary>
 public class DatabaseLogger : ILogger
 {
-    private readonly StringBuilder logBuilder = new StringBuilder();
     private readonly string[] logDatabase = new string[100];
     private int logIndex = 0;
 
@@ -100,7 +95,6 @@ public class DatabaseLogger : ILogger
         string log = $"[{level}] {DateTime.Now}: {message}";
         if (logIndex < logDatabase.Length)
             logDatabase[logIndex++] = log;
-        logBuilder.AppendLine(log);
     }
 
     public string[] GetLatestLogs(int count)
