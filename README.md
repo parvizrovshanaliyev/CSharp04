@@ -273,6 +273,11 @@ graph TD
 33. **[Week 23 Review and Homework Discussion - Week24, Day 01 - 23.02.2025](#week24-day01-23022025)**
     Review and discussion of Week 23 homework assignments covering interfaces, partial classes and sealed classes.
 
+34. **[Static Classes and Extension Methods in C# - Week254, Day 01 - 08.03.2025](#week25-day01-08032025)**
+    Understanding static classes, their use cases, and implementing extension methods in C#.
+
+
+
 ## Month 01
 
 ### Week01-Day01 08.09.2024
@@ -1895,6 +1900,35 @@ graph TD
 [Back to Top](#table-of-contents)
 
 ---
+
+### Week25-Day01 08.03.2025
+#### [Static Classes and Extension Methods in C#](#week25-day01-08032025)
+
+### Topics
+1. Understanding Static Classes
+2. Static Class Members and Properties
+3. Static Constructors
+4. Extension Methods in C#
+5. Creating and Using Extension Methods
+6. Best Practices for Static Classes
+7. Common Use Cases for Extension Methods
+
+### Resources
+1. [Static Class in C#](https://dotnettutorials.net/lesson/static-class-in-csharp/)
+2. [Extension Methods in C#](https://dotnettutorials.net/lesson/extension-methods-csharp/)
+3. [Static Classes and Static Class Members](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members)
+4. [Extension Methods in C#](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)
+5. [When to Use Static Classes vs Singleton](https://stackoverflow.com/questions/519520/difference-between-static-class-and-singleton-pattern)
+
+### **Homework Assignment**
+[Week25 Tasks - Static Classes](ConsoleApps/Week25/Practice/static-class-tasks.md)
+[Week25 Tasks - Extension Methods](ConsoleApps/Week25/Practice/extension-methods-tasks.md)
+
+[Back to Top](#table-of-contents)
+
+---
+
+
 
 
 
