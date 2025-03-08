@@ -34,23 +34,45 @@ public class TransactionHistory
 }
 
 /// <summary>
-/// Handles transaction logging.
+/// Handles transaction logging using an array.
 /// </summary>
 public class TransactionLog
 {
-    private readonly List<TransactionHistory> _transactions = new List<TransactionHistory>();
+    public class TransactionHistory
+    {
+        public decimal Amount { get; set; }
+        public DateTime Time { get; set; }
+    }
+
+    private TransactionHistory[] _transactions;
+    private int _transactionCount;
+
+    public TransactionLog(int capacity)
+    {
+        _transactions = new TransactionHistory[capacity];
+        _transactionCount = 0;
+    }
 
     public void AddTransaction(decimal amount)
     {
-        _transactions.Add(new TransactionHistory(amount, DateTime.Now));
+        if (_transactionCount < _transactions.Length)
+        {
+            _transactions[_transactionCount] = new TransactionHistory { Amount = amount, Time = DateTime.Now };
+            _transactionCount++;
+        }
+        else
+        {
+            Console.WriteLine("Transaction log is full.");
+        }
     }
 
     public void DisplayTransactions()
     {
         Console.WriteLine("Transaction History:");
-        foreach (var transaction in _transactions)
+        for (int i = 0; i < _transactionCount; i++)
         {
-            Console.WriteLine($" - {(transaction.Amount > 0 ? "Deposit" : "Withdrawal")}: ${Math.Abs(transaction.Amount):F2} at {transaction.Time}");
+            Console.WriteLine($" - {(_transactions[i].Amount > 0 ? "Deposit" : "Withdrawal")}: ${Math.Abs(_transactions[i].Amount):F2} at {_transactions[i].Time}");
         }
     }
 }
+
