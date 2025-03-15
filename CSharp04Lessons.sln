@@ -136,11 +136,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayRealExamples", "Consol
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week25", "Week25", "{3C7A5CB5-A4F7-4939-802C-3AA453FB4C51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "ConsoleApps\Week25\ExtensionMethods\ExtensionMethods.csproj", "{C0E2CC98-3DD3-4D31-A295-645264F4C68F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionMethods", "ConsoleApps\Week25\ExtensionMethods\ExtensionMethods.csproj", "{C0E2CC98-3DD3-4D31-A295-645264F4C68F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticClasses", "ConsoleApps\Week25\StaticClasses\StaticClasses.csproj", "{430EDBDC-2015-4986-8E92-F00D942DAA38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticClasses", "ConsoleApps\Week25\StaticClasses\StaticClasses.csproj", "{430EDBDC-2015-4986-8E92-F00D942DAA38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "ConsoleApps\Week25\Practice\Practice.csproj", "{FFB80A02-8BB9-4071-AA0E-506280A21035}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice", "ConsoleApps\Week25\Practice\Practice.csproj", "{FFB80A02-8BB9-4071-AA0E-506280A21035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntelligentUserProfileApp", "ConsoleApps\Week25\IntelligentUserProfileApp\IntelligentUserProfileApp.csproj", "{ABCC7C51-B0EB-4698-BCF2-8970D90BD449}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week26", "Week26", "{18294A54-6C54-41FC-AAF0-F6CC2B424F21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ConsoleApps\Week26\ExceptionHandling\ExceptionHandling.csproj", "{1BDE43BD-725A-4C61-A150-E3B4468E4CBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -332,6 +338,14 @@ Global
 		{FFB80A02-8BB9-4071-AA0E-506280A21035}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFB80A02-8BB9-4071-AA0E-506280A21035}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFB80A02-8BB9-4071-AA0E-506280A21035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABCC7C51-B0EB-4698-BCF2-8970D90BD449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABCC7C51-B0EB-4698-BCF2-8970D90BD449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABCC7C51-B0EB-4698-BCF2-8970D90BD449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABCC7C51-B0EB-4698-BCF2-8970D90BD449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BDE43BD-725A-4C61-A150-E3B4468E4CBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BDE43BD-725A-4C61-A150-E3B4468E4CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BDE43BD-725A-4C61-A150-E3B4468E4CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BDE43BD-725A-4C61-A150-E3B4468E4CBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -400,6 +414,9 @@ Global
 		{C0E2CC98-3DD3-4D31-A295-645264F4C68F} = {3C7A5CB5-A4F7-4939-802C-3AA453FB4C51}
 		{430EDBDC-2015-4986-8E92-F00D942DAA38} = {3C7A5CB5-A4F7-4939-802C-3AA453FB4C51}
 		{FFB80A02-8BB9-4071-AA0E-506280A21035} = {3C7A5CB5-A4F7-4939-802C-3AA453FB4C51}
+		{ABCC7C51-B0EB-4698-BCF2-8970D90BD449} = {3C7A5CB5-A4F7-4939-802C-3AA453FB4C51}
+		{18294A54-6C54-41FC-AAF0-F6CC2B424F21} = {EBDE559D-97AF-43DA-896A-8EDD7514F74F}
+		{1BDE43BD-725A-4C61-A150-E3B4468E4CBC} = {18294A54-6C54-41FC-AAF0-F6CC2B424F21}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEA2487A-AB74-4D13-B4F3-133B1E0660E1}
