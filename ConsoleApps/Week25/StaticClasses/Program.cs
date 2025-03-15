@@ -10,6 +10,17 @@
             testNoneStaticClass.Test();
 
             TestStaticClass.Test();
+
+            CommonTask.IsEmpty("Test");
+            CommonTask.GetComputerName();
+
+
+            Console.WriteLine($"Application 1 ID: {UniqueIDGenerator.AppID}");
+            Console.WriteLine($"Application 2 ID: {UniqueIDGenerator.AppID}");
+
+
+            Sample obj1 = new Sample(10);
+            Sample obj2 = new Sample(20);
         }
     }
 
@@ -23,8 +34,18 @@
         }
     }
 
-    public  class TestNoneStaticClass
+    public class TestNoneStaticClass
     {
+        public TestNoneStaticClass()
+        {
+            Console.WriteLine("None Static Constructor Called!");
+        }
+
+        static TestNoneStaticClass()
+        {
+            Console.WriteLine("Static Constructor Called!");
+        }
+
         public int _number = 10;
 
 
@@ -36,9 +57,11 @@
 
     public static class CommonTask
     {
+
         static CommonTask()
         {
             //Constructor
+            Console.WriteLine("Static Constructor Called!");
         }
 
         public static bool IsEmpty(string value)
@@ -61,8 +84,9 @@
         public string CustomerName { get; set; }
         private string MachineName = "";
 
-        public Customer()
+        public Customer(string customerCode)
         {
+            CustomerCode = customerCode;
             MachineName = CommonTask.GetComputerName();
         }
 
@@ -102,6 +126,38 @@
             {
                 //Insert the data
             }
+        }
+    }
+
+    class UniqueIDGenerator
+    {
+        public static Guid AppID;
+
+        static UniqueIDGenerator()
+        {
+            Console.WriteLine("Generating Unique Application ID...");
+            AppID = Guid.NewGuid();
+        }
+    }
+
+
+    class Sample
+    {
+        public static int StaticValue;
+        public int InstanceValue;
+
+        public const int ConstValue = 10;
+
+        static Sample() // Static Constructor
+        {
+            Console.WriteLine("Static Constructor Called!");
+            StaticValue = 100;
+        }
+
+        public Sample(int value) // Instance Constructor
+        {
+            Console.WriteLine("Instance Constructor Called!");
+            InstanceValue = value;
         }
     }
 }

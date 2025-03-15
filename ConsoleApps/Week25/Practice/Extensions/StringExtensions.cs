@@ -1,4 +1,4 @@
-﻿namespace Practice;
+﻿namespace Practice.Extensions;
 
 /// <summary>
 /// Provides extension methods for string operations.
