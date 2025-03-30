@@ -1129,7 +1129,7 @@ graph TD
 4. File Read/Write Operations
 
 ### Resources
-1. [Global Exception Handling in C#](https://learn.microsoft.com/en-us/dotnet/standard/exceptions/how-to-create-user-defined-exceptions)
+1. [Global Exception Handling in C#](ConsoleApps/Week26/GlobalExceptionDemo/Readme.md)
 2. [File Handling in C#](https://dotnettutorials.net/lesson/file-handling-in-csharp/)
 3. [Working with FileStream](https://dotnettutorials.net/lesson/filestream-class-in-csharp/)
 
