@@ -282,6 +282,9 @@ graph TD
 36. **[Exception Handling in C# - Week26, Day 02 - 16.03.2025](#week26-day02-15032025)**
     Learning about exception handling, try-catch blocks, custom exceptions, and error management in C#.
 
+37. **[Global Exception Handling and File Handling in C# - Week27, Day 01 - 30.03.2025](#week27-day01-30032025)**
+    Understanding global exception handling, working with files using FileStream and StreamWriter, and performing read/write operations in C#.
+
 ----
 
 ---
@@ -1114,7 +1117,23 @@ graph TD
 
 [Back to Top](#table-of-contents)
 
+---
 
+### Week27-Day01 30.03.2025
+#### [Global Exception Handling and File Handling in C#](#week27-day01-30032025)
+
+### Topics
+1. Global Exception Handling
+2. Working with Files in C#
+3. FileStream and StreamWriter
+4. File Read/Write Operations
+
+### Resources
+1. [Global Exception Handling in C#](https://learn.microsoft.com/en-us/dotnet/standard/exceptions/how-to-create-user-defined-exceptions)
+2. [File Handling in C#](https://dotnettutorials.net/lesson/file-handling-in-csharp/)
+3. [Working with FileStream](https://dotnettutorials.net/lesson/filestream-class-in-csharp/)
+
+[Back to Top](#table-of-contents)
 
 
 
