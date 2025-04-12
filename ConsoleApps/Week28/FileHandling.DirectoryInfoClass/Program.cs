@@ -1,4 +1,4 @@
-﻿namespace FileHandling.FileFileClass
+﻿namespace FileHandling.DirectoryInfoClass
 {
     internal class Program
     {
