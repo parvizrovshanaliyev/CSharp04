@@ -162,6 +162,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileHandling.FileFileClass"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteApp", "ConsoleApps\Week28\NoteApp\NoteApp.csproj", "{331F9D6C-CE92-4FC4-A06D-654FCFDAF8F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileHandling.FileInfoClass", "ConsoleApps\Week28\FileHandling.FileInfoClass\FileHandling.FileInfoClass.csproj", "{77FB6962-5BCE-430C-BA30-EC4B6517AFA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -380,6 +382,10 @@ Global
 		{331F9D6C-CE92-4FC4-A06D-654FCFDAF8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{331F9D6C-CE92-4FC4-A06D-654FCFDAF8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{331F9D6C-CE92-4FC4-A06D-654FCFDAF8F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77FB6962-5BCE-430C-BA30-EC4B6517AFA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77FB6962-5BCE-430C-BA30-EC4B6517AFA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77FB6962-5BCE-430C-BA30-EC4B6517AFA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77FB6962-5BCE-430C-BA30-EC4B6517AFA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -458,6 +464,7 @@ Global
 		{E2C9B248-6FE6-4566-9417-588EAC1DE77C} = {EBDE559D-97AF-43DA-896A-8EDD7514F74F}
 		{5EA94DC3-3314-4867-AC0E-0CDAB9B6F83A} = {E2C9B248-6FE6-4566-9417-588EAC1DE77C}
 		{331F9D6C-CE92-4FC4-A06D-654FCFDAF8F2} = {E2C9B248-6FE6-4566-9417-588EAC1DE77C}
+		{77FB6962-5BCE-430C-BA30-EC4B6517AFA4} = {E2C9B248-6FE6-4566-9417-588EAC1DE77C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEA2487A-AB74-4D13-B4F3-133B1E0660E1}
