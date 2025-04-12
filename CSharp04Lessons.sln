@@ -150,11 +150,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionHandling", "Consol
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice", "ConsoleApps\Week26\Practice\Practice.csproj", "{FD4DA127-0C6E-4D5D-9F2A-61E0C2AC1C51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalExceptionDemo", "ConsoleApps\Week26\GlobalExceptionDemo\GlobalExceptionDemo.csproj", "{8B6E8DA5-417D-421F-9661-8A68C5AA95A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlobalExceptionDemo", "ConsoleApps\Week26\GlobalExceptionDemo\GlobalExceptionDemo.csproj", "{8B6E8DA5-417D-421F-9661-8A68C5AA95A9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week27", "Week27", "{925DD319-AA00-4858-B716-815F7753DD20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileHandling", "ConsoleApps\Week27\FileHandling\FileHandling.csproj", "{AB572158-CBEB-4146-845B-DF40D5F54FA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileHandling", "ConsoleApps\Week27\FileHandling\FileHandling.csproj", "{AB572158-CBEB-4146-845B-DF40D5F54FA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week28", "Week28", "{E2C9B248-6FE6-4566-9417-588EAC1DE77C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileHandling.FileFileClass", "ConsoleApps\Week28\FileHandling.FileFileClass\FileHandling.FileFileClass.csproj", "{5EA94DC3-3314-4867-AC0E-0CDAB9B6F83A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -366,6 +370,10 @@ Global
 		{AB572158-CBEB-4146-845B-DF40D5F54FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB572158-CBEB-4146-845B-DF40D5F54FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB572158-CBEB-4146-845B-DF40D5F54FA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EA94DC3-3314-4867-AC0E-0CDAB9B6F83A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EA94DC3-3314-4867-AC0E-0CDAB9B6F83A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EA94DC3-3314-4867-AC0E-0CDAB9B6F83A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EA94DC3-3314-4867-AC0E-0CDAB9B6F83A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -441,6 +449,8 @@ Global
 		{8B6E8DA5-417D-421F-9661-8A68C5AA95A9} = {18294A54-6C54-41FC-AAF0-F6CC2B424F21}
 		{925DD319-AA00-4858-B716-815F7753DD20} = {EBDE559D-97AF-43DA-896A-8EDD7514F74F}
 		{AB572158-CBEB-4146-845B-DF40D5F54FA5} = {925DD319-AA00-4858-B716-815F7753DD20}
+		{E2C9B248-6FE6-4566-9417-588EAC1DE77C} = {EBDE559D-97AF-43DA-896A-8EDD7514F74F}
+		{5EA94DC3-3314-4867-AC0E-0CDAB9B6F83A} = {E2C9B248-6FE6-4566-9417-588EAC1DE77C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEA2487A-AB74-4D13-B4F3-133B1E0660E1}
