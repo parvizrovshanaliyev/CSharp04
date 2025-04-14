@@ -33,11 +33,12 @@ NoteApp/
 ├── Domain/
 │   ├── Entities/
 │   │   └── Note.cs
-│   └── Interfaces/
-│       └── IFileService.cs
+│   
+│      
 ├── Application/
 │   ├── Interfaces/
 │   │   └── INoteService.cs
+            IFileService.cs
 │   └── Services/
 │       └── NoteService.cs
 ├── Infrastructure/

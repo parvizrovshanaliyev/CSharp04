@@ -285,6 +285,12 @@ graph TD
 37. **[Global Exception Handling and File Handling in C# - Week27, Day 01 - 30.03.2025](#week27-day01-30032025)**
     Understanding global exception handling, working with files using FileStream and StreamWriter, and performing read/write operations in C#.
 
+38. **[File Handling in C# - Week28, Day 01 - 12.04.2025](#week28-day01-12042025)**
+    Understanding FileInfo, DirectoryInfo, and advanced file handling operations in C#.
+
+39. **[Unmanaged Code Dispose Pattern and File Handling - Week28, Day 02 - 13.04.2025](#week28-day02-13042025)**
+    Understanding the dispose pattern for unmanaged resources and implementing IDisposable interface in C#.
+
 ----
 
 ---
@@ -1132,6 +1138,53 @@ graph TD
 1. [Global Exception Handling in C#](ConsoleApps/Week26/GlobalExceptionDemo/Readme.md)
 2. [File Handling in C#](https://dotnettutorials.net/lesson/file-handling-in-csharp/)
 3. [Working with FileStream](https://dotnettutorials.net/lesson/filestream-class-in-csharp/)
+
+[Back to Top](#table-of-contents)
+
+---
+
+### Week28-Day01 12.04.2025
+#### [File Handling in C#](#week28-day01-12042025)
+
+### Topics
+1. FileInfo and DirectoryInfo Classes
+2. Advanced File Operations
+3. File System Monitoring
+4. File Attributes and Security
+5. Directory Operations
+6. Path Class Operations
+
+### Resources
+1. [FileInfo Class Tutorial](https://dotnettutorials.net/lesson/fileinfo-class-in-csharp/#google_vignette)
+2. [DirectoryInfo Class in C#](https://dotnettutorials.net/lesson/directoryinfo-class-in-csharp/)
+3. [File System Operations Best Practices](https://learn.microsoft.com/en-us/dotnet/standard/io/file-system-operations)
+4. [FileInfo Class in C#](https://learn.microsoft.com/en-us/dotnet/api/system.io.fileinfo)
+
+[Back to Top](#table-of-contents)
+
+---
+
+### Week28-Day02 13.04.2025
+#### [Unmanaged Code Dispose Pattern and File Handling](#week28-day02-13042025)
+
+### Topics
+1. Understanding Unmanaged Resources
+2. IDisposable Interface
+3. Dispose Pattern Implementation
+4. Using Statement
+5. Finalizers and Garbage Collection
+6. Best Practices for Resource Management
+
+### Resources
+1. [IDisposable Interface](https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/implementing-dispose)
+2. [Dispose Pattern](https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/implementing-dispose)
+3. [Using Statement in C#](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement)
+4. [Dispose Pattern Step by Step](https://vkontech.com/the-dispose-pattern-step-by-step/)
+5. [Implementing IDisposable and the Dispose Pattern Properly](https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/june/cleaning-up-unmanaged-resources)
+6. [Garbage Collection and IDisposable Best Practices](https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/implementing-disposable)
+
+### **Homework Assignment**
+[Week28 Tasks - File Handling and Resource Management](ConsoleApps/Week28/Practice/file-handling-tasks.md)
 
 [Back to Top](#table-of-contents)
 
