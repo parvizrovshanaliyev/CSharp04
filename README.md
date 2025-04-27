@@ -291,7 +291,15 @@ graph TD
 39. **[Unmanaged Code Dispose Pattern and File Handling - Week28, Day 02 - 13.04.2025](#week28-day02-13042025)**
     Understanding the dispose pattern for unmanaged resources and implementing IDisposable interface in C#.
 
+40. **[Practice File Handling Week28 Homework - LogFileManager with Exception Handling - Week29, Day 01 - 20.04.2025](#week29-day01-20042025)**
+    Implementing LogFileManager with proper exception handling, file operations, and resource management in C#.
+
 ----
+
+### [Month 06](#month-06)
+
+41. **[Introduction to Collections in C# - Week30, Day 01 - 26.04.2025](#week30-day01-26042025)**
+    Understanding different types of collections in C# including indexed based, key-value pair, prioritized collections, and specialized collections.
 
 ---
 
@@ -1188,6 +1196,39 @@ graph TD
 
 [Back to Top](#table-of-contents)
 
+---
 
+### Week29-Day01 20.04.2025
+#### [Practice File Handling Week28 Homework - LogFileManager with Exception Handling](#week29-day01-20042025)
 
+### Topics
+1. LogFileManager Implementation
+2. Exception Handling 
+4. Resource Cleanup Patterns
 
+### Resources
+1. [Exception Handling Best Practices](https://learn.microsoft.com/en-us/dotnet/standard/exceptions/best-practices-for-exceptions)
+2. [File IO Exception Handling](https://learn.microsoft.com/en-us/dotnet/standard/io/handling-io-errors)
+3. [Logging in .NET Applications](https://learn.microsoft.com/en-us/dotnet/core/extensions/logging)
+
+[Back to Top](#table-of-contents)
+
+---
+
+## Month 06
+
+### Week30-Day01 26.04.2025
+#### [Introduction to Collections in C#](#week30-day01-26042025)
+
+### Topics
+1. Understanding Collections in C#
+2. Types of Collections
+3. Array vs Collections
+
+### Resources
+1. [Collections in C#](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections)
+2. [Introduction to Collections in C#](https://dotnettutorials.net/lesson/collections-csharp/)
+
+[Back to Top](#table-of-contents)
+
+---

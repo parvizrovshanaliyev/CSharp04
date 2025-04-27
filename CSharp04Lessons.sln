@@ -173,7 +173,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesktopApps", "DesktopApps"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnmanagedCodes.DisposePattern", "ConsoleApps\Week28\UnmanagedCodes.DisposePattern\UnmanagedCodes.DisposePattern.csproj", "{E7E50ADD-13E6-4FBB-A383-A816B01D4B5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "ConsoleApps\Week28\Practice\Practice.csproj", "{FE5CD6BA-9DDE-491A-A7C5-A13CA02D27C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice", "ConsoleApps\Week28\Practice\Practice.csproj", "{FE5CD6BA-9DDE-491A-A7C5-A13CA02D27C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week30", "Week30", "{CD291E57-79A2-4FFF-A699-4F749A44A788}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroductionToCollections", "ConsoleApps\Week30\IntroductionToCollections\IntroductionToCollections.csproj", "{5B41F9D4-186B-4A30-8618-6E6B627DDA88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -409,6 +413,10 @@ Global
 		{FE5CD6BA-9DDE-491A-A7C5-A13CA02D27C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE5CD6BA-9DDE-491A-A7C5-A13CA02D27C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE5CD6BA-9DDE-491A-A7C5-A13CA02D27C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B41F9D4-186B-4A30-8618-6E6B627DDA88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B41F9D4-186B-4A30-8618-6E6B627DDA88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B41F9D4-186B-4A30-8618-6E6B627DDA88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B41F9D4-186B-4A30-8618-6E6B627DDA88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -491,6 +499,8 @@ Global
 		{74AC892E-EAAE-4E0D-8EC0-90B6F539BD7C} = {E2C9B248-6FE6-4566-9417-588EAC1DE77C}
 		{E7E50ADD-13E6-4FBB-A383-A816B01D4B5B} = {E2C9B248-6FE6-4566-9417-588EAC1DE77C}
 		{FE5CD6BA-9DDE-491A-A7C5-A13CA02D27C1} = {E2C9B248-6FE6-4566-9417-588EAC1DE77C}
+		{CD291E57-79A2-4FFF-A699-4F749A44A788} = {EBDE559D-97AF-43DA-896A-8EDD7514F74F}
+		{5B41F9D4-186B-4A30-8618-6E6B627DDA88} = {CD291E57-79A2-4FFF-A699-4F749A44A788}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEA2487A-AB74-4D13-B4F3-133B1E0660E1}
