@@ -301,6 +301,13 @@ graph TD
 41. **[Introduction to Collections in C# - Week30, Day 01 - 26.04.2025](#week30-day01-26042025)**
     Understanding different types of collections in C# including indexed based, key-value pair, prioritized collections, and specialized collections.
 
+42. **[Collections in C# - Non-generic ArrayList and Array vs ArrayList - Week31, Day 01 - 04.05.2025](#week31-day01-04052025)**
+    Understanding non-generic collections like ArrayList and comparing performance and implementation differences between array-based and ArrayList-based approaches.
+     Rewriting the Library Management System (#Week19) project to use ArrayList instead of arrays.
+
+43. **[Collections in C# - Non-generic Hashtable and Stack - Week33, Day 01 - 18.05.2025](#week33-day01-18052025)**
+    Understanding non-generic collections like Hashtable and Stack, their use cases, implementation patterns and performance characteristics in C#.
+
 ---
 
 ## Month 01
@@ -1228,6 +1235,66 @@ graph TD
 ### Resources
 1. [Collections in C#](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections)
 2. [Introduction to Collections in C#](https://dotnettutorials.net/lesson/collections-csharp/)
+
+[Back to Top](#table-of-contents)
+
+---
+### Week31-Day01 04.05.2025
+#### [Collections in C# - Non-generic ArrayList and Array vs ArrayList](#week31-day01-04052025)
+
+### Topics
+1. Non-generic Collections
+2. ArrayList in C# ([ArrayList Documentation](ConsoleApps/Week31/Collections.NonGenericArrayListCollectionClass/Readme.md))
+3. Array vs ArrayList ([Detailed Comparison](ConsoleApps/Week31/CompareArrayVsArrayList/Readme.md))
+4. When to Use Different Collection Types
+5. Rewriting Library Management System with ArrayList
+   - Converting array-based storage to ArrayList
+   - Performance considerations
+   - Implementation differences
+
+### Resources
+1. [ArrayList in C#](https://dotnettutorials.net/lesson/arraylist-collection-csharp/)
+2. [Arrays vs ArrayLists](https://www.bytehide.com/blog/array-vs-list-csharp)
+3. [Non-generic Collections Overview](https://learn.microsoft.com/en-us/dotnet/standard/collections/non-generic)
+4. [Performance Comparison: Arrays vs ArrayList](https://www.c-sharpcorner.com/article/array-vs-arraylist-in-C-Sharp/)
+
+### **Homework Assignment**
+[Week31 Tasks - ArrayList Implementation](ConsoleApps/Week31/Practice/array-list-tasks.md)
+
+### **Project Assignment**
+[Library Management System ArrayList Implementation](ConsoleApps/Week31/LMSWithArrayList)
+
+[Back to Top](#table-of-contents)
+
+---
+
+### Week33-Day01 18.05.2025
+#### [Collections in C# - Non-generic Hashtable and Stack](#week33-day01-18052025)
+
+### Topics
+1. Non-generic Hashtable Collection ([Detailed Guide](ConsoleApps/Week33/Collections.NoneGenericHashTableClass/Readme.md))
+   - Key-value pair storage
+   - Hash-based lookup
+   - Performance characteristics
+2. Non-generic Stack Collection ([Detailed Guide](ConsoleApps/Week33/Collections.NoneGenericStackClass/Readme.md))
+   - LIFO (Last-In-First-Out) operations
+   - Push, Pop and Peek methods
+   - Common use cases
+3. Implementation Patterns
+4. Performance Considerations
+5. Best Practices
+
+### Resources
+1. [Hashtable in C#](https://dotnettutorials.net/lesson/hashtable-csharp/)
+2. [Stack Collection in C#](https://dotnettutorials.net/lesson/stack-collection-csharp/)
+3. [Working with Non-generic Collections](https://dotnettutorials.net/lesson/hashtable-collection-csharp/)
+
+### **Homework Assignment**
+
+---
+[Week33 Tasks - Hashtable](ConsoleApps/Week33/Practice/product-inventory-system-hashtable-task.md)
+---
+[Week33 Tasks - Stack](ConsoleApps/Week33/Practice/undo-text-editor-stack-task.md)
 
 [Back to Top](#table-of-contents)
 
