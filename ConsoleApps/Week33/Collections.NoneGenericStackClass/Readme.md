@@ -21,34 +21,6 @@ A **Stack** is a **linear data structure** that follows the **LIFO** principle â
 
 ---
 
-flowchart TD
-    Start([Start]) --> CreateStack[Create Stack]
-    
-    subgraph Stack Operations
-        CreateStack --> Push1[Push: A]
-        Push1 --> Push2[Push: B]
-        Push2 --> Push3[Push: C]
-        
-        subgraph Peek and Pop Operations
-            Push3 --> Peek1[Peek: C is top]
-            Peek1 --> Pop1[Pop: Remove C]
-            Pop1 --> Peek2[Peek: B is top] 
-            Peek2 --> Pop2[Pop: Remove B]
-        end
-        
-        Pop2 --> Push4[Push: D]
-        Push4 --> FinalPeek[Peek: D is top]
-    end
-    
-    FinalPeek --> End([End])
-    
-    style Start fill:#90EE90
-    style End fill:#FFB6C1
-    style Stack Operations fill:#F0F8FF
-    style Peek and Pop Operations fill:#E6E6FA
-
----
-
 ## ðŸ“¦ Stack Types in C\#
 
 | Type       | Namespace                    | Description                           |

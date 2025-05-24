@@ -21,34 +21,6 @@ A **Queue** is a **linear data structure** that follows the **FIFO** principle �
 
 ---
 
-flowchart TD
-    Start([Start]) --> CreateQueue[Create Queue]
-    
-    subgraph Queue Operations
-        CreateQueue --> Enqueue1[Enqueue: A]
-        Enqueue1 --> Enqueue2[Enqueue: B] 
-        Enqueue2 --> Enqueue3[Enqueue: C]
-        
-        subgraph Peek and Dequeue Operations
-            Enqueue3 --> Peek1[Peek: A is front]
-            Peek1 --> Dequeue1[Dequeue: Remove A]
-            Dequeue1 --> Peek2[Peek: B is front]
-            Peek2 --> Dequeue2[Dequeue: Remove B]
-        end
-        
-        Dequeue2 --> Enqueue4[Enqueue: D]
-        Enqueue4 --> FinalPeek[Peek: C is front]
-    end
-    
-    FinalPeek --> End([End])
-    
-    style Start fill:#90EE90
-    style End fill:#FFB6C1
-    style Queue Operations fill:#F0F8FF
-    style Peek and Dequeue Operations fill:#E6E6FA
-
----
-
 ## 📦 Queue Types in C#
 
 | Type        | Namespace                    | Description                           |
@@ -184,6 +156,8 @@ while (printJobs.Count > 0)
 * Consider capacity if you know the expected size
 * Use `TryDequeue()` and `TryPeek()` to avoid exceptions
 
+---
+
 ## 🎯 Advanced Queue Concepts
 
 ### 1. Circular Queue
@@ -237,6 +211,8 @@ public class PriorityQueue<T>
 }
 ```
 
+---
+
 ## 🛠️ Best Practices
 
 1. **Error Handling**
@@ -262,6 +238,8 @@ public class PriorityQueue<T>
    // For thread-safe operations
    var queue = new ConcurrentQueue<string>();
    ```
+
+---
 
 ## 📚 Summary
 
@@ -296,6 +274,8 @@ Enqueue(4) → [2,3,4]
 * 🎮 **Game Event System**
 * 📨 **Message Queue** implementation
 * ⏱️ **Task Scheduler** mock
+
+---
 
 ## 🔗 Additional Resources
 
