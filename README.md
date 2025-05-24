@@ -1285,7 +1285,9 @@ graph TD
    - Common use cases
 3. Implementation Patterns
 4. Performance Considerations
-5. Best Practices
+5. Best Practices  
+
+
 
 ### Resources
 1. [Hashtable in C#](https://dotnettutorials.net/lesson/hashtable-csharp/)
@@ -1314,6 +1316,7 @@ graph TD
 3. Performance Considerations
 4. Best Practices
 5. Review of Week31,33 Collection Tasks
+
 
 ### Resources
 1. [Queue in C#](https://dotnettutorials.net/lesson/queue-collection-class-csharp/)
