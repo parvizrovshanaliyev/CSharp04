@@ -207,6 +207,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections.NoneGenericQueu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "ConsoleApps\Week34\Practice\Practice.csproj", "{D9910F02-A2A5-4C35-A418-221B89E8D94D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{05E78A8D-4A2C-462E-80B7-804F46DF9105}"
+	ProjectSection(SolutionItems) = preProject
+		docs\database\db-syllabus.md = docs\database\db-syllabus.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
