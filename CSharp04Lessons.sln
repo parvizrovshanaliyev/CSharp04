@@ -191,11 +191,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections.NoneGenericHash
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections.NoneGenericStackClass", "ConsoleApps\Week33\Collections.NoneGenericStackClass\Collections.NoneGenericStackClass.csproj", "{A02C0214-E54E-4259-93FF-B40E00733AD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareArrayVsArrayList", "ConsoleApps\Week31\CompareArrayVsArrayList\CompareArrayVsArrayList.csproj", "{D47E47D4-0358-42A6-9D23-2D37A261F27D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompareArrayVsArrayList", "ConsoleApps\Week31\CompareArrayVsArrayList\CompareArrayVsArrayList.csproj", "{D47E47D4-0358-42A6-9D23-2D37A261F27D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "ConsoleApps\Week31\Practice\Practice.csproj", "{F8DA0E84-0930-4532-A752-5D6BA87C3B12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice", "ConsoleApps\Week31\Practice\Practice.csproj", "{F8DA0E84-0930-4532-A752-5D6BA87C3B12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "ConsoleApps\Week33\Practice\Practice.csproj", "{93B6F946-4ED4-4FBB-B520-24B5E6C95D80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice", "ConsoleApps\Week33\Practice\Practice.csproj", "{93B6F946-4ED4-4FBB-B520-24B5E6C95D80}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductInventorySystem", "ConsoleApps\Week33\ProductInventorySystem\ProductInventorySystem.csproj", "{7EF7B708-71FD-4F79-8968-B000475219D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UndoTextEditor", "ConsoleApps\Week33\UndoTextEditor\UndoTextEditor.csproj", "{E749915A-0D3D-48CB-9C41-1FC032DB9C02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week34", "Week34", "{6174C9AB-9116-4ED6-ABD0-2C69976058D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections.NoneGenericQueueClass", "ConsoleApps\Week34\Collections.NoneGenericQueueClass\Collections.NoneGenericQueueClass.csproj", "{A8DB993B-57CC-4E5B-8A9F-873C90A4AD11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "ConsoleApps\Week34\Practice\Practice.csproj", "{D9910F02-A2A5-4C35-A418-221B89E8D94D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -463,6 +473,22 @@ Global
 		{93B6F946-4ED4-4FBB-B520-24B5E6C95D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93B6F946-4ED4-4FBB-B520-24B5E6C95D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93B6F946-4ED4-4FBB-B520-24B5E6C95D80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EF7B708-71FD-4F79-8968-B000475219D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF7B708-71FD-4F79-8968-B000475219D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF7B708-71FD-4F79-8968-B000475219D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF7B708-71FD-4F79-8968-B000475219D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E749915A-0D3D-48CB-9C41-1FC032DB9C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E749915A-0D3D-48CB-9C41-1FC032DB9C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E749915A-0D3D-48CB-9C41-1FC032DB9C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E749915A-0D3D-48CB-9C41-1FC032DB9C02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8DB993B-57CC-4E5B-8A9F-873C90A4AD11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8DB993B-57CC-4E5B-8A9F-873C90A4AD11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8DB993B-57CC-4E5B-8A9F-873C90A4AD11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8DB993B-57CC-4E5B-8A9F-873C90A4AD11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9910F02-A2A5-4C35-A418-221B89E8D94D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9910F02-A2A5-4C35-A418-221B89E8D94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9910F02-A2A5-4C35-A418-221B89E8D94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9910F02-A2A5-4C35-A418-221B89E8D94D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -556,6 +582,11 @@ Global
 		{D47E47D4-0358-42A6-9D23-2D37A261F27D} = {62BAC3E8-EB82-4EFD-A6DD-B0E8A534BE8A}
 		{F8DA0E84-0930-4532-A752-5D6BA87C3B12} = {62BAC3E8-EB82-4EFD-A6DD-B0E8A534BE8A}
 		{93B6F946-4ED4-4FBB-B520-24B5E6C95D80} = {6A62E14F-D6B0-4517-AB66-3DBB28CF8FD7}
+		{7EF7B708-71FD-4F79-8968-B000475219D3} = {6A62E14F-D6B0-4517-AB66-3DBB28CF8FD7}
+		{E749915A-0D3D-48CB-9C41-1FC032DB9C02} = {6A62E14F-D6B0-4517-AB66-3DBB28CF8FD7}
+		{6174C9AB-9116-4ED6-ABD0-2C69976058D2} = {EBDE559D-97AF-43DA-896A-8EDD7514F74F}
+		{A8DB993B-57CC-4E5B-8A9F-873C90A4AD11} = {6174C9AB-9116-4ED6-ABD0-2C69976058D2}
+		{D9910F02-A2A5-4C35-A418-221B89E8D94D} = {6174C9AB-9116-4ED6-ABD0-2C69976058D2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEA2487A-AB74-4D13-B4F3-133B1E0660E1}

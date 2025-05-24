@@ -308,6 +308,9 @@ graph TD
 43. **[Collections in C# - Non-generic Hashtable and Stack - Week33, Day 01 - 18.05.2025](#week33-day01-18052025)**
     Understanding non-generic collections like Hashtable and Stack, their use cases, implementation patterns and performance characteristics in C#.
 
+44. **[Collections in C# - Non-generic Queue and Review Week31,33 Tasks - Week34, Day 01 - 24.05.2025](#week34-day01-24052025)**
+    Understanding non-generic Queue collection, its FIFO behavior, implementation patterns and reviewing previous collection tasks. 
+
 ---
 
 ## Month 01
@@ -1295,6 +1298,30 @@ graph TD
 [Week33 Tasks - Hashtable](ConsoleApps/Week33/Practice/product-inventory-system-hashtable-task.md)
 ---
 [Week33 Tasks - Stack](ConsoleApps/Week33/Practice/undo-text-editor-stack-task.md)
+
+[Back to Top](#table-of-contents)
+
+---
+### Week34-Day01 24.05.2025
+#### [Collections in C# - Non-generic Queue and Review Week31,33 Tasks](#week34-day01-24052025)
+
+### Topics
+1. Non-generic Queue Collection ([Detailed Guide](ConsoleApps/Week34/Collections.NoneGenericQueueClass/Readme.md))
+   - FIFO (First-In-First-Out) operations
+   - Enqueue, Dequeue and Peek methods
+   - Common use cases
+2. Implementation Patterns
+3. Performance Considerations
+4. Best Practices
+5. Review of Week31,33 Collection Tasks
+
+### Resources
+1. [Queue in C#](https://dotnettutorials.net/lesson/queue-collection-class-csharp/)
+2. [Working with Queue Collection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.queue)
+3. [Queue vs Stack in C#](https://www.c-sharpcorner.com/UploadFile/219d4d/queue-collection-and-stack-collection-class-in-C-Sharp/)
+
+### **Homework Assignment**
+[Week34 Tasks - Queue](ConsoleApps/Week34/Practice/queue-task.md)
 
 [Back to Top](#table-of-contents)
 
