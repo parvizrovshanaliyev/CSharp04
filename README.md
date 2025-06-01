@@ -1337,7 +1337,7 @@ graph TD
 #### [Collections in C# - Non-generic SortedList and Binary Search, Introduction to SQL Server basics](#week35-day01-01062025)
 
 ### Topics
-1. Non-generic SortedList Collection ([Detailed Guide](ConsoleApps/Week35/Collections.NonGenericSortedListClass/Readme.md))
+1. Non-generic SortedList Collection ([Detailed Guide](ConsoleApps/Week35/Collections.NoneGenericSortedListClass/Readme.md))
    - Key-value pairs sorted by key
    - Add, Remove and Search operations
    - Common use cases
