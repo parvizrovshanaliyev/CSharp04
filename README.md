@@ -311,6 +311,9 @@ graph TD
 44. **[Collections in C# - Non-generic Queue and Review Week31,33 Tasks - Week34, Day 01 - 24.05.2025](#week34-day01-24052025)**
     Understanding non-generic Queue collection, its FIFO behavior, implementation patterns and reviewing previous collection tasks. 
 
+45. **[Collections in C# - Non-generic SortedList and Binary Search, Introduction to SQL Server basics - Week35, Day 01 - 01.06.2025](#week35-day01-01062025)**
+    Understanding non-generic SortedList collection, implementing binary search algorithms, and introduction to SQL Server basics including connecting via SSMS and writing basic SELECT queries.
+
 ---
 
 ## Month 01
@@ -1325,6 +1328,42 @@ graph TD
 
 ### **Homework Assignment**
 [Week34 Tasks - Queue](ConsoleApps/Week34/Practice/queue-task.md)
+
+[Back to Top](#table-of-contents)
+
+---
+
+### Week35-Day01 01.06.2025
+#### [Collections in C# - Non-generic SortedList and Binary Search, Introduction to SQL Server basics](#week35-day01-01062025)
+
+### Topics
+1. Non-generic SortedList Collection ([Detailed Guide](ConsoleApps/Week35/Collections.NonGenericSortedListClass/Readme.md))
+   - Key-value pairs sorted by key
+   - Add, Remove and Search operations
+   - Common use cases
+2. Binary Search Algorithm ([Detailed Guide](ConsoleApps/Week35/BinarySearchExamples/Readme.md))
+   - Understanding binary search concept
+   - Implementation in sorted collections
+   - Time complexity analysis
+   - Comparison with linear search
+3. Implementation Patterns
+4. Performance Considerations
+5. Best Practices
+6. Introduction to SQL Server
+   - Installing SQL Server and SSMS
+   - Creating databases and tables
+   - Basic SELECT queries
+
+### Resources
+1. [SortedList in C#](https://learn.microsoft.com/en-us/dotnet/api/system.collections.sortedlist)
+2. [Working with SortedList Collection](https://dotnettutorials.net/lesson/sortedlist-collection-class-in-csharp/)
+3. [Binary Search Algorithm](https://www.geeksforgeeks.org/binary-search/)
+4. [Getting Started with SQL Server](https://learn.microsoft.com/en-us/sql/relational-databases/tutorial-getting-started-with-the-database-engine)
+5. [SQL Introduction](https://www.w3schools.com/sql/sql_intro.asp)
+6. [SQL Server Management Studio Tutorial](https://dotnettutorials.net/lesson/sql-server-management-studio/)
+
+### **Homework Assignment**
+[Week35 Tasks - SortedList](ConsoleApps/Week35/Practice/sorted-list-task.md)
 
 [Back to Top](#table-of-contents)
 

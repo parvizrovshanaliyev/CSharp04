@@ -1,146 +1,163 @@
-﻿# 🚶 Queue in C# – A Complete Guide (Zero to Hero)
+﻿# Non-Generic Queue in C# – A Complete Guide
 
-Welcome to your one-stop guide to mastering the **Queue** data structure in **C#**. This guide takes you from beginner to advanced, covering core concepts, syntax, use cases, and best practices — all with practical examples.
-
----
-
-## 📌 What Is a Queue?
-
-A **Queue** is a **linear data structure** that follows the **FIFO** principle — **First In, First Out**.
-
-> The first element added is the first one to be removed.
+Welcome to your comprehensive guide to mastering the non-generic **Queue** data structure in **C#**. This guide covers everything from basic concepts to advanced implementations, with a focus on practical applications.
 
 ---
 
-## 🧠 Real-World Analogies
+## What Is a Non-Generic Queue?
 
-* **Print Queue** in printers
-* **Ticket Counter** line
-* **Message Queue** in applications
-* **Task Scheduler** in operating systems
+A non-generic **Queue** is a linear data structure that follows the **FIFO** (First In, First Out) principle, where elements are stored as `object` type.
 
----
-
-## 📦 Queue Types in C#
-
-| Type        | Namespace                    | Description                           |
-| ----------- | ---------------------------- | ------------------------------------- |
-| `Queue`     | `System.Collections`         | Non-generic version (stores `object`) |
-| `Queue<T>`  | `System.Collections.Generic` | Generic version (recommended)         |
+> The first element added is the first one to be removed, and all elements are stored as objects.
 
 ---
 
-## ⚙️ Core Queue Operations
+## Real-World Applications
 
-| Method           | Description                                      |
-| ---------------- | ------------------------------------------------ |
-| `Enqueue(T item)`| Adds an item to the end of the queue            |
-| `Dequeue()`      | Removes and returns the item at the front        |
-| `Peek()`         | Returns the item at the front **without removing**|
-| `Count`          | Gets the number of elements in the queue         |
-| `Clear()`        | Removes all items from the queue                 |
-| `Contains(T)`    | Checks whether an item exists in the queue       |
+* **Print Job Management** (as demonstrated in our example)
+* **Message Processing Systems**
+* **Task Scheduling**
+* **Event Handling**
+* **Order Processing Systems**
 
 ---
 
-## ✅ Basic Example
+## Queue Implementation Details
+
+| Component   | Description                                    |
+|------------|------------------------------------------------|
+| Namespace  | `System.Collections`                           |
+| Base Type  | `object`                                       |
+| Interface  | `ICollection`, `IEnumerable`, `ICloneable`     |
+
+---
+
+## Core Queue Operations
+
+| Method           | Description                                      | Example                                    |
+|-----------------|--------------------------------------------------|--------------------------------------------|
+| `Enqueue()`     | Adds an item to the end of the queue            | `queue.Enqueue("Document1.pdf")`          |
+| `Dequeue()`     | Removes and returns the item at the front        | `var job = queue.Dequeue()`               |
+| `Peek()`        | Returns the item at the front without removing   | `var nextJob = queue.Peek()`              |
+| `Count`         | Gets the number of elements in the queue         | `int jobsCount = queue.Count`             |
+| `Clear()`       | Removes all items from the queue                 | `queue.Clear()`                           |
+| `Contains()`    | Checks whether an item exists in the queue       | `bool exists = queue.Contains("job1")`    |
+
+---
+
+## Basic Example
 
 ```csharp
 using System.Collections;
 
-Queue queue = new Queue();
-queue.Enqueue("First");
-queue.Enqueue("Second");
-queue.Enqueue("Third");
+Queue printQueue = new Queue();
+printQueue.Enqueue("Document1.pdf");
+printQueue.Enqueue("Document2.pdf");
+printQueue.Enqueue("Document3.pdf");
 
-Console.WriteLine(queue.Peek()); // Output: First
-Console.WriteLine(queue.Dequeue()); // Output: First
-Console.WriteLine(queue.Count); // Output: 2
+Console.WriteLine(printQueue.Peek());    // Output: Document1.pdf
+Console.WriteLine(printQueue.Dequeue()); // Output: Document1.pdf
+Console.WriteLine(printQueue.Count);     // Output: 2
 ```
 
 ---
 
-## 🔁 Iterating Through a Queue
+## Iterating Through a Queue
 
 ```csharp
-foreach (var item in queue)
+foreach (object item in printQueue)
 {
     Console.WriteLine(item); // Output: front to back
 }
 ```
 
-> ❗ Iteration is FIFO (from oldest to most recent item)
+> Note: Non-generic Queue stores items as `object`, so type casting may be needed.
 
 ---
 
-## 💡 Generic Queue<T> (Preferred)
+## Practical Example: Print Job Management System
+
+Here's a simplified version of our print job management system using non-generic Queue:
 
 ```csharp
-Queue<int> numbers = new Queue<int>();
-numbers.Enqueue(10);
-numbers.Enqueue(20);
-
-Console.WriteLine(numbers.Peek()); // 10
-Console.WriteLine(numbers.Dequeue()); // 10
-```
-
-✅ Benefits of using `Queue<T>`:
-
-* Type safety (no casting)
-* Better performance
-* No boxing/unboxing
-
----
-
-## 🚀 Real-World Use Cases
-
-| Scenario                          | Why Queue?                       |
-| --------------------------------- | -------------------------------- |
-| Print job management              | Process documents in order       |
-| Task scheduling                   | Execute tasks in sequence        |
-| Message processing                | Handle messages in order         |
-| Breadth-first search             | Track nodes to visit             |
-| Event handling                    | Process events in order          |
-
----
-
-## 🧪 Common Example: Process Print Jobs
-
-```csharp
-Queue<string> printJobs = new Queue<string>();
-printJobs.Enqueue("Document1.pdf");
-printJobs.Enqueue("Document2.pdf");
-printJobs.Enqueue("Document3.pdf");
-
-while (printJobs.Count > 0)
+public class PrintJob
 {
-    string currentJob = printJobs.Dequeue();
-    Console.WriteLine($"Printing: {currentJob}");
+    public string Name { get; set; }
+    public int PrintTime { get; set; }
+
+    public PrintJob(string name, int printTime)
+    {
+        Name = name;
+        PrintTime = printTime;
+    }
+}
+
+public class PrintQueueManager
+{
+    private Queue _printQueue;
+
+    public PrintQueueManager()
+    {
+        _printQueue = new Queue();
+    }
+
+    public void AddJob(PrintJob job)
+    {
+        _printQueue.Enqueue(job);
+    }
+
+    public PrintJob ProcessNextJob()
+    {
+        return (PrintJob)_printQueue.Dequeue();
+    }
+
+    public void DisplayQueue()
+    {
+        foreach (PrintJob job in _printQueue)
+        {
+            Console.WriteLine($"Job: {job.Name}, Time: {job.PrintTime} minutes");
+        }
+    }
 }
 ```
 
 ---
 
-## ⚠️ Common Pitfalls
+## Common Pitfalls and Solutions
 
-* ❌ Calling `Dequeue()` or `Peek()` on an empty queue throws `InvalidOperationException`.
-* ❌ Assuming queue preserves reverse order (it's FIFO).
-* ❌ Using Queue when LIFO is required (use `Stack` instead).
+1. **Type Casting Issues**
+   ```csharp
+   // Problematic
+   string job = queue.Dequeue(); // Compilation error
+
+   // Solution
+   string job = (string)queue.Dequeue(); // Explicit casting
+   ```
+
+2. **Empty Queue Operations**
+   ```csharp
+   // Problematic
+   var item = queue.Dequeue(); // Throws InvalidOperationException
+
+   // Solution
+   if (queue.Count > 0)
+   {
+       var item = queue.Dequeue();
+   }
+   ```
+
+3. **Type Safety**
+   ```csharp
+   // Problematic
+   queue.Enqueue(123); // Works, but might cause issues later
+
+   // Solution
+   queue.Enqueue("123"); // Be consistent with types
+   ```
 
 ---
 
-## 🔍 Queue vs Stack in C#
-
-| Feature     | Queue                      | Stack                     |
-| ----------- | -------------------------- | ------------------------- |
-| Principle   | FIFO (First-In, First-Out) | LIFO (Last-In, First-Out) |
-| Add item    | `Enqueue()`                | `Push()`                  |
-| Remove item | `Dequeue()`                | `Pop()`                   |
-| Use cases   | Task scheduling, pipelines | Undo, call stack, reverse |
-
----
-
-## 📊 Performance Analysis
+## Performance Considerations
 
 | Operation  | Time Complexity | Space Complexity | Notes                                    |
 |------------|----------------|------------------|------------------------------------------|
@@ -148,137 +165,101 @@ while (printJobs.Count > 0)
 | Dequeue    | O(1)          | O(1)            | Constant time, removes from front        |
 | Peek       | O(1)          | O(1)            | Constant time, no removal                |
 | Contains   | O(n)          | O(1)            | Linear time, must search entire queue    |
-| Count      | O(1)          | O(1)            | Constant time, stored property           |
 
-### 🔍 Performance Tips:
-* Use `Queue<T>` instead of `Queue` for better performance
-* Avoid frequent `Contains()` checks on large queues
-* Consider capacity if you know the expected size
-* Use `TryDequeue()` and `TryPeek()` to avoid exceptions
-
----
-
-## 🎯 Advanced Queue Concepts
-
-### 1. Circular Queue
-```csharp
-public class CircularQueue<T>
-{
-    private T[] _items;
-    private int _front;
-    private int _rear;
-    private int _count;
-
-    public CircularQueue(int capacity)
-    {
-        _items = new T[capacity];
-        _front = _rear = -1;
-        _count = 0;
-    }
-
-    public bool Enqueue(T item)
-    {
-        if (_count == _items.Length) return false;
-        
-        _rear = (_rear + 1) % _items.Length;
-        _items[_rear] = item;
-        _count++;
-        
-        if (_front == -1) _front = _rear;
-        return true;
-    }
-}
-```
-
-### 2. Priority Queue
-```csharp
-public class PriorityQueue<T>
-{
-    private List<(T item, int priority)> _items = new();
-
-    public void Enqueue(T item, int priority)
-    {
-        _items.Add((item, priority));
-        _items.Sort((a, b) => b.priority.CompareTo(a.priority));
-    }
-
-    public T Dequeue()
-    {
-        var item = _items[0].item;
-        _items.RemoveAt(0);
-        return item;
-    }
-}
-```
+### Performance Tips:
+* Consider using `Queue<T>` for better type safety and performance
+* Avoid frequent type casting operations
+* Use `Count` property to check queue state
+* Implement proper error handling
 
 ---
 
-## 🛠️ Best Practices
+## Best Practices
 
 1. **Error Handling**
    ```csharp
-   // Instead of
-   var item = queue.Dequeue(); // Might throw
-
-   // Use
-   if (queue.TryDequeue(out var item))
+   try
    {
-       // Process item
+       var job = (PrintJob)queue.Dequeue();
+       // Process job
+   }
+   catch (InvalidOperationException)
+   {
+       Console.WriteLine("Queue is empty");
+   }
+   catch (InvalidCastException)
+   {
+       Console.WriteLine("Invalid type in queue");
    }
    ```
 
-2. **Capacity Management**
+2. **Type Safety**
    ```csharp
-   // If you know the size
-   var queue = new Queue<string>(1000);
+   // Create a wrapper class
+   public class TypedQueue
+   {
+       private Queue _queue = new Queue();
+
+       public void Enqueue(PrintJob job)
+       {
+           _queue.Enqueue(job);
+       }
+
+       public PrintJob Dequeue()
+       {
+           return (PrintJob)_queue.Dequeue();
+       }
+   }
    ```
 
 3. **Thread Safety**
    ```csharp
    // For thread-safe operations
-   var queue = new ConcurrentQueue<string>();
+   private readonly object _lockObject = new object();
+
+   public void EnqueueJob(PrintJob job)
+   {
+       lock (_lockObject)
+       {
+           _queue.Enqueue(job);
+       }
+   }
    ```
 
 ---
 
-## 📚 Summary
+## Summary
 
-| ✅ You Have Learned About:                    |
+| Key Points to Remember                    |
 | -------------------------------------------- |
-| ✔ What a Queue is                            |
-| ✔ Core operations (`Enqueue`, `Dequeue`, `Peek`) |
-| ✔ Generic vs non-generic versions            |
-| ✔ Real-world use cases                       |
-| ✔ Common mistakes and interview tips         |
+| Non-generic Queue stores items as `object` |
+| Requires explicit type casting             |
+| Follows FIFO principle                     |
+| Thread-safe operations need synchronization|
+| Consider using `Queue<T>` for new projects |
 
 ---
 
-## 🎁 Bonus: Interview Challenge
+## Interview Questions
 
-> Write a method to implement a **circular queue** with a fixed size using an array.
-
-```csharp
-Input: Size = 3
-Enqueue(1) → [1]
-Enqueue(2) → [1,2]
-Enqueue(3) → [1,2,3]
-Dequeue()  → [2,3]
-Enqueue(4) → [2,3,4]
-```
+1. How would you implement a thread-safe print queue?
+2. What's the difference between `Queue` and `Queue<T>`?
+3. How would you handle type casting errors in a non-generic queue?
+4. Explain the FIFO principle with a real-world example.
 
 ---
 
-## 🧰 Recommended Practice Projects
+## Practice Projects
 
-* 📋 **Print Queue** simulation
-* 🎮 **Game Event System**
-* 📨 **Message Queue** implementation
-* ⏱️ **Task Scheduler** mock
+1. **Print Queue Manager** (as shown above)
+2. **Game Event System**
+3. **Message Processor**
+4. **Task Scheduler**
 
 ---
 
-## 🔗 Additional Resources
+## Additional Resources
 
-* [Microsoft Docs: Queue<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.queue-1)
-* [Microsoft Docs: ConcurrentQueue<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentqueue-1)
-* [Queue vs Stack Performance](https://docs.microsoft.com/en-us/dotnet/standard/collections/selecting-a-collection-class)
+* [Microsoft Docs: Queue](https://docs.microsoft.com/en-us/dotnet/api/system.collections.queue)
+* [C# Collections Overview](https://docs.microsoft.com/en-us/dotnet/standard/collections/)
+* [Thread-Safe Collections](https://docs.microsoft.com/en-us/dotnet/standard/collections/thread-safe/)
