@@ -314,6 +314,9 @@ graph TD
 45. **[Collections in C# - Non-generic SortedList and Binary Search, Introduction to SQL Server basics - Week35, Day 01 - 01.06.2025](#week35-day01-01062025)**
     Understanding non-generic SortedList collection, implementing binary search algorithms, and introduction to SQL Server basics including connecting via SSMS and writing basic SELECT queries.
 
+46. **[Practice and Review Week35 Tasks, Introduction to SQL Server Basics - Week36, Day 01 - 09.06.2025](#week36-day01-09062025)**
+    Practice and review of Week35 collection tasks, introduction to SQL Server basics including connecting via SSMS and writing basic SELECT queries.
+
 ---
 
 ## Month 01
@@ -1364,6 +1367,16 @@ graph TD
 
 ### **Homework Assignment**
 [Week35 Tasks - SortedList](ConsoleApps/Week35/Practice/sorted-list-task.md)
+
+[Back to Top](#table-of-contents)
+
+---
+
+### Week36-Day01 09.06.2025
+#### [Practice and Review Week35 Tasks, Introduction to SQL Server Basics](#week36-day01-09062025)
+
+### Topics
+-
 
 [Back to Top](#table-of-contents)
 
