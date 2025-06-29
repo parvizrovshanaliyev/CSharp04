@@ -317,6 +317,12 @@ graph TD
 46. **[Practice and Review Week35 Tasks, Introduction to SQL Server Basics - Week36, Day 01 - 09.06.2025](#week36-day01-09062025)**
     Practice and review of Week35 collection tasks, introduction to SQL Server basics including connecting via SSMS and writing basic SELECT queries.
 
+47. **[SQL Fundamentals - SELECT, DISTINCT, WHERE, ORDER BY, AND/OR/NOT Operators and SQL Data Types - Week37, Day 01 - 28.06.2025](#week37-day01-28062025)**
+    Understanding SQL fundamentals including SELECT statements, DISTINCT keyword, WHERE clause with comparison operators, ORDER BY for sorting, logical operators (AND/OR/NOT), and comprehensive overview of SQL data types.
+
+48. **[Complete Week35 Phone Book Management System Task - Introduction to Regular Expressions - Week37, Day 02 - 29.06.2025](#week37-day02-29062025)**
+    Completing the Week35 Phone Book Management System project with comprehensive implementation, introduction to regular expressions for data validation, and advanced input processing techniques.
+
 ---
 
 ## Month 01
@@ -1378,6 +1384,87 @@ graph TD
 ### Topics
 -
 
+[Back to Top](#table-of-contents)
+
+---
+
+### Week37-Day01 28.06.2025
+#### [SQL Fundamentals - SELECT, DISTINCT, WHERE, ORDER BY, AND/OR/NOT Operators and SQL Data Types](#week37-day01-28062025)
+
+### Topics
+1. SQL Fundamentals
+   - SELECT statement basics
+   - DISTINCT keyword for unique values
+   - WHERE clause with comparison operators
+   - ORDER BY for sorting (ASC/DESC)
+   - Logical operators (AND/OR/NOT)
+2. SQL Data Types
+   - Numeric data types (INT, BIGINT, DECIMAL, FLOAT)
+   - Character data types (CHAR, VARCHAR, TEXT)
+   - Date and time data types (DATE, DATETIME, TIMESTAMP)
+   - Boolean data types
+   - Binary data types
+3. Basic SQL Query Structure
+4. Filtering and Sorting Data
+5. Best Practices for SQL Queries
+
+### Learning Materials
+1. **[SQL Fundamentals Demo Script](Database/Week37/sql-fundamentals-demo.sql)** - Comprehensive demonstration with examples and explanations
+2. **[SQL Practice Exercises](Database/Week37/sql-practice-exercises.sql)** - Hands-on practice exercises for students
+3. **[SQL Learning Guide](Database/Week37/README.md)** - Complete learning guide with step-by-step instructions
+4. **[Quick Start Guide](Database/Week37/quick-start-guide.md)** - Get up and running with SQL in 10 minutes
+
+### Resources
+1. [SQL SELECT Statement](https://www.w3schools.com/sql/sql_select.asp)
+2. [SQL WHERE Clause](https://www.w3schools.com/sql/sql_where.asp)
+3. [SQL ORDER BY](https://www.w3schools.com/sql/sql_orderby.asp)
+4. [SQL Data Types](https://www.w3schools.com/sql/sql_datatypes.asp)
+5. [SQL Logical Operators](https://www.w3schools.com/sql/sql_and_or.asp)
+6. [Microsoft SQL Server Data Types](https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql)
+
+### **Homework Assignment**
+[Week37 Tasks - SQL Fundamentals](Database/Week37/sql-practice-exercises.sql)
+
+[Back to Top](#table-of-contents)
+
+---
+
+### Week37-Day02 29.06.2025
+#### [Complete Week35 Phone Book Management System Task - Introduction to Regular Expressions](#week37-day02-29062025)
+
+### Topics
+1. Complete Week35 Phone Book Management System
+   - Final implementation and testing
+   - Performance optimization
+   - Code review and refactoring
+2. Introduction to Regular Expressions
+   - Basic regex patterns and syntax
+   - Character classes and quantifiers
+   - Anchors and boundaries
+   - Grouping and capturing
+   - [Regex Guide](ConsoleApps/Week35/PhoneBookManagementSystem/docs/RegexGuide.md)
+3. Regular Expressions in C#
+   - System.Text.RegularExpressions namespace
+   - Regex class and methods
+   - Pattern matching and validation
+   - String manipulation with regex
+4. Practical Applications
+   - Email validation
+   - Phone number formatting
+   - Data cleaning and parsing
+   - Input validation patterns
+
+### Resources
+1. [Phone Book Management System](ConsoleApps/Week35/PhoneBookManagementSystem/README.md)
+2. [Regular Expressions in C#](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions)
+3. [Regex Tutorial](https://regexone.com/)
+4. [Regular Expression Language](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)
+5. [Regex Testing Tools](https://regex101.com/)
+6. [C# Regex Examples](https://www.c-sharpcorner.com/article/regular-expressions-in-c-sharp/)
+
+### **Homework Assignment**
+
+[Week37 Tasks - Regular Expressions](ConsoleApps/Week37/Practice/regex-task.md)
 [Back to Top](#table-of-contents)
 
 ---

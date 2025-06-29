@@ -224,9 +224,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchExamples", "Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBookManagementSystem", "ConsoleApps\Week35\PhoneBookManagementSystem\PhoneBookManagementSystem.csproj", "{A1DAE17A-A52E-4FAA-B6B4-2BE41D14D2E4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week36", "Week36", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week37", "Week37", "{4AFC47E1-1110-4E34-B659-990DA1879744}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpToSqlDataTypes", "ConsoleApps\Week36\CSharpToSqlDataTypes\CSharpToSqlDataTypes.csproj", "{38BC9E52-49F0-457D-8FDB-196F165F0A09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpToSqlDataTypes", "ConsoleApps\Week37\CSharpToSqlDataTypes\CSharpToSqlDataTypes.csproj", "{B07E8CAD-46EB-43EB-87DD-309095989B48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "ConsoleApps\Week37\Practice\Practice.csproj", "{FF1C9F75-9ECE-404A-8B1F-C132324E1EA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week37", "Week37", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		Database\Week37\quick-start-guide.md = Database\Week37\quick-start-guide.md
+		Database\Week37\README.md = Database\Week37\README.md
+		Database\Week37\sql-fundamentals-demo.sql = Database\Week37\sql-fundamentals-demo.sql
+		Database\Week37\sql-practice-exercises.sql = Database\Week37\sql-practice-exercises.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -532,10 +542,14 @@ Global
 		{A1DAE17A-A52E-4FAA-B6B4-2BE41D14D2E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1DAE17A-A52E-4FAA-B6B4-2BE41D14D2E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1DAE17A-A52E-4FAA-B6B4-2BE41D14D2E4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{38BC9E52-49F0-457D-8FDB-196F165F0A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{38BC9E52-49F0-457D-8FDB-196F165F0A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{38BC9E52-49F0-457D-8FDB-196F165F0A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{38BC9E52-49F0-457D-8FDB-196F165F0A09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B07E8CAD-46EB-43EB-87DD-309095989B48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B07E8CAD-46EB-43EB-87DD-309095989B48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B07E8CAD-46EB-43EB-87DD-309095989B48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B07E8CAD-46EB-43EB-87DD-309095989B48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF1C9F75-9ECE-404A-8B1F-C132324E1EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF1C9F75-9ECE-404A-8B1F-C132324E1EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF1C9F75-9ECE-404A-8B1F-C132324E1EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF1C9F75-9ECE-404A-8B1F-C132324E1EA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -640,8 +654,10 @@ Global
 		{7804D1B9-0DC7-4167-9C47-77EB114D8FF2} = {88D453D9-D2CE-4FB7-8E43-74AB48C417D8}
 		{2ED0A1F4-00BC-4679-A2C7-46A534D308A2} = {88D453D9-D2CE-4FB7-8E43-74AB48C417D8}
 		{A1DAE17A-A52E-4FAA-B6B4-2BE41D14D2E4} = {88D453D9-D2CE-4FB7-8E43-74AB48C417D8}
-		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {EBDE559D-97AF-43DA-896A-8EDD7514F74F}
-		{38BC9E52-49F0-457D-8FDB-196F165F0A09} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{4AFC47E1-1110-4E34-B659-990DA1879744} = {EBDE559D-97AF-43DA-896A-8EDD7514F74F}
+		{B07E8CAD-46EB-43EB-87DD-309095989B48} = {4AFC47E1-1110-4E34-B659-990DA1879744}
+		{FF1C9F75-9ECE-404A-8B1F-C132324E1EA6} = {4AFC47E1-1110-4E34-B659-990DA1879744}
+		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {05E78A8D-4A2C-462E-80B7-804F46DF9105}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEA2487A-AB74-4D13-B4F3-133B1E0660E1}
