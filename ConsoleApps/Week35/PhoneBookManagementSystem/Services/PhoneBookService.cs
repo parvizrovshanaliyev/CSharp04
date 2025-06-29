@@ -429,31 +429,31 @@ namespace PhoneBookManagementSystem.Services
         /// Searches for contacts by name or phone number
         /// </summary>
         /// <param name="searchTerm">The search term to look for</param>
-        /// <returns>List of contacts matching the search criteria</returns>
-        public List<Contact> SearchContacts(string searchTerm)
+        /// <returns>Array of contacts matching the search criteria</returns>
+        public Contact[] SearchContacts(string searchTerm)
         {
-            var contacts = new List<Contact>();
             var allContacts = _repository.GetAllContacts();
+            var matchingContacts = new List<Contact>();
             
             foreach (var contact in allContacts)
             {
                 if (contact.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
                     contact.PhoneNumber.Contains(searchTerm))
                 {
-                    contacts.Add(contact);
+                    matchingContacts.Add(contact);
                 }
             }
             
-            return contacts;
+            return matchingContacts.ToArray();
         }
 
         /// <summary>
         /// Gets all contacts in the phone book
         /// </summary>
-        /// <returns>List of all contacts</returns>
-        public List<Contact> GetAllContacts()
+        /// <returns>Array of all contacts</returns>
+        public Contact[] GetAllContacts()
         {
-            return _repository.GetAllContacts().ToList();
+            return _repository.GetAllContacts();
         }
 
         /// <summary>

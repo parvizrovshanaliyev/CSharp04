@@ -5,6 +5,7 @@ namespace PhoneBookManagementSystem.Interfaces
     /// <summary>
     /// Interface for phone book service operations
     /// Provides methods for managing contacts in the phone book
+    /// Uses non-generic arrays instead of generic collections
     /// </summary>
     public interface IPhoneBookService
     {
@@ -27,14 +28,14 @@ namespace PhoneBookManagementSystem.Interfaces
         /// Searches for contacts by name or phone number
         /// </summary>
         /// <param name="searchTerm">The search term to look for</param>
-        /// <returns>List of contacts matching the search criteria</returns>
-        List<Contact> SearchContacts(string searchTerm);
+        /// <returns>Array of contacts matching the search criteria</returns>
+        Contact[] SearchContacts(string searchTerm);
 
         /// <summary>
         /// Gets all contacts in the phone book
         /// </summary>
-        /// <returns>List of all contacts</returns>
-        List<Contact> GetAllContacts();
+        /// <returns>Array of all contacts</returns>
+        Contact[] GetAllContacts();
 
         /// <summary>
         /// Gets a specific contact by ID
