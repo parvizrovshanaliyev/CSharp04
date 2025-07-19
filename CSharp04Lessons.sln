@@ -239,6 +239,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week37", "Week37", "{02EA68
 		Database\Week37\sql-practice-exercises.sql = Database\Week37\sql-practice-exercises.sql
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week38", "Week38", "{03EA681E-C7D8-13C7-8484-4AC65E1B71E9}"
+	ProjectSection(SolutionItems) = preProject
+		Database\Week38\shopping-database-design.sql = Database\Week38\shopping-database-design.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week39", "Week39", "{04EA681E-C7D8-13C7-8484-4AC65E1B71EA}"
+	ProjectSection(SolutionItems) = preProject
+		Database\Week39\sql-insert-update-practice.sql = Database\Week39\sql-insert-update-practice.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -325,9 +325,13 @@ graph TD
 
 ---
 
-### [Month 06](#month-06)
+### [Month 07](#month-07)
 
-49. 
+49. **[SQL Practice - Creating Shopping Database: Customer, Order, OrderDetail, and Product Tables - Week38, Day 01 - 06.07.2025](#week38-day01-06072025)**
+    Practicing SQL by designing and creating a shopping database, including tables for Customer, Order, OrderDetail, and Product, and understanding relationships between them.
+
+50. **[SQL Practice - INSERT, UPDATE Commands on Shopping Database - Week39, Day 01 - 19.07.2025](#week39-day01-19072025)**
+    Practicing SQL INSERT INTO and UPDATE commands on the shopping database, working with Customer, Order, OrderDetail, and Product tables to perform data manipulation operations.
 
 ## Month 01
 
@@ -1472,3 +1476,53 @@ graph TD
 [Back to Top](#table-of-contents)
 
 ---
+
+### Week38-Day01 06.07.2025
+#### [SQL Practice - Creating Shopping Database: Customer, Order, OrderDetail, and Product Tables](#week38-day01-06072025)
+
+### Topics
+1. Designing a Shopping Database
+   - Identifying entities: Customer, Order, OrderDetail, Product
+   - Defining relationships between tables
+   - Understanding primary and foreign keys
+2. Creating Tables in SQL Server
+   - Writing CREATE TABLE statements
+   - Setting up constraints and data types
+   - Implementing relationships with foreign keys
+3. Database Normalization Basics
+   - Understanding normalization concepts
+   - Applying normalization to the shopping database design
+
+### Resources
+1. [SQL CREATE TABLE Statement](https://www.w3schools.com/sql/sql_create_table.asp)
+2. [Primary and Foreign Keys in SQL](https://www.geeksforgeeks.org/sql-primary-key/)
+3. [Database Normalization](https://www.studytonight.com/dbms/database-normalization.php)
+4. [SQL Server Table Relationships](https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-foreign-key-constraints)
+
+### **Homework Assignment**
+[Week38 Tasks - Shopping Database Design](Database/Week38/shopping-database-design.sql)
+
+[Back to Top](#table-of-contents)
+
+---
+### Week39-Day01 19.07.2025
+#### [SQL Practice - INSERT, UPDATE Commands on Shopping Database](#week39-day01-19072025)
+
+### Topics
+1. Practicing SQL INSERT INTO statements
+   - Adding new records to Customer, Order, OrderDetail, and Product tables
+2. Practicing SQL UPDATE statements
+   - Modifying existing records in the shopping database
+   - Updating customer information, order status, product stock, etc.
+
+### Resources
+1. [SQL INSERT INTO Statement](https://www.w3schools.com/sql/sql_insert.asp)
+2. [SQL UPDATE Statement](https://www.w3schools.com/sql/sql_update.asp)
+
+### **Homework Assignment**
+[Week39 Tasks - SQL INSERT & UPDATE Practice](Database/Week39/sql-insert-update-practice.sql)
+
+[Back to Top](#table-of-contents)
+
+
+
