@@ -32,14 +32,23 @@ namespace Week37.Practice
         /// <returns>true if valid, false otherwise</returns>
         public static bool IsValidCreditCard(string cardNumber)
         {
-            // TODO: Implement credit card validation
-            // 1. Check for null or empty input
-            // 2. Remove all non-digit characters (spaces, hyphens, etc.)
-            // 3. Check if the cleaned number starts with 3, 4, 5, or 6
-            // 4. Check if the length is between 13 and 19 digits
-            // 5. Return true if all conditions are met
+            // Check for null or empty input
+            if (string.IsNullOrWhiteSpace(cardNumber))
+                return false;
+
+            // Remove all non-digit characters (spaces, hyphens, etc.)
+            string cleanNumber = Regex.Replace(cardNumber, @"\D", "");
             
-            throw new NotImplementedException("You need to implement this method");
+            // Check if the cleaned number starts with 3, 4, 5, or 6
+            if (!Regex.IsMatch(cleanNumber, @"^[3-6]"))
+                return false;
+            
+            // Check if the length is between 13 and 19 digits
+            if (cleanNumber.Length < 13 || cleanNumber.Length > 19)
+                return false;
+            
+            // Return true if all conditions are met
+            return true;
         }
 
         /// <summary>
@@ -58,16 +67,33 @@ namespace Week37.Practice
         /// <returns>true if valid, false otherwise</returns>
         public static bool IsValidIpAddress(string ipAddress)
         {
-            // TODO: Implement IP address validation
-            // 1. Check for null or empty input
-            // 2. Split by dots and check for exactly 4 parts
-            // 3. For each octet:
-            //    - Must be a valid number
-            //    - Must be between 0 and 255
-            //    - Must not have leading zeros (except 0 itself)
-            // 4. Return true if all conditions are met
+            // Check for null or empty input
+            if (string.IsNullOrWhiteSpace(ipAddress))
+                return false;
+
+            // Split by dots and check for exactly 4 parts
+            string[] octets = ipAddress.Split('.');
+            if (octets.Length != 4)
+                return false;
+
+            // For each octet:
+            foreach (string octet in octets)
+            {
+                // Must be a valid number
+                if (!int.TryParse(octet, out int value))
+                    return false;
+                
+                // Must be between 0 and 255
+                if (value < 0 || value > 255)
+                    return false;
+                
+                // Must not have leading zeros (except 0 itself)
+                if (octet.Length > 1 && octet[0] == '0')
+                    return false;
+            }
             
-            throw new NotImplementedException("You need to implement this method");
+            // Return true if all conditions are met
+            return true;
         }
 
         /// <summary>
@@ -87,15 +113,28 @@ namespace Week37.Practice
         /// <returns>true if valid, false otherwise</returns>
         public static bool IsValidTime(string time)
         {
-            // TODO: Implement time format validation
-            // 1. Check for null or empty input
-            // 2. Check if the format is HH:MM (exactly 5 characters with colon in middle)
-            // 3. Extract hours and minutes
-            // 4. Validate hours (00-23)
-            // 5. Validate minutes (00-59)
-            // 6. Return true if all conditions are met
-            
-            throw new NotImplementedException("You need to implement this method");
+            // Check for null or empty input
+            if (string.IsNullOrWhiteSpace(time))
+                return false;
+
+            // Check if the format is HH:MM (exactly 5 characters with colon in middle)
+            if (time.Length != 5 || time[2] != ':')
+                return false;
+
+            // Extract hours and minutes
+            string hoursStr = time.Substring(0, 2);
+            string minutesStr = time.Substring(3, 2);
+
+            // Validate hours (00-23)
+            if (!int.TryParse(hoursStr, out int hours) || hours < 0 || hours > 23)
+                return false;
+
+            // Validate minutes (00-59)
+            if (!int.TryParse(minutesStr, out int minutes) || minutes < 0 || minutes > 59)
+                return false;
+
+            // Return true if all conditions are met
+            return true;
         }
 
         /// <summary>
@@ -114,15 +153,14 @@ namespace Week37.Practice
         /// <returns>true if valid, false otherwise</returns>
         public static bool IsValidZipCode(string zipCode)
         {
-            // TODO: Implement ZIP code validation
-            // 1. Check for null or empty input
-            // 2. Check if the format matches either:
-            //    - Exactly 5 digits: "12345"
-            //    - 5 digits + hyphen + 4 digits: "12345-6789"
-            // 3. Ensure only digits and optional hyphen are present
-            // 4. Return true if format is valid
-            
-            throw new NotImplementedException("You need to implement this method");
+            // Check for null or empty input
+            if (string.IsNullOrWhiteSpace(zipCode))
+                return false;
+
+            // Check if the format matches either:
+            // - Exactly 5 digits: "12345"
+            // - 5 digits + hyphen + 4 digits: "12345-6789"
+            return Regex.IsMatch(zipCode, @"^\d{5}(-\d{4})?$");
         }
 
         /// <summary>
@@ -143,14 +181,31 @@ namespace Week37.Practice
         /// <returns>Formatted credit card number or null if invalid</returns>
         public static string? FormatCreditCard(string cardNumber)
         {
-            // TODO: Implement credit card formatting
-            // 1. Check for null or empty input
-            // 2. Remove all non-digit characters
-            // 3. Check if the cleaned number has 13-19 digits
-            // 4. Format into groups of 4 digits separated by hyphens
-            // 5. Return formatted string or null if invalid
+            // Check for null or empty input
+            if (string.IsNullOrWhiteSpace(cardNumber))
+                return null;
+
+            // Remove all non-digit characters
+            string digitsOnly = Regex.Replace(cardNumber, @"\D", "");
             
-            throw new NotImplementedException("You need to implement this method");
+            // Check if the cleaned number has 13-19 digits
+            if (digitsOnly.Length < 13 || digitsOnly.Length > 19)
+                return null;
+            
+            // Check if it starts with valid prefix (3, 4, 5, or 6)
+            if (!Regex.IsMatch(digitsOnly, @"^[3-6]"))
+                return null;
+
+            // Format into groups of 4 digits separated by hyphens
+            string formatted = "";
+            for (int i = 0; i < digitsOnly.Length; i++)
+            {
+                if (i > 0 && i % 4 == 0)
+                    formatted += "-";
+                formatted += digitsOnly[i];
+            }
+            
+            return formatted;
         }
 
         /// <summary>
@@ -169,16 +224,36 @@ namespace Week37.Practice
         /// <returns>Array of integers found in the text</returns>
         public static int[] ExtractNumbers(string text)
         {
-            // TODO: Implement number extraction
-            // 1. Check for null or empty input
-            // 2. Use regex to find all numbers in the text
-            // 3. Convert found numbers to integers
-            // 4. Return array of integers
-            // 
-            // Hint: You can use regex pattern @"\d+" to find sequences of digits
-            // or @"\d+(?:\.\d+)?" to find both integers and decimals
+            // Check for null or empty input
+            if (string.IsNullOrWhiteSpace(text))
+                return new int[0];
+
+            // Use regex to find all numbers in the text
+            // Pattern \d+ finds sequences of digits
+            MatchCollection matches = Regex.Matches(text, @"\d+");
             
-            throw new NotImplementedException("You need to implement this method");
+            // Convert found numbers to integers
+            int[] numbers = new int[matches.Count];
+            int index = 0;
+            
+            foreach (Match match in matches)
+            {
+                if (int.TryParse(match.Value, out int number))
+                {
+                    numbers[index] = number;
+                    index++;
+                }
+            }
+            
+            // If some matches failed to parse, resize the array
+            if (index < numbers.Length)
+            {
+                int[] result = new int[index];
+                Array.Copy(numbers, result, index);
+                return result;
+            }
+            
+            return numbers;
         }
 
         /// <summary>
@@ -198,14 +273,32 @@ namespace Week37.Practice
         /// <returns>Hashtable with word frequencies</returns>
         public static Hashtable CountWordFrequency(string text)
         {
-            // TODO: Implement word frequency counting (Bonus task)
-            // 1. Check for null or empty input
-            // 2. Split text into words
-            // 3. Clean each word (remove punctuation, convert to lowercase)
-            // 4. Count frequency of each word
-            // 5. Return Hashtable with word as key and count as value
+            // Check for null or empty input
+            if (string.IsNullOrWhiteSpace(text))
+                return new Hashtable();
+
+            // Split text into words and clean each word
+            string[] words = Regex.Split(text.ToLower(), @"\W+");
+            Hashtable wordCount = new Hashtable();
             
-            throw new NotImplementedException("You need to implement this method");
+            foreach (string word in words)
+            {
+                // Skip empty words and single characters
+                if (string.IsNullOrWhiteSpace(word) || word.Length <= 1)
+                    continue;
+                
+                // Count frequency of each word
+                if (wordCount.ContainsKey(word))
+                {
+                    wordCount[word] = (int)wordCount[word] + 1;
+                }
+                else
+                {
+                    wordCount[word] = 1;
+                }
+            }
+            
+            return wordCount;
         }
     }
 } 

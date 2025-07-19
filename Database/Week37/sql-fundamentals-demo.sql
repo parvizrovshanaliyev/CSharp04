@@ -17,9 +17,16 @@
 -- =====================================================
 
 -- Create a sample database for demonstration
--- Note: In SQL Server, you might need to create this database first
--- CREATE DATABASE StudentManagementDB;
--- USE StudentManagementDB;
+-- Note: Run this script in SQL Server Management Studio or Azure Data Studio
+-- Make sure you have appropriate permissions to create databases
+
+-- Create the database
+CREATE DATABASE StudentManagementDB;
+GO
+
+-- Use the newly created database
+USE StudentManagementDB;
+GO
 
 -- Create Students table with various data types
 CREATE TABLE Students (

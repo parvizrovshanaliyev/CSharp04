@@ -210,6 +210,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{05E78A8D-4A2C-462E-80B7-804F46DF9105}"
 	ProjectSection(SolutionItems) = preProject
 		docs\database\db-syllabus.md = docs\database\db-syllabus.md
+		database-syllabus.md = database-syllabus.md
 	EndProjectSection
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database1", "Database\Week35\Database1\Database1.sqlproj", "{FA01CCF3-5668-4973-A27B-B143ED397A44}"

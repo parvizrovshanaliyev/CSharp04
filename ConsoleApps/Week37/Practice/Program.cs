@@ -1,4 +1,5 @@
 ﻿using Week37.Practice;
+using System.Collections;
 
 namespace Week37.Practice
 {
@@ -229,9 +230,14 @@ namespace Week37.Practice
             var wordFreq = TextProcessor.CountWordFrequency(sampleText2);
             Console.WriteLine($"Text: {sampleText2}");
             Console.WriteLine("Word frequencies:");
-            foreach (var kvp in wordFreq.OrderByDescending(x => x.Value))
+            // Convert Hashtable to array and sort by value (descending)
+            var sortedEntries = new DictionaryEntry[wordFreq.Count];
+            wordFreq.CopyTo(sortedEntries, 0);
+            Array.Sort(sortedEntries, (a, b) => ((int)b.Value).CompareTo((int)a.Value));
+            
+            foreach (var entry in sortedEntries)
             {
-                Console.WriteLine($"  {kvp.Key}: {kvp.Value}");
+                Console.WriteLine($"  {entry.Key}: {entry.Value}");
             }
         }
 
