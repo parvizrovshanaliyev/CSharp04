@@ -333,6 +333,9 @@ graph TD
 50. **[SQL Practice - INSERT, UPDATE Commands on Shopping Database - Week39, Day 01 - 19.07.2025](#week39-day01-19072025)**
     Practicing SQL INSERT INTO and UPDATE commands on the shopping database, working with Customer, Order, OrderDetail, and Product tables to perform data manipulation operations.
 
+51. **[SQL Practice - DELETE Statement, TOP, LIMIT, FETCH FIRST, ROWNUM, Aggregate Functions, LIKE Operator, and Wildcards - Week40, Day 01 - 27.07.2025](#week40-day01-27072025)**
+    Practicing SQL DELETE statement, using SQL TOP, LIMIT, FETCH FIRST, or ROWNUM clauses for row selection, working with SQL aggregate functions, and understanding the LIKE operator and wildcards for pattern matching in SQL.
+
 ## Month 01
 
 ### Week01-Day01 08.09.2024
