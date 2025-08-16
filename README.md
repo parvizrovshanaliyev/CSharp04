@@ -338,6 +338,9 @@ graph TD
 
 52. **[SQL Practice - ALTER TABLE Statement: ADD COLUMN, DROP COLUMN, RENAME COLUMN, ALTER/MODIFY DATATYPE, Subqueries - Week41, Day 01 - 10.08.2025](#week41-day01-10082025)**
     Practicing SQL ALTER TABLE statement including adding columns, dropping columns, renaming columns, altering/modifying data types, and working with subqueries.
+
+53. **[SQL Practice - SQL JOINS: INNER JOINS - Week42, Day 01 - 16.08.2025](#week42-day01-16082025)**
+    Practicing SQL JOINS with a focus on INNER JOINS, understanding how to combine rows from two or more tables based on related columns.
 ## Month 01
 
 ### Week01-Day01 08.09.2024
@@ -1551,6 +1554,26 @@ graph TD
 
 ### **Homework Assignment**
 [Week41 Tasks - SQL ALTER TABLE & Subqueries Practice](Database/Week41/sql-alter-table-subqueries-practice.sql)
+
+[Back to Top](#table-of-contents)
+---
+
+### Week42-Day01 16.08.2025
+#### [SQL Practice - SQL JOINS: INNER JOINS](#week42-day01-16082025)
+
+### Topics
+1. Practicing SQL JOINS with a focus on INNER JOINS
+   - Understanding how to combine rows from two or more tables based on related columns
+   - Writing queries using INNER JOIN to retrieve related data from multiple tables
+   - Filtering and sorting joined data
+
+### Resources
+1. [SQL INNER JOIN Tutorial](https://www.w3schools.com/sql/sql_join_inner.asp)
+2. [SQL INNER JOIN Explained](https://www.geeksforgeeks.org/sql-inner-join/)
+3. [SQL Joins Visualizer](https://sql-joins.leopard.in.ua/)
+
+### **Homework Assignment**
+[Week42 Tasks - SQL INNER JOIN Practice](Database/Week42/sql-inner-joins-practice.sql)
 
 [Back to Top](#table-of-contents)
 

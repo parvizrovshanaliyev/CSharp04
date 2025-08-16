@@ -16,6 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		month03.md = month03.md
 		README.md = README.md
 		Database\Week41\sql-alter-table-subqueries-practice.sql = Database\Week41\sql-alter-table-subqueries-practice.sql
+		Database\Week42\sql-inner-joins-practice.sql = Database\Week42\sql-inner-joins-practice.sql
 		syllabus-as-universty.md = syllabus-as-universty.md
 		syllabus.csharp.txt = syllabus.csharp.txt
 		syllabus.md = syllabus.md
@@ -259,6 +260,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week41", "Week41", "{DF70F78F-58AB-4523-B2F1-C95A7CDD2958}"
 	ProjectSection(SolutionItems) = preProject
 		Database\Week41\sql-alter-table-subqueries-practice.sql = Database\Week41\sql-alter-table-subqueries-practice.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week42", "Week42", "{DF70F78F-58AB-4523-B2F1-C95A7CDD2959}"
+	ProjectSection(SolutionItems) = preProject
+		Database\Week42\sql-inner-joins-practice.sql = Database\Week42\sql-inner-joins-practice.sql
 	EndProjectSection
 EndProject
 Global
@@ -685,6 +691,7 @@ Global
 		{04EA681E-C7D8-13C7-8484-4AC65E1B71EA} = {05E78A8D-4A2C-462E-80B7-804F46DF9105}
 		{DF70F78F-58AB-4523-B2F1-C95A7CDD2957} = {05E78A8D-4A2C-462E-80B7-804F46DF9105}
 		{DF70F78F-58AB-4523-B2F1-C95A7CDD2958} = {05E78A8D-4A2C-462E-80B7-804F46DF9105}
+		{DF70F78F-58AB-4523-B2F1-C95A7CDD2959} = {05E78A8D-4A2C-462E-80B7-804F46DF9105}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEA2487A-AB74-4D13-B4F3-133B1E0660E1}
