@@ -156,9 +156,45 @@ FROM [Order]
 ORDER BY TotalAmount DESC;
 
 -- Step 2: Calculate order statistics by status
+
+-- Ensure the Status column exists (run only once; comment out after adding)
+-- ALTER TABLE [Order]
+-- ADD Status NVARCHAR(50) NULL;
+
+-- Set Status for existing orders if not already set
+-- You can adjust the logic below to better reflect your business rules
+
+-- Example 1: Set 'High Value' for orders over 1000, 'Standard' otherwise
+UPDATE [Order]
+SET Status = CASE 
+    WHEN TotalAmount > 1000 THEN 'High Value'
+    WHEN TotalAmount > 0 THEN 'Standard'
+    ELSE 'Pending'
+END
+WHERE Status IS NULL;
+
+-- Example 2: If you want all NULL statuses to be 'Pending' (uncomment if needed)
+-- UPDATE [Order]
+-- SET Status = 'Pending'
+-- WHERE Status IS NULL;
+
+-- Calculate order statistics grouped by status
 SELECT 
     Status,
     COUNT(*) AS OrderCount,
+    SUM(TotalAmount) AS TotalRevenue,
+    AVG(TotalAmount) AS AverageOrderAmount,
+    MIN(TotalAmount) AS MinOrderAmount,
+    MAX(TotalAmount) AS MaxOrderAmount
+FROM [Order]
+GROUP BY Status
+ORDER BY TotalRevenue DESC;
+
+-- For a more detailed breakdown, you can also include the percentage of total orders:
+SELECT 
+    Status,
+    COUNT(*) AS OrderCount,
+    CAST(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER() AS DECIMAL(5,2)) AS OrderPercent,
     SUM(TotalAmount) AS TotalRevenue,
     AVG(TotalAmount) AS AverageOrderAmount,
     MIN(TotalAmount) AS MinOrderAmount,

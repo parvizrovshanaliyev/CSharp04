@@ -336,6 +336,8 @@ graph TD
 51. **[SQL Practice - DELETE Statement, TOP, LIMIT, FETCH FIRST, ROWNUM, Aggregate Functions, LIKE Operator, and Wildcards - Week40, Day 01 - 27.07.2025](#week40-day01-27072025)**
     Practicing SQL DELETE statement, using SQL TOP, LIMIT, FETCH FIRST, or ROWNUM clauses for row selection, working with SQL aggregate functions, and understanding the LIKE operator and wildcards for pattern matching in SQL.
 
+52. **[SQL Practice - ALTER TABLE Statement: ADD COLUMN, DROP COLUMN, RENAME COLUMN, ALTER/MODIFY DATATYPE, Subqueries - Week41, Day 01 - 10.08.2025](#week41-day01-10082025)**
+    Practicing SQL ALTER TABLE statement including adding columns, dropping columns, renaming columns, altering/modifying data types, and working with subqueries.
 ## Month 01
 
 ### Week01-Day01 08.09.2024
@@ -1527,5 +1529,28 @@ graph TD
 
 [Back to Top](#table-of-contents)
 
+---
 
+### Week41-Day01 10.08.2025
+#### [SQL Practice - ALTER TABLE Statement: ADD COLUMN, DROP COLUMN, RENAME COLUMN, ALTER/MODIFY DATATYPE, Subqueries](#week41-day01-10082025)
+
+### Topics
+1. Practicing SQL ALTER TABLE statement
+   - Adding new columns to existing tables
+   - Dropping columns from tables
+   - Renaming columns
+   - Altering or modifying data types of columns
+2. Working with subqueries in SQL
+   - Using subqueries in SELECT, INSERT, UPDATE, and DELETE statements
+
+### Resources
+1. [SQL ALTER TABLE Statement](https://www.w3schools.com/sql/sql_alter.asp)
+2. [SQL Subqueries ](https://www.geeksforgeeks.org/sql/sql-subquery)
+3. [SQL Subquery: A Comprehensive Guide](https://www.datacamp.com/tutorial/sql-subquery)
+
+
+### **Homework Assignment**
+[Week41 Tasks - SQL ALTER TABLE & Subqueries Practice](Database/Week41/sql-alter-table-subqueries-practice.sql)
+
+[Back to Top](#table-of-contents)
 

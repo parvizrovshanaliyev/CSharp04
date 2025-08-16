@@ -15,6 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		month02.md = month02.md
 		month03.md = month03.md
 		README.md = README.md
+		Database\Week41\sql-alter-table-subqueries-practice.sql = Database\Week41\sql-alter-table-subqueries-practice.sql
 		syllabus-as-universty.md = syllabus-as-universty.md
 		syllabus.csharp.txt = syllabus.csharp.txt
 		syllabus.md = syllabus.md
@@ -208,10 +209,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice", "ConsoleApps\Week34\Practice\Practice.csproj", "{D9910F02-A2A5-4C35-A418-221B89E8D94D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{05E78A8D-4A2C-462E-80B7-804F46DF9105}"
-	ProjectSection(SolutionItems) = preProject
-		database-syllabus.md = database-syllabus.md
-		docs\database\db-syllabus.md = docs\database\db-syllabus.md
-	EndProjectSection
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database1", "Database\Week35\Database1\Database1.sqlproj", "{FA01CCF3-5668-4973-A27B-B143ED397A44}"
 EndProject
@@ -257,6 +254,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week40", "Week40", "{DF70F7
 		Database\Week40\04-like-operator-wildcards-practice.sql = Database\Week40\04-like-operator-wildcards-practice.sql
 		Database\Week40\05-comprehensive-practice-exercises.sql = Database\Week40\05-comprehensive-practice-exercises.sql
 		Database\Week40\README.md = Database\Week40\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week41", "Week41", "{DF70F78F-58AB-4523-B2F1-C95A7CDD2958}"
+	ProjectSection(SolutionItems) = preProject
+		Database\Week41\sql-alter-table-subqueries-practice.sql = Database\Week41\sql-alter-table-subqueries-practice.sql
 	EndProjectSection
 EndProject
 Global
@@ -682,6 +684,7 @@ Global
 		{03EA681E-C7D8-13C7-8484-4AC65E1B71E9} = {05E78A8D-4A2C-462E-80B7-804F46DF9105}
 		{04EA681E-C7D8-13C7-8484-4AC65E1B71EA} = {05E78A8D-4A2C-462E-80B7-804F46DF9105}
 		{DF70F78F-58AB-4523-B2F1-C95A7CDD2957} = {05E78A8D-4A2C-462E-80B7-804F46DF9105}
+		{DF70F78F-58AB-4523-B2F1-C95A7CDD2958} = {05E78A8D-4A2C-462E-80B7-804F46DF9105}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEA2487A-AB74-4D13-B4F3-133B1E0660E1}
