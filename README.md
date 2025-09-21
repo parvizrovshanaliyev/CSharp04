@@ -341,6 +341,14 @@ graph TD
 
 53. **[SQL Practice - SQL JOINS: INNER JOINS - Week42, Day 01 - 16.08.2025](#week42-day01-16082025)**
     Practicing SQL JOINS with a focus on INNER JOINS, understanding how to combine rows from two or more tables based on related columns.
+
+
+54. **[Career Preparation - Resume Building, Self-Introduction, and Interview Preparation for Junior .NET Developer - Week43, Day 01 - 23.08.2025](#week43-day01-23082025)**
+    Preparing a professional resume tailored for a Junior .NET Developer role, practicing self-introduction techniques for interviews, and developing strategies for effective interview preparation including common questions and best practices.
+
+55. **[SQL Practice - EXISTS, ANY, ALL Operators, CASE Expression, and NULL Functions - Week44, Day 01 - 21.09.2025](#week44-day01-21092025)**
+    Practicing SQL EXISTS operator, using ANY and ALL operators for advanced comparisons, implementing CASE expressions for conditional logic, and working with SQL NULL functions for handling missing or undefined data.
+
 ## Month 01
 
 ### Week01-Day01 08.09.2024
@@ -1574,6 +1582,31 @@ graph TD
 
 ### **Homework Assignment**
 [Week42 Tasks - SQL INNER JOIN Practice](Database/Week42/sql-inner-joins-practice.sql)
+
+[Back to Top](#table-of-contents)
+
+---
+
+### Week44-Day01 21.09.2025
+#### [SQL Practice - EXISTS, ANY, ALL Operators, CASE Expression, and NULL Functions](#week44-day01-21092025)
+
+### Topics
+1. Practicing SQL EXISTS operator
+   - Using EXISTS to test for the existence of rows in a subquery
+2. Using ANY and ALL operators for advanced comparisons
+   - Applying ANY and ALL in WHERE clauses for flexible filtering
+3. Implementing CASE expressions for conditional logic in SQL queries
+4. Working with SQL NULL functions
+   - Handling missing or undefined data using functions like ISNULL, COALESCE, and NULLIF
+
+### Resources
+1. [SQL EXISTS Operator](https://www.w3schools.com/sql/sql_exists.asp)
+2. [SQL ANY and ALL Operators](https://www.geeksforgeeks.org/sql-any-all-operators/)
+3. [SQL CASE Expression](https://www.w3schools.com/sql/sql_case.asp)
+4. [SQL NULL Functions](https://www.sqlservertutorial.net/sql-server-basics/sql-server-null-functions/)
+
+### **Homework Assignment**
+[Week44 Tasks - SQL EXISTS, ANY, ALL, CASE, and NULL Functions Practice](Database/Week44/sql-exists-any-all-case-null-practice.sql)
 
 [Back to Top](#table-of-contents)
 
