@@ -1601,7 +1601,7 @@ graph TD
 
 ### Resources
 1. [SQL EXISTS Operator](https://www.w3schools.com/sql/sql_exists.asp)
-2. [SQL ANY and ALL Operators](https://www.geeksforgeeks.org/sql-any-all-operators/)
+2. [SQL ANY and ALL Operators](https://www.w3schools.com/sql/sql_any_all.asp)
 3. [SQL CASE Expression](https://www.w3schools.com/sql/sql_case.asp)
 4. [SQL NULL Functions](https://www.sqlservertutorial.net/sql-server-basics/sql-server-null-functions/)
 
