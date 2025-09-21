@@ -153,14 +153,23 @@ ALTER COLUMN EmailAddress VARCHAR(100) NOT NULL;
 -- =====================================================
 
 -- Task 1: Add a 'Bonus' column to Employees table with DECIMAL(8,2) data type
+ALTER TABLE Employees 
+ADD Bonus DECIMAL(8,2);
 
 -- Task 2: Add 'ProjectManager' and 'TeamSize' columns to CompanyProjects table
 -- ProjectManager should be VARCHAR(100) and TeamSize should be INT
+ALTER TABLE CompanyProjects 
+ADD ProjectManager VARCHAR(100),
+    TeamSize INT;
 
 -- Task 3: Change the data type of Budget column to MONEY in CompanyProjects table
+ALTER TABLE CompanyProjects 
+ALTER COLUMN Budget MONEY;
 
 -- Task 4: Add a 'Description' column with default value 'No description available' 
 -- to CompanyProjects table with VARCHAR(500) data type
+ALTER TABLE CompanyProjects 
+ADD Description VARCHAR(500) DEFAULT 'No description available';
 
 -- =====================================================
 -- PART 2: SUBQUERIES
@@ -330,26 +339,75 @@ WHERE d.DepartmentName = (
 -- =====================================================
 
 -- Task 1: Find employees who earn more than the company average salary
+SELECT FirstName, LastName, Salary
+FROM Employees
+WHERE Salary > (SELECT AVG(Salary) FROM Employees);
 
 -- Task 2: Find departments that have employees with salary above 60000
+SELECT DISTINCT Department
+FROM Employees
+WHERE Department IN (
+    SELECT Department 
+    FROM Employees 
+    WHERE Salary > 60000
+);
 
 -- Task 3: Update all IT department employees to have 15% salary increase
+UPDATE Employees
+SET Salary = Salary * 1.15
+WHERE Department = 'IT';
 
 -- Task 4: Find employees who work in the same department as 'John Doe'
+SELECT FirstName, LastName, Department
+FROM Employees
+WHERE Department = (
+    SELECT Department 
+    FROM Employees 
+    WHERE FirstName = 'John' AND LastName = 'Doe'
+)
+AND NOT (FirstName = 'John' AND LastName = 'Doe');
 
 -- Task 5: Create a table with employees who have salary in top 3
+CREATE TABLE TopSalaryEmployees (
+    EmployeeID INT,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Salary DECIMAL(10,2)
+);
+
+INSERT INTO TopSalaryEmployees (EmployeeID, FirstName, LastName, Salary)
+SELECT TOP 3 EmployeeID, FirstName, LastName, Salary
+FROM Employees
+ORDER BY Salary DESC;
 
 -- =====================================================
 -- ADVANCED EXERCISES
 -- =====================================================
 
 -- Task 6: Find the second highest salary using subquery
+SELECT MAX(Salary) AS SecondHighestSalary
+FROM Employees
+WHERE Salary < (SELECT MAX(Salary) FROM Employees);
 
 -- Task 7: Find employees who earn more than the average salary of their department
+SELECT e1.FirstName, e1.LastName, e1.Salary, e1.Department
+FROM Employees e1
+WHERE e1.Salary > (
+    SELECT AVG(e2.Salary)
+    FROM Employees e2
+    WHERE e2.Department = e1.Department
+);
 
 -- Task 8: Update project budgets to be 10% higher than the average budget
+UPDATE CompanyProjects
+SET Budget = Budget * 1.10
+WHERE Budget < (SELECT AVG(Budget) FROM CompanyProjects);
 
 -- Task 9: Find departments that have more than 2 employees
+SELECT Department, COUNT(*) AS EmployeeCount
+FROM Employees
+GROUP BY Department
+HAVING COUNT(*) > 2;
 
 -- Task 10: Create a summary table with department statistics including:
 -- - Department name
@@ -357,18 +415,59 @@ WHERE d.DepartmentName = (
 -- - Average salary
 -- - Maximum salary
 -- - Minimum salary
+CREATE TABLE DepartmentStatistics (
+    DepartmentName VARCHAR(50),
+    EmployeeCount INT,
+    AverageSalary DECIMAL(10,2),
+    MaximumSalary DECIMAL(10,2),
+    MinimumSalary DECIMAL(10,2)
+);
+
+INSERT INTO DepartmentStatistics (DepartmentName, EmployeeCount, AverageSalary, MaximumSalary, MinimumSalary)
+SELECT 
+    Department,
+    COUNT(*) AS EmployeeCount,
+    AVG(Salary) AS AverageSalary,
+    MAX(Salary) AS MaximumSalary,
+    MIN(Salary) AS MinimumSalary
+FROM Employees
+GROUP BY Department;
 
 -- =====================================================
 -- ADDITIONAL CHALLENGE EXERCISES
 -- =====================================================
 
 -- Challenge 1: Find the employee with the highest salary in each department
+SELECT e1.FirstName, e1.LastName, e1.Salary, e1.Department
+FROM Employees e1
+WHERE e1.Salary = (
+    SELECT MAX(e2.Salary)
+    FROM Employees e2
+    WHERE e2.Department = e1.Department
+);
 
 -- Challenge 2: Find departments where the average salary is higher than the company average
+SELECT Department, AVG(Salary) AS AvgSalary
+FROM Employees
+GROUP BY Department
+HAVING AVG(Salary) > (SELECT AVG(Salary) FROM Employees);
 
 -- Challenge 3: Update employee salaries to match the highest salary in their department
+UPDATE Employees
+SET Salary = (
+    SELECT MAX(e2.Salary)
+    FROM Employees e2
+    WHERE e2.Department = Employees.Department
+);
 
 -- Challenge 4: Find employees who have been with the company longer than the average tenure
+SELECT FirstName, LastName, HireDate, 
+       DATEDIFF(YEAR, HireDate, GETDATE()) AS YearsWithCompany
+FROM Employees
+WHERE DATEDIFF(YEAR, HireDate, GETDATE()) > (
+    SELECT AVG(DATEDIFF(YEAR, HireDate, GETDATE()))
+    FROM Employees
+);
 
 -- Challenge 5: Create a comprehensive employee report with department rankings including:
 -- - Employee name and salary
@@ -377,6 +476,31 @@ WHERE d.DepartmentName = (
 -- - Company rank (overall)
 -- - Department average salary
 -- - Company average salary
+CREATE TABLE EmployeeComprehensiveReport (
+    EmployeeName VARCHAR(101),
+    Salary DECIMAL(10,2),
+    Department VARCHAR(50),
+    DepartmentRank INT,
+    CompanyRank INT,
+    DepartmentAvgSalary DECIMAL(10,2),
+    CompanyAvgSalary DECIMAL(10,2)
+);
+
+INSERT INTO EmployeeComprehensiveReport
+SELECT 
+    e.FirstName + ' ' + e.LastName AS EmployeeName,
+    e.Salary,
+    e.Department,
+    RANK() OVER (PARTITION BY e.Department ORDER BY e.Salary DESC) AS DepartmentRank,
+    RANK() OVER (ORDER BY e.Salary DESC) AS CompanyRank,
+    dept_avg.AvgSalary AS DepartmentAvgSalary,
+    (SELECT AVG(Salary) FROM Employees) AS CompanyAvgSalary
+FROM Employees e
+JOIN (
+    SELECT Department, AVG(Salary) AS AvgSalary
+    FROM Employees
+    GROUP BY Department
+) dept_avg ON e.Department = dept_avg.Department;
 
 -- =====================================================
 -- LEARNING TIPS

@@ -206,46 +206,123 @@ ORDER BY OrderCount DESC;
 -- Exercise 1: Delete all products in 'Footwear' category
 -- TASK: First, check which products are in the 'Footwear' category
 -- Then, if the results look correct, delete them
-/*
+
+-- SOLUTION:
+-- Step 1: Check which products are in 'Footwear' category
 SELECT * FROM Product WHERE Category = 'Footwear';
-DELETE FROM Product WHERE Category = 'Footwear';
-*/
+
+-- Step 2: If the results look correct, delete them
+-- DELETE FROM Product WHERE Category = 'Footwear';
 
 -- Exercise 2: Delete customers who registered more than 1 year ago
 -- TASK: First, check which customers registered more than 1 year ago
 -- Then, if the results look correct, delete them
 -- HINT: Use DATEADD(year, -1, GETDATE()) to get date 1 year ago
-/*
+
+-- SOLUTION:
+-- Step 1: Check which customers registered more than 1 year ago
 SELECT * FROM Customer WHERE RegistrationDate < DATEADD(year, -1, GETDATE());
-DELETE FROM Customer WHERE RegistrationDate < DATEADD(year, -1, GETDATE());
-*/
+
+-- Step 2: If the results look correct, delete them
+-- DELETE FROM Customer WHERE RegistrationDate < DATEADD(year, -1, GETDATE());
 
 -- Exercise 3: Delete order details with zero quantity
 -- TASK: First, check which order details have zero quantity
 -- Then, if the results look correct, delete them
 -- HINT: This helps clean up invalid order entries
-/*
+
+-- SOLUTION:
+-- Step 1: Check which order details have zero quantity
 SELECT * FROM OrderDetail WHERE Quantity = 0;
-DELETE FROM OrderDetail WHERE Quantity = 0;
-*/
+
+-- Step 2: If the results look correct, delete them
+-- DELETE FROM OrderDetail WHERE Quantity = 0;
 
 -- Exercise 4: Delete products with price less than 100
 -- TASK: First, check which products have price less than 100
 -- Then, if the results look correct, delete them
 -- HINT: This helps remove very cheap or invalid products
-/*
+
+-- SOLUTION:
+-- Step 1: Check which products have price less than 100
 SELECT * FROM Product WHERE Price < 100;
-DELETE FROM Product WHERE Price < 100;
-*/
+
+-- Step 2: If the results look correct, delete them
+-- DELETE FROM Product WHERE Price < 100;
 
 -- Exercise 5: Delete orders with status 'Pending' and amount less than 500
 -- TASK: First, check which orders are pending and have low amounts
 -- Then, if the results look correct, delete them
 -- HINT: This helps clean up small pending orders that might be abandoned
-/*
+
+-- SOLUTION:
+-- Step 1: Check which orders are pending and have low amounts
 SELECT * FROM [Order] WHERE Status = 'Pending' AND TotalAmount < 500;
-DELETE FROM [Order] WHERE Status = 'Pending' AND TotalAmount < 500;
-*/
+
+-- Step 2: If the results look correct, delete them
+-- DELETE FROM [Order] WHERE Status = 'Pending' AND TotalAmount < 500;
+
+-- =====================================================
+-- 7.1 ADDITIONAL PRACTICE EXERCISES
+-- =====================================================
+
+-- Exercise 6: Delete inactive customers from specific cities
+-- TASK: Delete customers who are inactive AND from 'Baku' or 'Ganja'
+-- SOLUTION:
+-- Step 1: Check which customers are inactive and from specified cities
+SELECT ID, FirstName, LastName, City, IsActive 
+FROM Customer 
+WHERE IsActive = 0 AND City IN ('Baku', 'Ganja');
+
+-- Step 2: If the results look correct, delete them
+-- DELETE FROM Customer 
+-- WHERE IsActive = 0 AND City IN ('Baku', 'Ganja');
+
+-- Exercise 7: Delete products with zero stock and high price
+-- TASK: Delete products that have no stock AND price greater than 1000
+-- SOLUTION:
+-- Step 1: Check which products have zero stock and high price
+SELECT ID, ProductName, Price, StockQuantity 
+FROM Product 
+WHERE StockQuantity = 0 AND Price > 1000;
+
+-- Step 2: If the results look correct, delete them
+-- DELETE FROM Product 
+-- WHERE StockQuantity = 0 AND Price > 1000;
+
+-- Exercise 8: Delete old cancelled orders
+-- TASK: Delete orders that are cancelled AND older than 6 months
+-- SOLUTION:
+-- Step 1: Check which orders are cancelled and older than 6 months
+SELECT ID, OrderDate, Status, TotalAmount 
+FROM [Order] 
+WHERE Status = 'Cancelled' AND OrderDate < DATEADD(month, -6, GETDATE());
+
+-- Step 2: If the results look correct, delete them
+-- DELETE FROM [Order] 
+-- WHERE Status = 'Cancelled' AND OrderDate < DATEADD(month, -6, GETDATE());
+
+-- Exercise 9: Delete order details for specific product
+-- TASK: Delete order details for products with ID 5
+-- SOLUTION:
+-- Step 1: Check which order details are for product ID 5
+SELECT * FROM OrderDetail WHERE ProductID = 5;
+
+-- Step 2: If the results look correct, delete them
+-- DELETE FROM OrderDetail WHERE ProductID = 5;
+
+-- Exercise 10: Delete customers with no orders (using subquery)
+-- TASK: Delete customers who have never placed an order
+-- SOLUTION:
+-- Step 1: Check which customers have no orders
+SELECT c.ID, c.FirstName, c.LastName, c.Email
+FROM Customer c
+LEFT JOIN [Order] o ON c.ID = o.CustomerID
+WHERE o.CustomerID IS NULL;
+
+-- Step 2: If the results look correct, delete them
+-- DELETE FROM Customer 
+-- WHERE ID NOT IN (SELECT DISTINCT CustomerID FROM [Order] WHERE CustomerID IS NOT NULL);
 
 -- =====================================================
 -- 8. VERIFICATION QUERIES
@@ -290,6 +367,78 @@ COMMON MISTAKES:
 */
 
 -- =====================================================
+-- 9.1 ADVANCED DELETE SCENARIOS WITH SOLUTIONS
+-- =====================================================
+
+-- Advanced Exercise 1: Cascade Delete Pattern
+-- TASK: Delete a customer and all their related data in correct order
+-- SOLUTION:
+-- Step 1: Check customer and their orders
+SELECT c.ID, c.FirstName, c.LastName, COUNT(o.ID) AS OrderCount
+FROM Customer c
+LEFT JOIN [Order] o ON c.ID = o.CustomerID
+WHERE c.ID = 1
+GROUP BY c.ID, c.FirstName, c.LastName;
+
+-- Step 2: Check order details for this customer
+SELECT od.*
+FROM OrderDetail od
+INNER JOIN [Order] o ON od.OrderID = o.ID
+WHERE o.CustomerID = 1;
+
+-- Step 3: Delete in correct order (commented for safety)
+-- DELETE FROM OrderDetail WHERE OrderID IN (SELECT ID FROM [Order] WHERE CustomerID = 1);
+-- DELETE FROM [Order] WHERE CustomerID = 1;
+-- DELETE FROM Customer WHERE ID = 1;
+
+-- Advanced Exercise 2: Batch Delete with TOP
+-- TASK: Delete oldest 5 orders to avoid performance issues
+-- SOLUTION:
+-- Step 1: Check the 5 oldest orders
+SELECT TOP 5 ID, OrderDate, Status, TotalAmount
+FROM [Order]
+ORDER BY OrderDate ASC;
+
+-- Step 2: Delete them (commented for safety)
+-- DELETE FROM [Order] 
+-- WHERE ID IN (
+--     SELECT TOP 5 ID FROM [Order] ORDER BY OrderDate ASC
+-- );
+
+-- Advanced Exercise 3: Conditional Delete with EXISTS
+-- TASK: Delete products that have never been ordered
+-- SOLUTION:
+-- Step 1: Check products that have never been ordered
+SELECT p.ID, p.ProductName, p.Price
+FROM Product p
+WHERE NOT EXISTS (
+    SELECT 1 FROM OrderDetail od WHERE od.ProductID = p.ID
+);
+
+-- Step 2: Delete them (commented for safety)
+-- DELETE FROM Product 
+-- WHERE NOT EXISTS (
+--     SELECT 1 FROM OrderDetail od WHERE od.ProductID = Product.ID
+-- );
+
+-- Advanced Exercise 4: Delete with Date Range
+-- TASK: Delete all data from a specific date range
+-- SOLUTION:
+-- Step 1: Check orders in date range
+SELECT ID, OrderDate, Status, TotalAmount
+FROM [Order]
+WHERE OrderDate BETWEEN '2024-01-01' AND '2024-01-31';
+
+-- Step 2: Delete order details first, then orders (commented for safety)
+-- DELETE FROM OrderDetail 
+-- WHERE OrderID IN (
+--     SELECT ID FROM [Order] 
+--     WHERE OrderDate BETWEEN '2024-01-01' AND '2024-01-31'
+-- );
+-- DELETE FROM [Order] 
+-- WHERE OrderDate BETWEEN '2024-01-01' AND '2024-01-31';
+
+-- =====================================================
 -- 10. SAFE DELETE PATTERN (Without Transactions)
 -- =====================================================
 
@@ -312,6 +461,40 @@ WHERE City = 'TestCity';
 
 -- Note: Transactions will be covered in advanced SQL topics
 -- Transactions provide additional safety but are more complex
+
+-- =====================================================
+-- 11. COMPREHENSIVE SOLUTIONS SUMMARY
+-- =====================================================
+
+/*
+SOLUTIONS SUMMARY:
+
+Basic DELETE Patterns:
+1. Simple DELETE: DELETE FROM Table WHERE condition
+2. Multiple conditions: DELETE FROM Table WHERE condition1 AND condition2
+3. Date-based DELETE: DELETE FROM Table WHERE date_column < DATEADD(unit, -value, GETDATE())
+4. IN clause DELETE: DELETE FROM Table WHERE column IN (value1, value2, value3)
+
+Advanced DELETE Patterns:
+1. Cascade DELETE: Delete child records first, then parent records
+2. Batch DELETE: Use TOP to limit records deleted at once
+3. EXISTS/NOT EXISTS: Delete based on existence in other tables
+4. Subquery DELETE: Use subqueries to determine what to delete
+
+Safety Best Practices:
+1. Always use SELECT first to preview what will be deleted
+2. Use specific WHERE conditions to avoid accidental deletions
+3. Consider foreign key relationships when deleting
+4. Use batch processing for large deletions
+5. Verify results after deletion
+
+Common DELETE Scenarios:
+- Clean up old/invalid data
+- Remove test data
+- Archive completed records
+- Maintain data integrity
+- Performance optimization
+*/
 
 -- =====================================================
 -- END OF DELETE STATEMENT PRACTICE
