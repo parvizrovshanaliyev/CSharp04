@@ -349,6 +349,9 @@ graph TD
 55. **[SQL Practice - EXISTS, ANY, ALL Operators, CASE Expression, and NULL Functions - Week44, Day 01 - 21.09.2025](#week44-day01-21092025)**
     Practicing SQL EXISTS operator, using ANY and ALL operators for advanced comparisons, implementing CASE expressions for conditional logic, and working with SQL NULL functions for handling missing or undefined data.
 
+56. **[SQL Practice - FOREIGN KEY Constraint and Stored Procedures in SQL Server - Week45, Day 01 - 28.09.2025](#week45-day01-28092025)**
+    Understanding and implementing SQL FOREIGN KEY constraints for referential integrity, creating and working with stored procedures in SQL Server for modular and reusable code.
+
 ## Month 01
 
 ### Week01-Day01 08.09.2024
@@ -1609,4 +1612,55 @@ graph TD
 [Week44 Tasks - SQL EXISTS, ANY, ALL, CASE, and NULL Functions Practice](Database/Week44/sql-exists-any-all-case-null-practice.sql)
 
 [Back to Top](#table-of-contents)
+
+---
+### Week45-Day01 28.09.2025
+#### [SQL Practice - FOREIGN KEY Constraint and Stored Procedures in SQL Server](#week45-day01-28092025)
+
+### Topics
+1. Understanding and implementing SQL FOREIGN KEY constraints
+   - Creating FOREIGN KEY constraints for referential integrity
+   - Managing relationships between tables using FOREIGN KEYs
+   - Adding FOREIGN KEYs to Shopping Database tables:
+     - OrderDetail -> Order (OrderId)
+     - OrderDetail -> Product (ProductId) 
+     - Order -> Customer (CustomerId)
+   - Handling FOREIGN KEY violations and cascading actions
+2. Creating and working with stored procedures in SQL Server
+   - Writing stored procedures for common shopping operations
+   - Creating procedures for:
+     - Adding new orders
+     - Updating product inventory
+     - Processing customer orders
+   - Passing parameters to stored procedures
+   - Error handling in stored procedures
+
+### Resources
+1. [SQL FOREIGN KEY Constraint](https://www.w3schools.com/sql/sql_foreignkey.asp)
+2. [SQL Server Stored Procedures](https://www.sqlservertutorial.net/sql-server-stored-procedures/)
+3. [Understanding SQL Server Foreign Keys](https://www.sqlshack.com/understanding-sql-server-foreign-keys/)
+4. [Best Practices for SQL Server Stored Procedures](https://www.mssqltips.com/sqlservertip/1600/sql-server-stored-procedure-best-practices/)
+
+### **Homework Assignment**
+1. [Week45 Tasks Part 1 - Shopping Database FOREIGN KEYs](Database/Week45/01-shopping-db-foreign-keys.sql)
+   - Adding FOREIGN KEYs to existing tables
+   - Creating new tables with FOREIGN KEYs
+   - Implementing relationships and constraints
+   - Best practices and verification
+
+2. [Week45 Tasks Part 2 - SQL Server Stored Procedures](Database/Week45/02-shopping-db-stored-procedures.sql)
+   - Creating stored procedures for order management
+   - Implementing transaction handling
+   - Adding inventory management procedures
+   - Error handling and logging
+
+3. [Week45 Documentation and Guidelines](Database/Week45/README.md)
+   - Detailed explanations of concepts
+   - Implementation guidelines
+   - Best practices
+   - Additional resources
+
+[Back to Top](#table-of-contents)
+
+---
 

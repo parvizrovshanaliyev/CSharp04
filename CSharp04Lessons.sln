@@ -15,8 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		month02.md = month02.md
 		month03.md = month03.md
 		README.md = README.md
-		Database\Week41\sql-alter-table-subqueries-practice.sql = Database\Week41\sql-alter-table-subqueries-practice.sql
-		Database\Week42\sql-inner-joins-practice.sql = Database\Week42\sql-inner-joins-practice.sql
 		syllabus-as-universty.md = syllabus-as-universty.md
 		syllabus.csharp.txt = syllabus.csharp.txt
 		syllabus.md = syllabus.md
@@ -215,19 +213,19 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database1", "Database\Week3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week35", "Week35", "{88D453D9-D2CE-4FB7-8E43-74AB48C417D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections.NoneGenericSortedListClass", "ConsoleApps\Week35\Collections.NoneGenericSortedListClass\Collections.NoneGenericSortedListClass.csproj", "{55C0CE36-7F78-4673-BA5B-1B270D92190C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections.NoneGenericSortedListClass", "ConsoleApps\Week35\Collections.NoneGenericSortedListClass\Collections.NoneGenericSortedListClass.csproj", "{55C0CE36-7F78-4673-BA5B-1B270D92190C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "ConsoleApps\Week35\Practice\Practice.csproj", "{7804D1B9-0DC7-4167-9C47-77EB114D8FF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice", "ConsoleApps\Week35\Practice\Practice.csproj", "{7804D1B9-0DC7-4167-9C47-77EB114D8FF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchExamples", "ConsoleApps\Week35\BinarySearchExamples\BinarySearchExamples.csproj", "{2ED0A1F4-00BC-4679-A2C7-46A534D308A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearchExamples", "ConsoleApps\Week35\BinarySearchExamples\BinarySearchExamples.csproj", "{2ED0A1F4-00BC-4679-A2C7-46A534D308A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneBookManagementSystem", "ConsoleApps\Week35\PhoneBookManagementSystem\PhoneBookManagementSystem.csproj", "{A1DAE17A-A52E-4FAA-B6B4-2BE41D14D2E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneBookManagementSystem", "ConsoleApps\Week35\PhoneBookManagementSystem\PhoneBookManagementSystem.csproj", "{A1DAE17A-A52E-4FAA-B6B4-2BE41D14D2E4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week37", "Week37", "{4AFC47E1-1110-4E34-B659-990DA1879744}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpToSqlDataTypes", "ConsoleApps\Week37\CSharpToSqlDataTypes\CSharpToSqlDataTypes.csproj", "{B07E8CAD-46EB-43EB-87DD-309095989B48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "ConsoleApps\Week37\Practice\Practice.csproj", "{FF1C9F75-9ECE-404A-8B1F-C132324E1EA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice", "ConsoleApps\Week37\Practice\Practice.csproj", "{FF1C9F75-9ECE-404A-8B1F-C132324E1EA6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week37", "Week37", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 	ProjectSection(SolutionItems) = preProject
@@ -264,18 +262,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week41", "Week41", "{DF70F7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week42", "Week42", "{DF70F78F-58AB-4523-B2F1-C95A7CDD2959}"
 	ProjectSection(SolutionItems) = preProject
+		Database\Week42\sql-cross-join-practice.sql = Database\Week42\sql-cross-join-practice.sql
+		Database\Week42\sql-full-outer-join-practice.sql = Database\Week42\sql-full-outer-join-practice.sql
 		Database\Week42\sql-inner-joins-practice.sql = Database\Week42\sql-inner-joins-practice.sql
+		Database\Week42\sql-join-comparison-best-practices.sql = Database\Week42\sql-join-comparison-best-practices.sql
 		Database\Week42\sql-left-join-practice.sql = Database\Week42\sql-left-join-practice.sql
 		Database\Week42\sql-right-join-practice.sql = Database\Week42\sql-right-join-practice.sql
-		Database\Week42\sql-full-outer-join-practice.sql = Database\Week42\sql-full-outer-join-practice.sql
-		Database\Week42\sql-cross-join-practice.sql = Database\Week42\sql-cross-join-practice.sql
 		Database\Week42\sql-self-join-practice.sql = Database\Week42\sql-self-join-practice.sql
-		Database\Week42\sql-join-comparison-best-practices.sql = Database\Week42\sql-join-comparison-best-practices.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week44", "Week44", "{DF70F78F-58AB-4523-B2F1-C95A7CDD2960}"
 	ProjectSection(SolutionItems) = preProject
 		Database\Week44\sql-exists-any-all-case-null-practice.sql = Database\Week44\sql-exists-any-all-case-null-practice.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week45", "Week45", "{DF70F78F-58AB-4523-B2F1-C95A7CDD2961}"
+	ProjectSection(SolutionItems) = preProject
+		Database\Week45\01-shopping-db-foreign-keys.sql = Database\Week45\01-shopping-db-foreign-keys.sql
+		Database\Week45\02-shopping-db-stored-procedures.sql = Database\Week45\02-shopping-db-stored-procedures.sql
+		Database\Week45\README.md = Database\Week45\README.md
 	EndProjectSection
 EndProject
 Global
@@ -704,6 +709,7 @@ Global
 		{DF70F78F-58AB-4523-B2F1-C95A7CDD2958} = {05E78A8D-4A2C-462E-80B7-804F46DF9105}
 		{DF70F78F-58AB-4523-B2F1-C95A7CDD2959} = {05E78A8D-4A2C-462E-80B7-804F46DF9105}
 		{DF70F78F-58AB-4523-B2F1-C95A7CDD2960} = {05E78A8D-4A2C-462E-80B7-804F46DF9105}
+		{DF70F78F-58AB-4523-B2F1-C95A7CDD2961} = {05E78A8D-4A2C-462E-80B7-804F46DF9105}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEA2487A-AB74-4D13-B4F3-133B1E0660E1}
