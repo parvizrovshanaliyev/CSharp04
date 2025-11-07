@@ -352,6 +352,15 @@ graph TD
 56. **[SQL Practice - FOREIGN KEY Constraint and Stored Procedures in SQL Server - Week45, Day 01 - 28.09.2025](#week45-day01-28092025)**
     Understanding and implementing SQL FOREIGN KEY constraints for referential integrity, creating and working with stored procedures in SQL Server for modular and reusable code.
 
+---
+
+### [Month 08](#month-08)
+
+57. **[Introduction to ADO.NET - Week46, Day 01 - 02.11.2025](#week46-day01-02112025)**
+    Learning the fundamentals of ADO.NET for data access in .NET applications, understanding key components such as `SqlConnection`, `SqlCommand`, `SqlDataReader`, and `SqlDataAdapter`. Practicing how to connect to a SQL Server database, execute queries to fetch data, and map the retrieved results to C# classes for object-oriented data handling.
+
+---
+
 ## Month 01
 
 ### Week01-Day01 08.09.2024
@@ -1659,6 +1668,38 @@ graph TD
    - Implementation guidelines
    - Best practices
    - Additional resources
+
+[Back to Top](#table-of-contents)
+
+---
+### Week46-Day01 02.11.2025
+#### [Introduction to ADO.NET](#week46-day01-02112025)
+
+### Topics
+1. Fundamentals of ADO.NET
+    - Understanding ADO.NET architecture
+    - Key components: `SqlConnection`, `SqlCommand`, `SqlDataReader`, `SqlDataAdapter`
+    - Differences between connected and disconnected data access
+2. Connecting to a SQL Server database
+    - Establishing a connection using `SqlConnection`
+    - Connection strings and their structure
+3. Executing SQL queries
+    - Using `SqlCommand` to execute queries
+    - Fetching data with `SqlDataReader`
+4. Mapping data to C# classes
+    - Object-oriented data handling
+    - Populating objects with database data
+
+### Resources
+1. [What is ADO.NET?](https://dotnettutorials.net/lesson/what-is-ado-net)
+2. [Getting Started with ADO.NET](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview)
+3. [SqlConnection Class](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlconnection)
+4. [SqlCommand Class](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlcommand)
+5. [SqlDataReader Class](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqldatareader)
+6. [Best Practices for ADO.NET](https://www.c-sharpcorner.com/article/ado-net-best-practices/)
+
+### **Homework Assignment**
+[Week46 Tasks - ADO.NET Basics](ConsoleAppsWithAdoNet\Week46\Practice\ado-net-basics-tasks.md)
 
 [Back to Top](#table-of-contents)
 

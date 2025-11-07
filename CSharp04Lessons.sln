@@ -287,7 +287,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsoleAppsWithAdoNet", "Co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week46", "Week46", "{A0F89646-917E-4B2E-9858-23677627BB3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroductionToAdoNet", "ConsoleAppsWithAdoNet\Week46\IntroductionToAdoNet\IntroductionToAdoNet.csproj", "{0EA0B176-2406-46CF-9515-9F2764DB53DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroductionToAdoNet", "ConsoleAppsWithAdoNet\Week46\IntroductionToAdoNet\IntroductionToAdoNet.csproj", "{0EA0B176-2406-46CF-9515-9F2764DB53DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "ConsoleAppsWithAdoNet\Week46\Practice\Practice.csproj", "{6142AA4C-CCBA-423C-99C9-D7362DED3984}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -605,6 +607,10 @@ Global
 		{0EA0B176-2406-46CF-9515-9F2764DB53DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EA0B176-2406-46CF-9515-9F2764DB53DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EA0B176-2406-46CF-9515-9F2764DB53DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6142AA4C-CCBA-423C-99C9-D7362DED3984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6142AA4C-CCBA-423C-99C9-D7362DED3984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6142AA4C-CCBA-423C-99C9-D7362DED3984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6142AA4C-CCBA-423C-99C9-D7362DED3984}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -722,6 +728,7 @@ Global
 		{DF70F78F-58AB-4523-B2F1-C95A7CDD2961} = {05E78A8D-4A2C-462E-80B7-804F46DF9105}
 		{A0F89646-917E-4B2E-9858-23677627BB3C} = {5151B6AA-8286-48B6-8138-AD436A6E04AB}
 		{0EA0B176-2406-46CF-9515-9F2764DB53DE} = {A0F89646-917E-4B2E-9858-23677627BB3C}
+		{6142AA4C-CCBA-423C-99C9-D7362DED3984} = {A0F89646-917E-4B2E-9858-23677627BB3C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEA2487A-AB74-4D13-B4F3-133B1E0660E1}
