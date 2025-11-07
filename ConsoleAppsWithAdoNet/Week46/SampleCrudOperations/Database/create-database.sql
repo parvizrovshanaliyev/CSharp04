@@ -1,0 +1,12 @@
+CREATE DATABASE SampleDb;
+GO
+
+USE SampleDb;
+GO
+
+CREATE TABLE Customers (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Name NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) NOT NULL,
+    CreatedAt DATETIME NOT NULL
+);
