@@ -10,3 +10,14 @@ CREATE TABLE Customers (
     Email NVARCHAR(100) NOT NULL,
     CreatedAt DATETIME NOT NULL
 );
+
+
+
+INSERT INTO Customers (Name, Email, CreatedAt)
+VALUES 
+('Alice Johnson', 'alice@example.com', GETDATE()),
+('Michael Smith', 'michael.smith@example.com', GETDATE()),
+('Emma Brown', 'emma.brown@example.com', GETDATE());
+
+
+SELECT * FROM Customers;

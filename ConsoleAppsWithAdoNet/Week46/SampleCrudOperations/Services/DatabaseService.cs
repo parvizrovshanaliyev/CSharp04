@@ -395,85 +395,85 @@ namespace SampleCrudOperations.Services
  * • If `0` rows are affected, it means no record with the provided Id exists.
  * • Using `using` blocks ensures all database resources are released properly.
  */
-public bool DeleteCustomer(int id)
-{
-    // 1. Create and open a SQL connection synchronously.
-    using var connection = new SqlConnection(_connectionString);
-    connection.Open();
+        public bool DeleteCustomer(int id)
+        {
+            // 1. Create and open a SQL connection synchronously.
+            using var connection = new SqlConnection(_connectionString);
+            connection.Open();
 
-    /*
-     * Parameterized Query Explanation
-     * ===============================
-     * Even though this command deletes by a simple numeric Id, parameters are still critical.
-     * 
-     * 1. Security:
-     *    - Prevents SQL injection attacks.
-     *    - Ensures that even if user input is tampered with, it is treated as a literal value,
-     *      not executable SQL code.
-     * 
-     * 2. Performance:
-     *    - Parameterized queries allow SQL Server to reuse cached execution plans.
-     *      This improves speed when the same query structure runs multiple times
-     *      with different parameter values.
-     * 
-     * 3. Code Consistency:
-     *    - Enforces a standard practice across all CRUD methods.
-     *    - Makes the codebase easier to maintain and reason about.
-     * 
-     * SQL Explanation:
-     * ----------------
-     * DELETE FROM Customers WHERE Id = @Id
-     * - The WHERE clause ensures that only the record matching the provided Id will be removed.
-     * - Without a WHERE clause, ALL records would be deleted — a common and critical mistake to avoid.
-     */
-    const string sql = "DELETE FROM Customers WHERE Id = @Id;";
+            /*
+             * Parameterized Query Explanation
+             * ===============================
+             * Even though this command deletes by a simple numeric Id, parameters are still critical.
+             * 
+             * 1. Security:
+             *    - Prevents SQL injection attacks.
+             *    - Ensures that even if user input is tampered with, it is treated as a literal value,
+             *      not executable SQL code.
+             * 
+             * 2. Performance:
+             *    - Parameterized queries allow SQL Server to reuse cached execution plans.
+             *      This improves speed when the same query structure runs multiple times
+             *      with different parameter values.
+             * 
+             * 3. Code Consistency:
+             *    - Enforces a standard practice across all CRUD methods.
+             *    - Makes the codebase easier to maintain and reason about.
+             * 
+             * SQL Explanation:
+             * ----------------
+             * DELETE FROM Customers WHERE Id = @Id
+             * - The WHERE clause ensures that only the record matching the provided Id will be removed.
+             * - Without a WHERE clause, ALL records would be deleted — a common and critical mistake to avoid.
+             */
+            const string sql = "DELETE FROM Customers WHERE Id = @Id;";
 
-    // 2. Create a SQL command using the query and connection.
-    using var command = new SqlCommand(sql, connection);
+            // 2. Create a SQL command using the query and connection.
+            using var command = new SqlCommand(sql, connection);
 
-    /*
-     * Parameter Mapping
-     * =================
-     * @Id
-     * ----
-     * • SQL Type: INT
-     * • Purpose: Represents the unique primary key of the record to be deleted.
-     * • Source: Method parameter `id`.
-     * 
-     * AddWithValue automatically infers type based on the .NET type of the provided value (int).
-     * For critical systems, consider specifying explicit SqlDbType (see alternative example below).
-     */
-    command.Parameters.AddWithValue("@Id", id);
+            /*
+             * Parameter Mapping
+             * =================
+             * @Id
+             * ----
+             * • SQL Type: INT
+             * • Purpose: Represents the unique primary key of the record to be deleted.
+             * • Source: Method parameter `id`.
+             * 
+             * AddWithValue automatically infers type based on the .NET type of the provided value (int).
+             * For critical systems, consider specifying explicit SqlDbType (see alternative example below).
+             */
+            command.Parameters.AddWithValue("@Id", id);
 
-    // Alternative with explicit type declaration for better control:
-    /*
-    command.Parameters.Add(new SqlParameter
-    {
-        ParameterName = "@Id",
-        SqlDbType = SqlDbType.Int,
-        Value = id
-    });
-    */
+            // Alternative with explicit type declaration for better control:
+            /*
+            command.Parameters.Add(new SqlParameter
+            {
+                ParameterName = "@Id",
+                SqlDbType = SqlDbType.Int,
+                Value = id
+            });
+            */
 
-    // 3. ExecuteNonQuery executes the command and returns the number of rows affected.
-    //    For DELETE, this number indicates how many records were removed.
-    int affectedRows = command.ExecuteNonQuery();
+            // 3. ExecuteNonQuery executes the command and returns the number of rows affected.
+            //    For DELETE, this number indicates how many records were removed.
+            int affectedRows = command.ExecuteNonQuery();
 
-    /*
-     * Return Value Explanation
-     * ========================
-     * - If affectedRows > 0 → At least one record was successfully deleted.
-     * - If affectedRows == 0 → No record matched the provided Id (nothing deleted).
-     * 
-     * Returning a boolean simplifies usage for the calling code:
-     * Example:
-     *    if (DeleteCustomer(5))
-     *        Console.WriteLine("Customer deleted successfully!");
-     *    else
-     *        Console.WriteLine("Customer not found.");
-     */
-    return affectedRows > 0;
-}
+            /*
+             * Return Value Explanation
+             * ========================
+             * - If affectedRows > 0 → At least one record was successfully deleted.
+             * - If affectedRows == 0 → No record matched the provided Id (nothing deleted).
+             * 
+             * Returning a boolean simplifies usage for the calling code:
+             * Example:
+             *    if (DeleteCustomer(5))
+             *        Console.WriteLine("Customer deleted successfully!");
+             *    else
+             *        Console.WriteLine("Customer not found.");
+             */
+            return affectedRows > 0;
+        }
 
     }
 }

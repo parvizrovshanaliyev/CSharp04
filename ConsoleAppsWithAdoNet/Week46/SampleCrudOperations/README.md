@@ -8,7 +8,7 @@ A console application demonstrating basic CRUD (Create, Read, Update, Delete) op
 - View all customers
 - Update customer details
 - Delete customers
-- Async database operations
+- Database operations
 - Parameter binding for SQL injection prevention
 
 ## Prerequisites
