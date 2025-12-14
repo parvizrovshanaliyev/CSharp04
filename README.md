@@ -9,6 +9,7 @@
 **Instructor:** Parviz Rovshan Aliyev  
 **Location:** Online Platform  
 
+
 ---
 
 ## Quick Navigation
@@ -358,6 +359,15 @@ graph TD
 
 57. **[Introduction to ADO.NET - Week46, Day 01 - 02.11.2025](#week46-day01-02112025)**
     Learning the fundamentals of ADO.NET for data access in .NET applications, understanding key components such as `SqlConnection`, `SqlCommand`, `SqlDataReader`, and `SqlDataAdapter`. Practicing how to connect to a SQL Server database, execute queries to fetch data, and map the retrieved results to C# classes for object-oriented data handling.
+
+58. **[ADO.NET Practice and Generic Collections Introduction - Week47, Day 01 - 16.11.2025](#week47-day01-16112025)**
+    Practicing ADO.NET concepts with hands-on exercises including CRUD operations, parameterized queries, and data mapping. Introduction to Generic Collections in C# - understanding the benefits of generics over non-generic collections, exploring `List<T>`, `Dictionary<TKey, TValue>`, and type safety.
+
+59. **[ADO.NET Practice and Generic Collections Deep Dive - Week48, Day 01 - 23.11.2025](#week48-day01-23112025)**
+    Continuing ADO.NET practice with advanced scenarios and error handling. Deep dive into Generic Collections including `Queue<T>`, `Stack<T>`, `HashSet<T>`, and `LinkedList<T>`. Understanding when to use each collection type and their performance characteristics.
+
+60. **[Practice Library Management System With ADO.NET and Generic Collections - Week49, Day 01 - 07.12.2025](#week49-day01-07122025)**
+    Building a comprehensive Library Management System using ADO.NET for database operations and Generic Collections for in-memory data management. Applying CRUD operations, parameterized queries, and collection best practices in a real-world project.
 
 ---
 
@@ -1700,6 +1710,96 @@ graph TD
 
 ### **Homework Assignment**
 [Week46 Tasks - ADO.NET Basics](ConsoleAppsWithAdoNet\Week46\Practice\ado-net-basics-tasks.md)
+
+[Back to Top](#table-of-contents)
+
+---
+
+### Week47-Day01 16.11.2025
+#### [ADO.NET Practice and Generic Collections Introduction](#week47-day01-16112025)
+
+### Topics
+1. ADO.NET Practice
+    - Hands-on CRUD operations with SQL Server
+    - Parameterized queries for security
+    - Exception handling in data access layer
+    - Best practices for connection management
+2. Introduction to Generic Collections
+    - What are Generics and why use them?
+    - Benefits over non-generic collections (type safety, performance)
+    - `List<T>` - dynamic arrays with generic type
+    - `Dictionary<TKey, TValue>` - key-value pair collections
+    - Comparing `ArrayList` vs `List<T>`
+
+### Resources
+1. [Generic Collections in C#](https://dotnettutorials.net/lesson/generic-collections-csharp/)
+2. [List<T> Class](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1)
+3. [Dictionary<TKey,TValue> Class](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2)
+4. [When to Use Generic Collections](https://learn.microsoft.com/en-us/dotnet/standard/collections/when-to-use-generic-collections)
+5. [ADO.NET Parameterized Queries](https://www.c-sharpcorner.com/article/aboraboraborabor/)
+
+[Back to Top](#table-of-contents)
+
+---
+
+### Week48-Day01 23.11.2025
+#### [ADO.NET Practice and Generic Collections Deep Dive](#week48-day01-23112025)
+
+### Topics
+1. ADO.NET Advanced Practice
+    - Complex query execution
+    - Transaction management basics
+    - Working with stored procedures in ADO.NET
+    - Data mapping patterns
+2. Generic Collections Deep Dive
+    - `Queue<T>` - First-In-First-Out (FIFO) collection
+    - `Stack<T>` - Last-In-First-Out (LIFO) collection
+    - `HashSet<T>` - unique element collections
+    - `LinkedList<T>` - doubly linked list implementation
+    - `SortedList<TKey, TValue>` and `SortedDictionary<TKey, TValue>`
+    - Performance comparison of different collection types
+    - Choosing the right collection for your use case
+
+### Resources
+1. [Queue<T> Class](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.queue-1)
+2. [Stack<T> Class](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.stack-1)
+3. [HashSet<T> Class](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.hashset-1)
+4. [LinkedList<T> Class](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.linkedlist-1)
+5. [Selecting a Collection Class](https://learn.microsoft.com/en-us/dotnet/standard/collections/selecting-a-collection-class)
+6. [ADO.NET Transactions](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/local-transactions)
+
+[Back to Top](#table-of-contents)
+
+---
+
+### Week49-Day01 07.12.2025
+#### [Practice Library Management System With ADO.NET and Generic Collections](#week49-day01-07122025)
+
+### Topics
+1. Library Management System Implementation
+    - Project architecture and structure
+    - Database design for library system
+    - Entity classes and data models
+2. ADO.NET Integration
+    - Database connection management
+    - CRUD operations for Books, Members, and Loans
+    - Parameterized queries for data security
+    - Exception handling and error management
+3. Generic Collections Usage
+    - Using `List<T>` for managing book and member collections
+    - `Dictionary<TKey, TValue>` for quick lookups
+    - Implementing search and filter functionality
+4. Practical Features
+    - Book management (add, update, delete, search)
+    - Member registration and management
+    - Loan tracking and history
+    - Console-based user interface
+
+### Resources
+1. [ADO.NET Overview](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview)
+2. [Generic Collections in C#](https://dotnettutorials.net/lesson/generic-collections-csharp/)
+3. [Best Practices for ADO.NET](https://www.c-sharpcorner.com/article/ado-net-best-practices/)
+4. [Building Console Applications in C#](https://learn.microsoft.com/en-us/dotnet/csharp/tutorials/console-teleprompter)
 
 [Back to Top](#table-of-contents)
 
