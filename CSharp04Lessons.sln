@@ -289,9 +289,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week46", "Week46", "{A0F896
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroductionToAdoNet", "ConsoleAppsWithAdoNet\Week46\IntroductionToAdoNet\IntroductionToAdoNet.csproj", "{0EA0B176-2406-46CF-9515-9F2764DB53DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice", "ConsoleAppsWithAdoNet\Week46\Practice\Practice.csproj", "{6142AA4C-CCBA-423C-99C9-D7362DED3984}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice", "ConsoleAppsWithAdoNet\Week46\Practice\Practice.csproj", "{6142AA4C-CCBA-423C-99C9-D7362DED3984}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleCrudOperations", "ConsoleAppsWithAdoNet\Week46\SampleCrudOperations\SampleCrudOperations.csproj", "{8D597E0B-940F-4894-818F-6EB822F41D23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleCrudOperations", "ConsoleAppsWithAdoNet\Week46\SampleCrudOperations\SampleCrudOperations.csproj", "{8D597E0B-940F-4894-818F-6EB822F41D23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week49", "Week49", "{5A9F8EBF-8D01-42CE-A97C-FBE9605DB4DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem", "ConsoleAppsWithAdoNet\Week49\LibraryManagementSystem\LibraryManagementSystem.csproj", "{A613D65A-6D5F-4440-A86D-9ED3CAFCCDFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -617,6 +621,10 @@ Global
 		{8D597E0B-940F-4894-818F-6EB822F41D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D597E0B-940F-4894-818F-6EB822F41D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D597E0B-940F-4894-818F-6EB822F41D23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A613D65A-6D5F-4440-A86D-9ED3CAFCCDFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A613D65A-6D5F-4440-A86D-9ED3CAFCCDFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A613D65A-6D5F-4440-A86D-9ED3CAFCCDFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A613D65A-6D5F-4440-A86D-9ED3CAFCCDFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -736,6 +744,8 @@ Global
 		{0EA0B176-2406-46CF-9515-9F2764DB53DE} = {A0F89646-917E-4B2E-9858-23677627BB3C}
 		{6142AA4C-CCBA-423C-99C9-D7362DED3984} = {A0F89646-917E-4B2E-9858-23677627BB3C}
 		{8D597E0B-940F-4894-818F-6EB822F41D23} = {A0F89646-917E-4B2E-9858-23677627BB3C}
+		{5A9F8EBF-8D01-42CE-A97C-FBE9605DB4DC} = {5151B6AA-8286-48B6-8138-AD436A6E04AB}
+		{A613D65A-6D5F-4440-A86D-9ED3CAFCCDFA} = {5A9F8EBF-8D01-42CE-A97C-FBE9605DB4DC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEA2487A-AB74-4D13-B4F3-133B1E0660E1}
